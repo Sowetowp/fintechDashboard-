@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-        <main className='max-w-xl bg-slate-400 h-2'></main>
+        <main className='max-w-2xl bg-slate-400 h-2'></main>
     </>
   )
 }
