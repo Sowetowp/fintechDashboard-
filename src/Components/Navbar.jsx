@@ -23,7 +23,7 @@ const Navbar = () => {
                                     <span></span>
                                 </label>
                             </a>
-                            <div className='flex'>
+                            <div className='flex bg'>
                                 <img src={search} className="w-6" alt="" />
                                 <input type="text" placeholder='Search here'/>
                             </div>
