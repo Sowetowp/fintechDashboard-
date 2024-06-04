@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
         <header className='w-screen sticky top-0'>
-            <section className='max-w-7xl bg-blue-400 mx-auto py-3'>
+            <section className='max-w-7xl bg-blue-400 mx-auto py-4'>
                 <div className='w-1/2 bg-green-300'>
                     <a className="pl-2 flex gap-3 flex-row items-center">
                         <img className='w-12' src={logo} alt="logo" />
