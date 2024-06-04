@@ -12,7 +12,9 @@ const Navbar = () => {
                         <img className='w-14' src={logo} alt="logo" />
                         <img className='w-28' src={logo2} alt="logo" />
                     </a>
-                    
+                    <div>
+                        
+                    </div>
                 </div>
             </section>
         </header>
