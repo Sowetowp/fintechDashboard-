@@ -3,11 +3,11 @@ import Navbar from '../Components/Navbar'
 import "../Styles/Dashboard.css"
 
 const Dashboard = () => {
-  return (
-    <>
-    <Navbar/>
-    </>
-  )
+    return (
+        <>
+            <Navbar />
+        </>
+    )
 }
 
 export default Dashboard
