@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
         <header className='w-screen '>
-            <div className='max'></div>
+            <section className='max'></section>
         </header>
     </>
   )
