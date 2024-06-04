@@ -22,6 +22,10 @@ const Navbar = () => {
                                     <span></span>
                                 </label>
                             </a>
+                            <div>
+                                <img src="" alt="" />
+                                <input type="text" />
+                            </div>
                         </div>
                     </div>
                 </section>
