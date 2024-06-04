@@ -24,7 +24,7 @@ const Navbar = () => {
                             </a>
                             <div>
                                 <img src="" alt="" />
-                                <input type="text" />
+                                <input type="text" placeholder='Search here'/>
                             </div>
                         </div>
                     </div>
