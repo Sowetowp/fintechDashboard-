@@ -9,7 +9,7 @@ const Navbar = () => {
             <section className='max-w-7xl bg-blue-400 mx-auto'>
                 <div className='w-1/2 bg-green-300'>
                     <a href="flex flex-row items-center">
-                        <img src="" alt="logo" />
+                        <img src={logo} alt="logo" />
                         <img src="" alt="logo" />
                     </a>
                 </div>
