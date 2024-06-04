@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <>
         <header className='w-screen sticky top-0'>
-            <section className='max-w-7xl bg-blue-400 h-3 mx-auto'>
+            <section className='max-w-7xl bg-blue-400 mx-auto'>
                 <div className='w-1/2 bg-green-300'>
                     <a href="">
                         <img src="" alt="logo" />
