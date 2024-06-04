@@ -8,7 +8,7 @@ const Navbar = () => {
         <header className='w-screen sticky top-0'>
             <section className='max-w-7xl bg-blue-400 mx-auto'>
                 <div className='w-1/2 bg-green-300'>
-                    <a className="px-2 flex flex-row items-center">
+                    <a className="pl-2 flex flex-row items-center">
                         <img src={logo} alt="logo" />
                         <img src={logo2} alt="logo" />
                     </a>
