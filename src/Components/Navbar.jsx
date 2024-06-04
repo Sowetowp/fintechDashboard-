@@ -22,7 +22,7 @@ const Navbar = () => {
                                     <span></span>
                                 </label>
                             </a>
-                            <div>
+                            <div className='flex'>
                                 <img src="" alt="" />
                                 <input type="text" placeholder='Search here'/>
                             </div>
