@@ -8,6 +8,7 @@ const Navbar = () => {
                 <div className='w-1/2 bg-green-300'>
                     <a href="">
                         <img src="" alt="logo" />
+                        <img src="" alt="" />
                     </a>
                 </div>
             </section>
