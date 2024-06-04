@@ -3,25 +3,30 @@ import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
 
 const Navbar = () => {
-  return (
-    <>
-        <header className='w-screen sticky top-0'>
-            <section className='max-w-7xl bg-blue-400 mx-auto py-5'>
-                <div className='w-1/2 bg-green-300 flex items-center'>
-                    <a className="pl-5 flex gap-3 flex-row items-center">
-                        <img className='w-14' src={logo} alt="logo" />
-                        <img className='w-28' src={logo2} alt="logo" />
-                    </a>
-                    <div>
-                        <a href="" className=''>
-                            <img src="" alt="" />
+    return (
+        <>
+            <header className='w-screen sticky top-0'>
+                <section className='max-w-7xl bg-blue-400 mx-auto py-5'>
+                    <div className='w-1/2 bg-green-300 flex items-center'>
+                        <a className="pl-5 flex gap-3 flex-row items-center">
+                            <img className='w-14' src={logo} alt="logo" />
+                            <img className='w-28' src={logo2} alt="logo" />
                         </a>
+                        <div>
+                            <a href="" className=''>
+                                <label class="buttons__burger" for="burger">
+                                    <input type="checkbox" id="burger"/>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                </label>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </header>
-    </>
-  )
+                </section>
+            </header>
+        </>
+    )
 }
 
 export default Navbar
