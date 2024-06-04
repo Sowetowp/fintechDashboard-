@@ -13,7 +13,7 @@ const Navbar = () => {
                             <img className='w-14' src={logo} alt="logo" />
                             <img className='w-28' src={logo2} alt="logo" />
                         </a>
-                        <div>
+                        <div className='flex'>
                             <a href="" className=''>
                                 <label class="buttons__burger" for="burger">
                                     <input type="checkbox" id="burger" />
