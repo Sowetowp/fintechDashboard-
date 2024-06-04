@@ -3,9 +3,9 @@ import React from 'react'
 const Navbar = () => {
   return (
     <>
-        <main className='w-screen '>
+        <header className='w-screen '>
             <div className='max'></div>
-        </main>
+        </header>
     </>
   )
 }
