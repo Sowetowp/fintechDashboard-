@@ -13,7 +13,9 @@ const Navbar = () => {
                         <img className='w-28' src={logo2} alt="logo" />
                     </a>
                     <div>
-                        <a href="" className='bg-blue-900 h-1 w-6 block z-10 before:conten'></a>
+                        <a href="" className=''>
+                            <img src="" alt="" />
+                        </a>
                     </div>
                 </div>
             </section>
