@@ -9,7 +9,7 @@ const Navbar = () => {
             <section className='max-w-7xl bg-blue-400 mx-auto py-5'>
                 <div className='w-1/2 bg-green-300'>
                     <a className="pl-5 flex gap-3 flex-row items-center">
-                        <img className='w-12' src={logo} alt="logo" />
+                        <img className='w-14' src={logo} alt="logo" />
                         <img className='w-28' src={logo2} alt="logo" />
                     </a>
                 </div>
