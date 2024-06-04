@@ -1,5 +1,5 @@
 .buttons__burger {
-    --size: 2rem;
+    --size: 6rem;
     --clr: #000;
     width: var(--size);
     height: calc(0.7 * var(--size));
