@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
         <header className='w-screen sticky top-0'>
             <section className='max-w-7xl bg-blue-400 h-3 mx-auto'>
-
+                
             </section>
         </header>
     </>
