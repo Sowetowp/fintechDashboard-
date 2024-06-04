@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
-import search from "../assets/logo-text.png"
+import search from "../assets/search1-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
