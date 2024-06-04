@@ -14,7 +14,7 @@ const Navbar = () => {
                     </a>
                     <div>
                         <a href="">
-                            img
+                            <img src="" alt="" />
                         </a>
                     </div>
                 </div>
