@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className='w-1/2 bg-green-300'>
                     <a className="pl-2 flex gap-3 flex-row items-center">
                         <img className='w-12' src={logo} alt="logo" />
-                        <img className='w-16' src={logo2} alt="logo" />
+                        <img className='w-17' src={logo2} alt="logo" />
                     </a>
                 </div>
             </section>
