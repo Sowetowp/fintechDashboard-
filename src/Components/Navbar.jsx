@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className='w-1/2 bg-green-300'>
                     <a href="flex flex-row items-center">
                         <img src={logo} alt="logo" />
-                        <img src="" alt="logo" />
+                        <img src={logo2} alt="logo" />
                     </a>
                 </div>
             </section>
