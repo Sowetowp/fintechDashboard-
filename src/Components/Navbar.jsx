@@ -15,10 +15,10 @@ const Navbar = () => {
                         <div>
                             <a href="" className=''>
                                 <label class="buttons__burger" for="burger">
-                                    <input type="checkbox" id="burger"/>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
+                                    <input type="checkbox" id="burger" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </label>
                             </a>
                         </div>
