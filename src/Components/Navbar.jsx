@@ -13,9 +13,7 @@ const Navbar = () => {
                         <img className='w-28' src={logo2} alt="logo" />
                     </a>
                     <div>
-                        <a href="">
-                            <img src="" alt="" />
-                        </a>
+                        <a href="" className='bg-white'></a>
                     </div>
                 </div>
             </section>
