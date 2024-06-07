@@ -8,12 +8,11 @@ function App() {
 
   return (
     <>
-    <Dashboard/>
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path="/" element={<Dashboard />} />
         </Routes>
-      </Router> */}
+      </Router>
     </>
   )
 }
