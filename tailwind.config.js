@@ -8,7 +8,7 @@ export default {
     extend: {},
   },
   darkMode: ['variant', [
-    '@media (prefers-color-scheme: dark) { &:not(.light **) }',
+    '@media (prefers-color-scheme: dark) { &:not(.light *) }',
     '&:is(.dark *)',
   ]],
   plugins: [],
