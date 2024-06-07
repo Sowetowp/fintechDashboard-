@@ -50,7 +50,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="w-1/2 flex justify-around items-cente">
-                        <div className='bg-slate-200 flex items-center rounded-full'>
+                        <div className='bg-slate-200 flex items-center rounded-full dark:bg-[rgb(17,26,56)]'>
                             <div className='bg-[#0099FF] h-full flex items-center gap-3 py-1 rounded-full px-3'>
                                 <img className='w-7' src={cloud} alt="" />
                                 <span className='text-xl font-medium text-white'>21</span>
