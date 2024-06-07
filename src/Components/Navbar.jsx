@@ -53,7 +53,7 @@ const Navbar = () => {
                             <img className='w-4' src={chat} alt="" />
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
-                        <a className='align-right'>
+                        <a className='text-right'>
                             <span>Hello,Franklin</span>
                             <br/>
                             <span>super admin</span>
