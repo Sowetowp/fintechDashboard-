@@ -14,6 +14,7 @@ const Navbar = () => {
     const [dark, setDark] = useState(false)
     const darkMode = () => {
         document.body.classList.toggle("light");
+        
     }
 
     return (
