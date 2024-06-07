@@ -73,7 +73,7 @@ const Navbar = () => {
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
                     </div>
                 </section>
-            </ style={{overflow:"hidden"}}>
+            </header>
         </>
     )
 }
