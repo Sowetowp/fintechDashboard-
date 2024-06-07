@@ -42,7 +42,7 @@ const Navbar = () => {
                             <span className='pr-4 pl-2 text-white text-sm font-normal'>Medan, IDN</span>
                         </div>
                         <div className="bg-white rounded-full">
-                            <img src={moon} alt="" />
+                            <img className='w-3' src={moon} alt="" />
                         </div>
                     </div>
                 </section>
