@@ -23,7 +23,9 @@
     background-color: rgb(0, 153, 255);
     transition: 0.15s ease-in-out;
 }
-
+.buttons__burgerxx{
+    
+}
 .buttons__burger span:nth-of-type(1) {
     top: 0;
     right: 0;
