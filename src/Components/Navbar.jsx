@@ -32,6 +32,7 @@ const Navbar = () => {
                     <div className="flex item-center">
                         <div>
                             <div>
+                                <img src="" alt="" />
                                 
                             </div>
                         </div>
