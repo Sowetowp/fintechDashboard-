@@ -39,7 +39,7 @@ const Navbar = () => {
                             </div>
                             <span className='pr-4 pl-2 text-white text-sm font-normal'>Medan, IDN</span>
                         </div>
-                        .bg-white.
+                        <div className="bg-white rounded-full"></div>
                     </div>
                 </section>
             </header>
