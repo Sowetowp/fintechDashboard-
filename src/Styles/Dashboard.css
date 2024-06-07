@@ -19,7 +19,7 @@
     position: absolute;
     width: 100%;
     border-radius: 0.5rem;
-    border: 1.5px solid rgb(0, 153, 255);
+    border: 1.5px solid;
     transition: 0.15s ease-in-out;
 }
 
