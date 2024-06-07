@@ -22,6 +22,7 @@ const Navbar = () => {
         document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
         setDark(theme === "dark" ? true : false)
     }, [])
+    
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 '>
