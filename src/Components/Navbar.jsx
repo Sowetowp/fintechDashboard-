@@ -12,6 +12,7 @@ import "../Styles/Dashboard.css"
 
 const Navbar = () => {
     const darkMode = ()=>{
+        alert("k")
         document.documentElement.classList.add('light');
     }
     return (
