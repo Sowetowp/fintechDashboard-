@@ -22,7 +22,7 @@ const Navbar = () => {
         if(theme){
             document.body.classList.add(theme)
         }
-        th
+        theme === "dark" && setDark(true)
     },[])
     return (
         <>
