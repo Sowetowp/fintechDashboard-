@@ -38,7 +38,7 @@ const Navbar = () => {
                             <a href="" className=''>
                                 <label className="buttons__burger" htmlFor="burger">
                                     <input type="checkbox" id="burger" />
-                                    <span className={dark ? "bg-white" : ""}></span>
+                                    <span className={dark ? "bg-white" : "bg-["}></span>
                                     <span></span>
                                     <span></span>
                                 </label>
