@@ -51,7 +51,7 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white relative shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={chat} alt="" />
-                            <sup className='absolute'><span className='w-[fit-content] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>5</span></sup>
+                            <sup className='absolute'><span className='p-[1px] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>5</span></sup>
                         </div>
                     </div>
                 </section>
