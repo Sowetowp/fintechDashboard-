@@ -56,7 +56,7 @@ const Navbar = () => {
                         <a className='text-right'>
                             <span>Hello,<b>Franklin</b></span>
                             <br/>
-                            <span className='text-xs text-gray-500'>super admin</span>
+                            <span className='text-sm text-gray-500'>super admin</span>
                         </a>
                     </div>
                 </section>
