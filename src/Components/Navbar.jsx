@@ -11,7 +11,7 @@ import dp from "../assets/17.jpg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
-    
+    const dark 
     const darkMode = ()=>{
             if (dark) {
               localStorage.setItem('theme', 'light');
