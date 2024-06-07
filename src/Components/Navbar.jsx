@@ -18,7 +18,8 @@ const Navbar = () => {
     }
 
     useEffect(()=>{
-        const theme = 
+        const theme = localStorage.getItem('theme')
+        
     },[])
     return (
         <>
