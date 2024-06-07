@@ -71,7 +71,7 @@ const Navbar = () => {
                         </a>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
                     </div>
-                </section>
+                {/* </section> */}
             </header>
         </>
     )
