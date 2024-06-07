@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
 import search from "../assets/search1-svgrepo-com.svg"
@@ -11,7 +11,7 @@ import dp from "../assets/17.jpg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
-    const dark 
+    const [dark, setDark] = useState(false)
     const darkMode = ()=>{
             if (dark) {
               localStorage.setItem('theme', 'light');
