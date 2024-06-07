@@ -55,7 +55,7 @@ const Navbar = () => {
                         </div>
                         <a>
                             <span>Hello,Franklin</span>
-                            
+                            <span></span>
                         </a>
                     </div>
                 </section>
