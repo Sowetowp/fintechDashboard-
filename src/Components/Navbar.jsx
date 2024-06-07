@@ -24,8 +24,8 @@ const Navbar = () => {
     }, [])
     return (
         <>
-            <header className='sticky top-0 dark:bg-blue-950 '>
-                <section className='w-screen bg-slate-400 mx-auto py-5 flex items-center'>
+            <header className=' top-0 dark:bg-blue-950 '>
+                <section className='max-w-7xl  bg-slate-400 mx-auto py-5 flex items-center'>
                     <div className='w-1/2 flex items-center justify-between'>
                         <a className="pl-5 flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
