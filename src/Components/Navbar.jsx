@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
 import search from "../assets/search1-svgrepo-com.svg"
@@ -17,6 +17,9 @@ const Navbar = () => {
         localStorage.setItem('theme', `${dark ? "dark" : "light"}`);
     }
 
+    useEffect(()=>{
+        
+    },[])
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 '>
