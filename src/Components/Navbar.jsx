@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     <div className="w-1/2 flex item-center">
                         <div>
-                            <div className='bg-[rgb(0, 153, 255)]'>
+                            <div className='bg-[rgba(0, 153, 255, 1)]'>
                                 <img src="" alt="" />
                                 <span>21</span>
                             </div>
