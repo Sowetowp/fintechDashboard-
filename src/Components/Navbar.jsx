@@ -25,7 +25,7 @@ const Navbar = () => {
     
     return (
         <>
-            <header className='sticky top-0 dark:bg-blue-950 '>
+            <header style={{overflow:"hidden"}} className='sticky top-0 dark:bg-blue-950 '>
                 <section className='max-w-7xl w-full bg-slate-500 mx-auto py-5 flex items-center'>
                     <div className='w-1/2 flex items-center justify-between'>
                         <a className="pl-5 flex gap-3 flex-row items-center">
@@ -73,7 +73,7 @@ const Navbar = () => {
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
                     </div>
                 </section>
-            </header>
+            </ style={{overflow:"hidden"}}>
         </>
     )
 }
