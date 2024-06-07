@@ -22,7 +22,7 @@ const Navbar = () => {
     useEffect(() => {
         const theme = localStorage.getItem('theme')
         document.body.classList.add(theme)
-        document.body.classList.remove()
+        document.body.classList.remove(`${theme === "dark" ? "dark" : "light"}`)
         setDark(true)
     }, [])
     return (
