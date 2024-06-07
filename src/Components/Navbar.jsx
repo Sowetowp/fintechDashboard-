@@ -37,7 +37,7 @@ const Navbar = () => {
                                 <img className='w-7' src={cloud} alt="" />
                                 <span className='text-xl font-medium text-white'>21</span>
                             </div>
-                            <span className='px-3 text-white text-sm font-normal'>Medan, IDN</span>
+                            <span className='pr-4 pl-2 text-white text-sm font-normal'>Medan, IDN</span>
                         </div>
                     </div>
                 </section>
