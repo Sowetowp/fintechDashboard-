@@ -13,7 +13,6 @@ import "../Styles/Dashboard.css"
 const Navbar = () => {
     const darkMode = ()=>{
             if (dark) {
-              html.classList.remove('dark');
               localStorage.setItem('theme', 'light');
             } else {
               html.classList.add('dark');
