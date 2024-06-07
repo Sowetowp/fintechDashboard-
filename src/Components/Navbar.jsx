@@ -13,8 +13,8 @@ import "../Styles/Dashboard.css"
 const Navbar = () => {
     const [dark, setDark] = useState(false)
     const darkMode = () => {
-        document.body.classList.add(`${dark ? "dark" : "light"}`);
-        localStorage.setItem('theme', `${dark ? "dark" : "light"}`);
+        document.body.classList.add(`${!dark ? "dark" : "light"}`);
+        localStorage.setItem('theme', `${!dark ? "dark" : "light"}`);
         setDark(!dark)
     }
 
