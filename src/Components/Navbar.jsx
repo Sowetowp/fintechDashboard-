@@ -54,9 +54,9 @@ const Navbar = () => {
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
                         <a className='text-right'>
-                            <span className='leading-tight mb-0'>Hello,<b>Franklin</b></span>
+                            <span className='leading-tight'>Hello,<b>Franklin</b></span>
                             <br/>
-                            <span className='text-sm text-gray-500'>super admin</span>
+                            <span className='text-sm mt-0 text-gray-500'>super admin</span>
                         </a>
                     </div>
                 </section>
