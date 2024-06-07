@@ -31,7 +31,7 @@ const Navbar = () => {
                             <img className='w-14' src={logo} alt="logo" />
                             <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden xs:block`} src={logo2} alt="logo" />
                         </a>
-                        <div className='hidden sm:flex items-center gap-3'>
+                        <div className='hidden xs:flex items-center gap-3'>
                             <a href="" className=''>
                                 <label className={dark ? "buttons__burgerr" : "buttons__burger"} htmlFor="burger">
                                     <input type="checkbox" id="burger" />
