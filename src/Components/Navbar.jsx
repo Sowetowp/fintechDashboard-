@@ -57,14 +57,14 @@ const Navbar = () => {
                             </div>
                             <span className='pr-4 pl-2 text-sm font-semibold dark:text-[#0099FF]'>Medan, IDN</span>
                         </div>
-                        <a onClick={darkMode} className="bg-white shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
+                        <a onClick={darkMode} className="bg-white shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
                             <img className='w-4' src={dark ? day : moon} alt="" />
                         </a>
-                        <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
+                        <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
                             <img className='w-4' src={bell} alt="" />
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                         </div>
-                        <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
+                        <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
                             <img className='w-4' src={chat} alt="" />
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
