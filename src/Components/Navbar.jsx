@@ -46,7 +46,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-around items-cente">
+                    {/* <div className="w-1/2 flex justify-around items-cente">
                         <div className='bg-slate-200 flex items-center rounded-full dark:bg-[rgb(17,26,56)]'>
                             <div className='bg-[#0099FF] h-full flex items-center gap-3 py-1 rounded-full px-3'>
                                 <img className='w-7' src={cloud} alt="" />
@@ -70,7 +70,7 @@ const Navbar = () => {
                             <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                         </a>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
-                    </div>
+                    </div> */}
                 </section>
             </header>
         </>
