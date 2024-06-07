@@ -67,7 +67,7 @@ const Navbar = () => {
                         </div>
                         <a className='text-right flex flex-col dark:text-white'>
                             <span className='leading-tight'>Hello,<b>Franklin</b></span>
-                            <span className='text-sm text-gray-500'>super admin</span>
+                            <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                         </a>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
                     </div>
