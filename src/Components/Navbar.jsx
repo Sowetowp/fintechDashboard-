@@ -5,7 +5,7 @@ import search from "../assets/search1-svgrepo-com.svg"
 import cloud from "../assets/cloud-svgrepo-com.svg"
 import moon from "../assets/night-moon-svgrepo-com.svg"
 import day from "../assets/day-festival-light-2-svgrepo-com.svg"
-import bell from "../assets/day-festival-light-2-svgrepo-com.svg"
+import bell from "../assets/bell-svgrepo-com.svg"
 
 import "../Styles/Dashboard.css"
 
