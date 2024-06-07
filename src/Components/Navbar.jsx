@@ -22,7 +22,8 @@ const Navbar = () => {
     useEffect(()=>{
         const theme = localStorage.getItem('theme')
         if(theme === "dark"){
-            document.body.classList.add(theme)
+            document.body.classList.add("dark")
+            
             setDark(true)
         }
     },[])
