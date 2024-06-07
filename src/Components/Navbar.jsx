@@ -36,9 +36,9 @@ const Navbar = () => {
                         </a>
                         <div className='flex items-center gap-3'>
                             <a href="" className=''>
-                                <label className={dark ? "buttons__burger buttons__burgeryy" : "buttons__burger buttons__burgerxx"} htmlFor="burger">
+                                <label className={dark ? "buttons__burger" : "buttons__burger"} htmlFor="burger">
                                     <input type="checkbox" id="burger" />
-                                    <span style={{backgroundColor:"red"}}></span>
+                                    <span></span>
                                     <span></span>
                                     <span></span>
                                 </label>
