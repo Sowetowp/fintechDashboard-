@@ -33,9 +33,9 @@ const Navbar = () => {
                     </div>
                     <div className="w-1/2 flex item-center">
                         <div>
-                            <div className='bg-[#0099FF]'>
+                            <div className='bg-[#0099FF] '>
                                 <img className='w-7' src={cloud} alt="" />
-                                <span className='text-2xl font-medium'>21</span>
+                                <span className='text-2xl font-medium text-white'>21</span>
                             </div>
                         </div>
                     </div>
