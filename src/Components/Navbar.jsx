@@ -33,7 +33,7 @@ const Navbar = () => {
                         <div>
                             <div>
                                 <img src="" alt="" />
-                                
+                                <span>21</span>
                             </div>
                         </div>
                     </div>
