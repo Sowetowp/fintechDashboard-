@@ -46,7 +46,7 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={moon} alt="" />
-                            sup.bg-[#0099FF].r
+                            sup.bg-[#0099FF].rounded
                         </div>
                         <div className="bg-white shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={moon} alt="" />
