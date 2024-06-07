@@ -26,7 +26,7 @@ const Navbar = () => {
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 '>
                 <section className='max-w-7xl w-full bg-slate-500 mx-auto py-5 flex items-center'>
-                    <div className='w-1/2 flex items-center justify-between'>
+                    {/* <div className='w-1/2 flex items-center justify-between'>
                         <a className="pl-5 flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
                             <img className={`w-28 ${dark && "invert brightness-[10%]"}`} src={logo2} alt="logo" />
@@ -45,7 +45,7 @@ const Navbar = () => {
                                 <input className='bg-transparent w-68 font-light outline-0 dark:text-white placeholder:dark:text-white' type="text" placeholder='Search here...' />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="w-1/2 flex justify-around items-cente">
                         <div className='bg-slate-200 flex items-center rounded-full dark:bg-[rgb(17,26,56)]'>
                             <div className='bg-[#0099FF] h-full flex items-center gap-3 py-1 rounded-full px-3'>
