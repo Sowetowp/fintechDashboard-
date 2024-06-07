@@ -19,14 +19,12 @@ const Navbar = () => {
         setDark(!dark)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         const theme = localStorage.getItem('theme')
-        if(theme === "dark"){
-            document.body.classList.add("dark")
-            document.body.classList.add("light")
-            setDark(true)
-        }
-    },[])
+        document.body.classList.add("dark")
+        document.body.classList.add("light")
+        setDark(true)
+    }, [])
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 '>
