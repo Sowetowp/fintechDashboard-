@@ -23,7 +23,7 @@ const Navbar = () => {
         const theme = localStorage.getItem('theme')
         document.body.classList.add(theme)
         document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
-        setDark(`${dark ? "dark" : "light"}`)
+        setDark(`${theme === "dark" ? true : false}`)
     }, [])
     return (
         <>
