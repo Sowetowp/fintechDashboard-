@@ -28,6 +28,7 @@ const Navbar = () => {
                                 <input className='bg-transparent w-68 outline-0' type="text" placeholder='Search here...'/>
                             </div>
                         </div>
+                        
                     </div>
                 </section>
             </header>
