@@ -47,7 +47,7 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white relative shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={bell} alt="" />
-                            <sup className='absolute'><span className='p-2 text-xs text-white bg-[#0099FF] rounded-[50%]'>12</span></sup>
+                            <sup className='absolute'><span className='p-1 text-xs text-white bg-[#0099FF] rounded-[50%]'>12</span></sup>
                         </div>
                         <div className="bg-white shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={moon} alt="" />
