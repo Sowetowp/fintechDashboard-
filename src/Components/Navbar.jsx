@@ -35,7 +35,7 @@ const Navbar = () => {
                         <div>
                             <div className='bg-[#0099FF]'>
                                 <img className='w-7' src={cloud} alt="" />
-                                <span>21</span>
+                                <span className='font-2'>21</span>
                             </div>
                         </div>
                     </div>
