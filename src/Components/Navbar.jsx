@@ -32,7 +32,7 @@ const Navbar = () => {
                     <div className='w-1/2 flex items-center justify-between'>
                         <a className="pl-5 flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
-                            <img className='w-28 invert' src={logo2} alt="logo" />
+                            <img className='w-28 invert brightness-[1000%]' src={logo2} alt="logo" />
                         </a>
                         <div className='flex items-center gap-3'>
                             <a href="" className=''>
