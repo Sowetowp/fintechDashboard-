@@ -99,7 +99,7 @@
     transform: translateY(-100%);
 }
 
-.buttons__burgerr #burgerr:checked~span:nth-of-type(1) {
+.buttons__burgerr #burger:checked~span:nth-of-type(1) {
     transform: translateY(-30%) rotate(40deg);
     width: 50%;
     top: 50%;
