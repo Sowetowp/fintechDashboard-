@@ -41,7 +41,7 @@ const Navbar = () => {
                                 <img className='w-7' src={cloud} alt="" />
                                 <span className='text-xl font-medium text-white'>21</span>
                             </div>
-                            <span className='pr-4 pl-2 text-white text-sm font-normal'>Medan, IDN</span>
+                            <span className='pr-4 pl-2 text-sm font-normal'>Medan, IDN</span>
                         </div>
                         <div className="bg-white shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={moon} alt="" />
