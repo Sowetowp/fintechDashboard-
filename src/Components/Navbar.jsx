@@ -23,8 +23,8 @@ const Navbar = () => {
         const theme = localStorage.getItem('theme')
         if(theme === "dark"){
             document.body.classList.add(theme)
+            setDark(true)
         }
-        theme === "dark" && 
     },[])
     return (
         <>
