@@ -35,7 +35,7 @@ const Navbar = () => {
                         <div className='bg-slate-300 flex items-center rounded-full'>
                             <div className='bg-[#0099FF] flex items-center gap-3 py-1 rounded-full px-3'>
                                 <img className='w-7' src={cloud} alt="" />
-                                <span className='text-2xl font-normal text-white'>21</span>
+                                <span className='text-xl font-medium text-white'>21</span>
                             </div>
                             <span className='px-2 text-white text-sm font-normal'>Medan, IDN</span>
                         </div>
