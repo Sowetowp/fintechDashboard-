@@ -5,6 +5,30 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <script>
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+        const html = document.documentElement;
+        if (html.classList.contains('dark')) {
+          html.classList.remove('dark');
+          localStorage.setItem('theme', 'light');
+        } else {
+          html.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      }
+  
+      // Check the user's preference on load
+      window.onload = function() {
+        const html = document.documentElement;
+        const userPreference = localStorage.getItem('theme');
+        const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+        if (userPreference === 'dark' || (!userPreference && systemPreference)) {
+          html.classList.add('dark');
+        }
+      }
+    </script>
   </head>
   <body class="dark">
     <div id="root"></div>
