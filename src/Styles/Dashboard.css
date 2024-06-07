@@ -26,8 +26,8 @@
     background-color: rgb(0, 153, 255);
 }
 .buttons__burgeryy{
-    border: 1.5px solid rgb(0, 153, 255);
-    background-color: rgb(0, 153, 255);
+    border: 1.5px solid white;
+    background-color: white;
 }
 .buttons__burger span:nth-of-type(1) {
     top: 0;
