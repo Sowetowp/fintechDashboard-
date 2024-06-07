@@ -7,6 +7,7 @@ import moon from "../assets/night-moon-svgrepo-com.svg"
 import day from "../assets/day-festival-light-2-svgrepo-com.svg"
 import bell from "../assets/bell-svgrepo-com.svg"
 import chat from "../assets/chat-line-square-svgrepo-com.svg"
+import dp from "../assets/chat-line-square-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
