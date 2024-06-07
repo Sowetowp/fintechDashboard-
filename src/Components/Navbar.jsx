@@ -19,7 +19,9 @@ const Navbar = () => {
 
     useEffect(()=>{
         const theme = localStorage.getItem('theme')
-        
+        if(theme){
+            document.body.classList.add(theme)
+        }
     },[])
     return (
         <>
