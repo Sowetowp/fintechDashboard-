@@ -57,6 +57,7 @@ const Navbar = () => {
                             <span className='leading-tight'>Hello,<b>Franklin</b></span>
                             <span className='text-sm text-gray-500'>super admin</span>
                         </a>
+                        <img src="" alt="" />
                     </div>
                 </section>
             </header>
