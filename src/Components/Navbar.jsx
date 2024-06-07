@@ -11,6 +11,7 @@ import dp from "../assets/17.jpg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
+    const 
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 light'>
