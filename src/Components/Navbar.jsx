@@ -33,7 +33,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-1/2 flex item-center bg-green-300">
+                    <div className="w-1/2 flex items-center bg-green-300">
                         <div className='bg-slate-300 flex items-center rounded-full'>
                             <div className='bg-[#0099FF] flex items-center gap-3 py-1 rounded-full px-3'>
                                 <img className='w-7' src={cloud} alt="" />
