@@ -29,7 +29,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    .flex.item-centre
+                    <div className="flex item-center">
+                        
+                    </div>
                 </section>
             </header>
         </>
