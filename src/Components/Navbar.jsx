@@ -29,7 +29,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex item-center">
+                    <div className="w-1/2 flex item-center">
                         <div>
                             <div>
                                 <img src="" alt="" />
