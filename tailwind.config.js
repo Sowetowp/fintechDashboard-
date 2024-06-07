@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {},
   },
-  darkMode: ['variant', '&:not(.light *)'],
+  darkMode: ['variant', [
+    '@media (prefers-color-scheme: dark) { &:not(.light *) }',
+    '&:is(.dark *)',
+  ]],
   plugins: [],
 }
 
