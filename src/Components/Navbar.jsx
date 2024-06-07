@@ -15,12 +15,14 @@ const Navbar = () => {
     const darkMode = () => {
         if (dark) {
             localStorage.setItem('theme', 'light');
+            setDark(!dark)
         } else {
             localStorage.setItem('theme', 'dark');
+            setDark(!dark)
         }
 
     }
-    
+
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 light'>
