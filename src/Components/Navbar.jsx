@@ -47,11 +47,11 @@ const Navbar = () => {
                         </div>
                         <div className="bg-white relative shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={bell} alt="" />
-                            <sup className='absolute'><span className='px-[3px] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>12jjj</span></sup>
+                            <sup className='absolute'><span className='px-[3px] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>12</span></sup>
                         </div>
                         <div className="bg-white relative shadow-none rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={chat} alt="" />
-                            <sup className='absolute'><span className='px-[5px] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>5</span></sup>
+                            <sup className='absolute'><span className='px-[5px] ml-6 text-xs text-white bg-[#0099FF] rounded-[50%]'>5000</span></sup>
                         </div>
                     </div>
                 </section>
