@@ -55,7 +55,7 @@ const Navbar = () => {
                                 <img className='w-7' src={cloud} alt="" />
                                 <span className='text-xl font-medium text-white'>21</span>
                             </div>
-                            <span className='pr-4 pl-2 text-sm font-semibold'>Medan, IDN</span>
+                            <span className='pr-4 pl-2 text-sm font-semibold dark:text-['>Medan, IDN</span>
                         </div>
                         <a onClick={darkMode} className="bg-white shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center">
                             <img className='w-4' src={dark ? day : moon} alt="" />
