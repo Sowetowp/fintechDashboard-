@@ -55,6 +55,7 @@ const Navbar = () => {
                         </div>
                         <a className='align-right'>
                             <span>Hello,Franklin</span>
+                            <br/>
                             <span>super admin</span>
                         </a>
                     </div>
