@@ -30,7 +30,7 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="flex item-center">
-                        
+                        <div></div>
                     </div>
                 </section>
             </header>
