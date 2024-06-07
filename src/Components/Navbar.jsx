@@ -45,7 +45,7 @@ const Navbar = () => {
                             </a>
                             <div className='flex bg-slate-200 rounded-lg px-6 items-center gap-3 py-2'>
                                 <img src={search} className="w-6" alt="" />
-                                <input className='bg-transparent w-68 font-light outline-0 dark:bg-[rgb(23,37,84)]' type="text" placeholder='Search here...' />
+                                <input className='bg-transparent w-68 font-light outline-0' type="text" placeholder='Search here...' />
                             </div>
                         </div>
                     </div>
