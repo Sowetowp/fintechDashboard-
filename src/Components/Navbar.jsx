@@ -34,7 +34,7 @@ const Navbar = () => {
                     <div className="w-1/2 flex item-center">
                         <div>
                             <div className='bg-[#0099FF]'>
-                                <img className='w-4' src={cloud} alt="" />
+                                <img className='w-7' src={cloud} alt="" />
                                 <span>21</span>
                             </div>
                         </div>
