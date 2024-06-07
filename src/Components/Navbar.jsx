@@ -54,7 +54,7 @@ const Navbar = () => {
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
                         <a className='text-right'>
-                            <span>Hello,Franklin</span>
+                            <span>Hello,<b>Franklin</b></span>
                             <br/>
                             <span>super admin</span>
                         </a>
