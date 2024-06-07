@@ -22,10 +22,11 @@ const Navbar = () => {
         document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
         setDark(theme === "dark" ? true : false)
     }, [])
+    
     return (
         <>
             <header className='w-screen sticky top-0 dark:bg-blue-950 '>
-                <section className='max-w-7xl w-full bg mx-auto py-5 flex items-center'>
+                <section className='max-w-7xl w-full bg-slate-500 mx-auto py-5 flex items-center'>
                     <div className='w-1/2 flex items-center justify-between'>
                         <a className="pl-5 flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
