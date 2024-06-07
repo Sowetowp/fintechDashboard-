@@ -39,8 +39,8 @@ const Navbar = () => {
                                 <label className="buttons__burger" htmlFor="burger">
                                     <input type="checkbox" id="burger" />
                                     <span className={dark ? "bg-white border-white" : "bg-[#0099FF] border-[#0099FF]"}></span>
-                                    <span></span>
-                                    <span></span>
+                                    <span className={dark ? "bg-white border-white" : "bg-[#0099FF] border-[#0099FF]"}></span>
+                                    <span className={dark ? "bg-white border-white" : "bg-[#0099FF] border-[#0099FF]"}></span>
                                 </label>
                             </a>
                             <div className='flex bg-slate-200 rounded-lg px-6 items-center gap-3 py-2'>
