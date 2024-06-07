@@ -105,7 +105,7 @@
     top: 50%;
 }
 
-.buttons__burgerr #burgerr:checked~span:nth-of-type(3) {
+.buttons__burgerr #burger:checked~span:nth-of-type(3) {
     transform: translateY(-70%) rotate(-40deg);
     width: 50%;
     top: 50%;
