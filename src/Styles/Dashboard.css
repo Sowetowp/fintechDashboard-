@@ -2,7 +2,7 @@
     --size: 1rem;
     --clr: #000;
     width: var(--size);
-    height: calc(0.7 * var(--size));
+    height: calc(0.2 * var(--size));
     cursor: pointer;
     position: relative;
     display: block;
