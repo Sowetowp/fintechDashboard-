@@ -5,6 +5,7 @@ const Dashboard = () => {
     return (
         <>
             <Navbar />
+            .w-full
         </>
     )
 }
