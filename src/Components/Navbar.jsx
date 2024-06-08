@@ -73,7 +73,7 @@ const Navbar = () => {
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
                             <div className="bg-red-500 w-[fit-content] absolute">
-                                <a href="" className=''><img src={profile} alt="" />Profile</a>
+                                <a href="" className=''><img className='w-5' src={profile} alt="" />Profile</a>
                                 
                             </div>
                         </div>
