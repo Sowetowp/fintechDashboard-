@@ -75,7 +75,7 @@ const Navbar = () => {
                             <div className="bg-red-500 w-[fit-content] absolute">
                                 <ul>
                                     <li className=''>
-                                        <a href="" className='flex'><img src={profile} alt="" />Profile</a>
+                                        <a href="" className='flex bg-slate-400'><img src={profile} alt="" />Profile</a>
                                     </li>
                                 </ul>
                             </div>
