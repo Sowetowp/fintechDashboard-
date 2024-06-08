@@ -72,7 +72,9 @@ const Navbar = () => {
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
                             <div className="bg-red-500 min-w-full absolute">
-                                
+                                <ul>
+                                    
+                                </ul>
                             </div>
                         </div>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
