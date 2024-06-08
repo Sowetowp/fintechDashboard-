@@ -5,7 +5,7 @@ const Dashboard = () => {
     return (
         <>
             <Navbar />
-            .w-full.h-screen.bg-
+            <div className="w-full h-screen bg-red-500"></div>
         </>
     )
 }
