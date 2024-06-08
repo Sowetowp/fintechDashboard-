@@ -5,7 +5,7 @@ import cloud from "../assets/cloud-svgrepo-com.svg"
 import moon from "../assets/night-moon-svgrepo-com.svg"
 import day from "../assets/day-festival-light-2-svgrepo-com.svg"
 import dp from "../assets/17.jpg"
-import profile from "../assets/17.jpg"
+import profile from "../assets/.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
