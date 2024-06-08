@@ -74,7 +74,7 @@ const Navbar = () => {
                             </a>
                             <div className="bg-red-500 w-[max-content] absolute py-3">
                                 <a href="" className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={profile} alt="" />Profile</a>
-                                
+                                <a href="" className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={profile} alt="" />Profile</a>
                             </div>
                         </div>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
