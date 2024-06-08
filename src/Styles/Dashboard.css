@@ -1,8 +1,8 @@
 .buttons__burger {
-    --size: 1rem;
+    --size: 2rem;
     --clr: #000;
     width: var(--size);
-    height: calc(0.9 * var(--size));
+    height: calc(0.7 * var(--size));
     cursor: pointer;
     position: relative;
     display: block;
