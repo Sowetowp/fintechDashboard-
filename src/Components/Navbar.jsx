@@ -6,7 +6,7 @@ import moon from "../assets/night-moon-svgrepo-com.svg"
 import day from "../assets/day-festival-light-2-svgrepo-com.svg"
 import dp from "../assets/17.jpg"
 import profile from "../assets/profile-svgrepo-com (2).svg"
-import inbox from "../assets/profile-svgrepo-com (2).svg"
+import inbox from "../assets/envelope-closed-svgrepo-com.svg"
 import logout from "../assets/profile-svgrepo-com (2).svg"
 import "../Styles/Dashboard.css"
 
