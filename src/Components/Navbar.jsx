@@ -75,9 +75,9 @@ const Navbar = () => {
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
                             <div className="bg-red-500 w-[max-content] absolute py-3">
-                                <a href="" className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={profile} alt="" />Profile</a>
-                                <a href="" className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={inbox} alt="" />Inbox</a>
-                                <a href="" className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={logout} alt="" />Logout</a>
+                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={profile} alt="" />Profile</a>
+                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={inbox} alt="" />Inbox</a>
+                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
