@@ -34,7 +34,7 @@ const Navbar = () => {
                         </a>
                         <div className='items-center gap-9 flex'>
                             <a href="" className='lg:flex sm:hidden'>
-                                <label className={dark ? "buttons__burgerr w-4 h-5 sm:w-6 sm:h-5" : "buttons__burger w-4 h-4 sm:w-6 sm:h-5"} htmlFor="burger">
+                                <label className={dark ? "buttons__burgerr w-5 h-5 sm:w-6 sm:h-5" : "buttons__burger w-4 h-4 sm:w-6 sm:h-5"} htmlFor="burger">
                                     <input type="checkbox" id="burger" />
                                     <span></span>
                                     <span></span>
