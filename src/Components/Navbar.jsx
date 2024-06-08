@@ -76,8 +76,8 @@ const Navbar = () => {
                             </a>
                             <div className="bg-white rounded-md w-[max-content] absolute py-3">
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-4' src={profile} alt="" />Profile</a>
-                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={inbox} alt="" />Inbox</a>
-                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-300'><img className='w-4' src={logout} alt="" />Logout</a>
+                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-4' src={inbox} alt="" />Inbox</a>
+                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-4' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
                         <img src={dp} className='rounded-[50%] w-10' alt="" />
