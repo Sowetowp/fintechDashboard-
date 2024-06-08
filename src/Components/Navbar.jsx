@@ -16,7 +16,7 @@ const Navbar = () => {
         document.body.classList.add(`${!dark ? "dark" : "light"}`);
         document.body.classList.remove(`${dark ? "dark" : "light"}`);
         localStorage.setItem('theme', `${!dark ? "dark" : "light"}`);
-        setDark(!dark)
+        setDark(!dark);
     }
 
     useEffect(() => {
