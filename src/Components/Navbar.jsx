@@ -72,7 +72,7 @@ const Navbar = () => {
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
-                            <div className="bg-red-500 w-[max-content] absolute py-5">
+                            <div className="bg-red-500 w-[max-content] absolute py-3">
                                 <a href="" className='flex gap-3'><img className='w-4' src={profile} alt="" />Profile</a>
                                 
                             </div>
