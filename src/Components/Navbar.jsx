@@ -28,7 +28,7 @@ const Navbar = () => {
             <header className='w-full sticky top-0 dark:bg-blue-950 '>
                 <section className='px-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
                     <div className='w-1/3 sm:w-1/2 flex items-center justify-between'>
-                        <a className="flex gap-3 flex-row items-center">
+                        <a href='/' className="flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
                             <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden lg:block`} src={logo2} alt="logo" />
                         </a>
