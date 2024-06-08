@@ -73,7 +73,7 @@ const Navbar = () => {
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
                             <div className="bg-red-500 w-[max-content] absolute py-3">
-                                <a href="" className='flex gap-3 px-3 hover:bggr'><img className='w-4' src={profile} alt="" />Profile</a>
+                                <a href="" className='flex gap-3 px-3 hover:bg-gray-300'><img className='w-4' src={profile} alt="" />Profile</a>
                                 
                             </div>
                         </div>
