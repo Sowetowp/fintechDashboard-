@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <>
             <header className='w-full sticky top-0 dark:bg-blue-950 '>
-                <section className='max-w-7xl w-full mx-auto py-5 flex items-center'>
+                <section className='pl-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
                     <div className='w-1/3 sm:w-1/2 bg-slate-500 flex items-center justify-between'>
                         <a className="flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
