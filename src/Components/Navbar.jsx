@@ -75,7 +75,7 @@ const Navbar = () => {
                             <div className="bg-red-500 min-w-full absolute">
                                 <ul>
                                     <li>
-                                        <img src="prof" alt="" />
+                                        <img src={profile} alt="" />
                                     </li>
                                 </ul>
                             </div>
