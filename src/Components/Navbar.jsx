@@ -73,7 +73,9 @@ const Navbar = () => {
                             </a>
                             <div className="bg-red-500 min-w-full absolute">
                                 <ul>
-                                    
+                                    <li>
+                                        
+                                    </li>
                                 </ul>
                             </div>
                         </div>
