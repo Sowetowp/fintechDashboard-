@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'im': '480px',
+        'im': '780px',
         "mob": "480px"
       },
     },
