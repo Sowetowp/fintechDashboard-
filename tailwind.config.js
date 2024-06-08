@@ -8,7 +8,7 @@ export default {
     extend: {
       screens: {
         'im': '480px',
-        "mob": ""
+        "mob": "480px"
       },
     },
   },
