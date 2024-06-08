@@ -5,7 +5,7 @@ const Dashboard = () => {
     return (
         <>
             <Navbar />
-            <div className="w-full h-screen bg-red-500"></div>
+            {/* <div className="w-full h-screen bg-red-500"></div> */}
         </>
     )
 }
