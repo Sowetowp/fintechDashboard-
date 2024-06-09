@@ -10,6 +10,9 @@ import profileico from "../assets/profile-svgrepo-com (2).svg"
 import inbox from "../assets/envelope-closed-svgrepo-com.svg"
 import logout from "../assets/logout-svgrepo-com.svg"
 import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
+import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
+import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
+import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
