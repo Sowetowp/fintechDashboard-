@@ -75,7 +75,7 @@ const Navbar = () => {
                                 <a className='flex items-center p-3 border-b gap-3'>
                                     <img src={notif1} alt="" className='w-14 h-14 rounded-lg'/>
                                     <span>
-                                        <p className='font-semibold break-all text-md text-gray-700'>Dr sultrfffffffffffffffffffffffffffffffffffffffffffffffffffffads Senddddd you Photo</p>
+                                        <p className='font-semibold break-all text-md text-gray-700'>Dr sultrfffffffffffffffffffffffffffffffffffffffffffffffffffffads Senddddddd you Photo</p>
                                         <p className='break-all'>29 July 2020 - 02:26 PM</p>
                                     </span>
                                 </a>
