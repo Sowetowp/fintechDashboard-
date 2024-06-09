@@ -101,7 +101,7 @@ const Navbar = () => {
                                     <a key={index} className='flex items-center p-3 border-b gap-3'>
                                         <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
                                         <span>
-                                            <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>Dr sultads Send you Photo</p>
+                                            <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>{noti.title}</p>
                                             <p style={{ wordBreak: "break-word" }}>29 July 2020 - 02:26 PM</p>
                                         </span>
                                     </a>
