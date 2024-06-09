@@ -37,6 +37,9 @@ const Navbar = () => {
         }
     }, []);
 
+    useEffect(()=>{
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    })
     const notifs = [
         {
             image: notif1,
