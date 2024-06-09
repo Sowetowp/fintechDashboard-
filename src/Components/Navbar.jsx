@@ -75,7 +75,7 @@ const Navbar = () => {
                                     <img src="" alt="" />
                                     <span>
                                         <p>Dr sultads Send you Photo</p>
-                                        <p>Dr sultads Send you Photo</p>
+                                        <p>29 July 2020 - 02:26 PM</p>
                                     </span>
                                 </a>
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
