@@ -75,8 +75,8 @@ const Navbar = () => {
                                 <a className='flex items-center p-3 border-b gap-3'>
                                     <img src={notif1} alt="" className='w-14 h-14 rounded-lg'/>
                                     <span>
-                                        <p className='font-semibold text-md text-gray-700'>Dr sultrfffffffffffffffffffffffffffffffffffffffffffffffffffffads Send you Photo</p>
-                                        <p>29 July 2020 - 02:26 PM</p>
+                                        <p style={{wordBreak:"break-word"}} className='font-semibold text-md text-gray-700'>Dr sultrfffffffffffffffffffffffffffffffffffffffffffffffffffffads Send you Photo</p>
+                                        <p style={{wordBreak:"break-word"}}>29 July 2020 - 02:26 PM</p>
                                     </span>
                                 </a>
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
