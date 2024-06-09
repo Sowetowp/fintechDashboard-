@@ -20,12 +20,12 @@ const Navbar = () => {
     const [profile, setProfile] = useState(false)
     const [notification, setNotification] = useState(false)
 
-    // const darkMode = () => {
-    //     document.body.classList.add(`${!dark ? "dark" : "light"}`);
-    //     document.body.classList.remove(`${dark ? "dark" : "light"}`);
-    //     localStorage.setItem('theme', `${!dark ? "dark" : "light"}`);
-    //     setDark(!dark);
-    // }
+    const darkMode = () => {
+        // document.body.classList.add(`${!dark ? "dark" : "light"}`);
+        // document.body.classList.remove(`${dark ? "dark" : "light"}`);
+        // localStorage.setItem('theme', `${!dark ? "dark" : "light"}`);
+        // setDark(!dark);
+    }
 
     // useEffect(() => {
     //     const theme = localStorage.getItem('theme')
