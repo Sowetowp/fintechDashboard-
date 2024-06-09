@@ -73,7 +73,7 @@ const Navbar = () => {
                         </div>
                         {profile && <a onClick={()=>setProfile(!profile)} className='bg-[#80808041] cursor-pointer absolute w-screen h-screen top-0 left-0 right-0 z-10'></a>}
                         <div className='relative hidden sm:inline-block'>
-                            <a onClick={()=>setProfile(!profile)} className='text-right flex-col dark:text-white flex'>
+                            <a onClick={()=>setProfile(!profile)} className='text-right cursor-pointer flex-col dark:text-white flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
