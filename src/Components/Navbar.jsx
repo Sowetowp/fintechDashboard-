@@ -71,7 +71,9 @@ const Navbar = () => {
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
                             <div className={`bg-white shadow min-w-80 mt-8 -ml-[17rem] rounded-md w-[max-content] absolute z-20 ${true ? "block" : "hidden"}`}>
-                                <a href=""></a>
+                                <a>
+                                    
+                                </a>
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
                             </div>
                         </div>
