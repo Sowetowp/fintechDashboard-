@@ -34,6 +34,7 @@ const Navbar = () => {
         setDark(theme === "dark" ? true : false)
     }, [])
 
+    const 
     return (
         <>
             <header className='w-full sticky top-0 dark:bg-blue-950 '>
