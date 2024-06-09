@@ -97,6 +97,9 @@ const Navbar = () => {
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
+                                {notifs?.map((noti, index)=>(
+                                    
+                                ))}
                                 <a className='flex items-center p-3 border-b gap-3'>
                                     <img src={notif1} alt="" className='w-14 h-14 rounded-lg'/>
                                     <span>
