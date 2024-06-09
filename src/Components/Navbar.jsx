@@ -43,6 +43,7 @@ const Navbar = () => {
     const toggleNotification = () => {
         setNotification(!notification);
         if (notifRef.current) {
+            alert("j")
             notifRef.current.focus();
         }
     };
