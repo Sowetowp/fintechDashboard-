@@ -98,6 +98,7 @@ const Navbar = () => {
                             </a>
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
                                 {notifs?.map((noti, index) => (
+                                    <div>
                                     <a key={index} className='flex items-center border-b gap-3'>
                                         <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
                                         <span>
