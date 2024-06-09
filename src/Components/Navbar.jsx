@@ -72,7 +72,7 @@ const Navbar = () => {
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
                         <div className='relative hidden sm:inline-block'>
-                            <a  className='text-right flex-col dark:text-white flex'>
+                            <a onClick={()=>setProfile(!profile)} className='text-right flex-col dark:text-white flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
