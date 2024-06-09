@@ -73,7 +73,7 @@ const Navbar = () => {
                             </a>
                             <div className={`bg-white shadow min-w-80 mt-8 -ml-[17rem] rounded-md w-[max-content] absolute z-20 ${true ? "block" : "hidden"}`}>
                                 <a>
-                                    <img src={notif1} alt="" />
+                                    <img src={notif1} alt="" className='w-5'/>
                                     <span>
                                         <p>Dr sultads Send you Photo</p>
                                         <p>29 July 2020 - 02:26 PM</p>
