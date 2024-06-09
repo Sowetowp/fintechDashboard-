@@ -78,6 +78,7 @@ const Navbar = () => {
             time: "29 July 2020 - 02:26 PM"
         }
     ]
+    
     return (
         <>
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
