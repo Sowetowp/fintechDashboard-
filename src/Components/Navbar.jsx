@@ -39,6 +39,7 @@ const Navbar = () => {
 
     useEffect(()=>{
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        alert()
     },[])
     const notifs = [
         {
