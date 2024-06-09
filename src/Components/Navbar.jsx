@@ -12,7 +12,7 @@ import "../Styles/Dashboard.css"
 
 const Navbar = () => {
     const [dark, setDark] = useState(false)
-    const [dark, setDark] = useState(false)
+    const [profile, setProfile] = useState(false)
 
     const darkMode = () => {
         document.body.classList.add(`${!dark ? "dark" : "light"}`);
