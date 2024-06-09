@@ -102,7 +102,7 @@ const Navbar = () => {
                                         <a className={`flex items-center py-3 gap-3 dark:border-gray-600 ${index !== 0 && "border-t"}`}>
                                             <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
                                             <span>
-                                                <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>{noti.title}</p>
+                                                <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700 dark:text-white'>{noti.title}</p>
                                                 <p style={{ wordBreak: "break-word" }} className='text-sm text-gray-500'>{noti.time}</p>
                                             </span>
                                         </a>
