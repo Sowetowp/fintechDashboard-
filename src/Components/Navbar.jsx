@@ -72,7 +72,7 @@ const Navbar = () => {
                             <div className={`bg-white shadow min-w-80 mt-8 -ml-[17rem] rounded-md w-[max-content] absolute z-20 ${true ? "block" : "hidden"}`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
-                                <a className='flex text-[#0099FF] font-normal gap-4 py-3 justify-center hover:bg-gray-100 rounded-b-md'>See all notifications<img className='w-5' src={logout} alt="" /></a>
+                                <a className='flex text-[#0099FF] gap-4 py-3 justify-center hover:bg-gray-100 rounded-b-md'>See all notifications<img className='w-5' src={logout} alt="" /></a>
                             </div>
                         </div>
                         <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
