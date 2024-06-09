@@ -64,10 +64,10 @@ const Navbar = () => {
                             <img className='w-4' src={dark ? day : moon} alt="" />
                         </a>
                         <div>
-                        <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
-                            <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z" /><path fill={dark ? "white" : "#000000"} d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z" /><path fill={dark ? "white" : "#000000"} d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32zm352 128h128a64 64 0 0 1-128 0z" /></svg>
-                            <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
-                        </div>
+                            <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
+                                <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z" /><path fill={dark ? "white" : "#000000"} d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z" /><path fill={dark ? "white" : "#000000"} d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32zm352 128h128a64 64 0 0 1-128 0z" /></svg>
+                                <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
+                            </div>
                             <div className={`bg-white shadow min-w-40 rounded-md w-[max-content] absolute z-20 py-3 ${!profile ? "block" : "hidden"}`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
@@ -78,9 +78,9 @@ const Navbar = () => {
                             <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M160 826.88 273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128H296z" /><path fill={dark ? "white" : "#000000"} d="M352 512h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32zm0-192h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32z" /></svg>
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
-                        {profile && <a onClick={()=>setProfile(!profile)} className='bg-[#80808041] cursor-pointer absolute w-screen h-screen top-0 left-0 right-0 z-10'></a>}
+                        {profile && <a onClick={() => setProfile(!profile)} className='bg-[#80808041] cursor-pointer absolute w-screen h-screen top-0 left-0 right-0 z-10'></a>}
                         <div className='relative hidden sm:inline-block'>
-                            <a onClick={()=>setProfile(!profile)} className='text-right cursor-pointer flex-col dark:text-white flex'>
+                            <a onClick={() => setProfile(!profile)} className='text-right cursor-pointer flex-col dark:text-white flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
@@ -90,7 +90,7 @@ const Navbar = () => {
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
-                        <a onClick={()=>setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
+                        <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
                     </div>
                 </section>
             </header>
