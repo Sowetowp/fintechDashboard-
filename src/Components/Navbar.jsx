@@ -27,14 +27,14 @@ const Navbar = () => {
         // setDark(!dark);
     }
 
-    // useEffect(() => {
-    //     const theme = localStorage.getItem('theme')
-    //     if(theme.length > 1){
-    //         document.body.classList.add(theme)
-    //         document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
-    //         setDark(theme === "dark" ? true : false)
-    //     }
-    // }, [])
+    useEffect(() => {
+        const theme = localStorage.getItem('theme')
+        if(theme.length > 1){
+            document.body.classList.add(theme)
+            document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
+            setDark(theme === "dark" ? true : false)
+        }
+    }, [])
 
     const notifs = [
         {
