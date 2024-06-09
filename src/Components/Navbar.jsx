@@ -97,15 +97,14 @@ const Navbar = () => {
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
-                                {notifs?.map((noti, index)=>(
-
-                                <a className='flex items-center p-3 border-b gap-3'>
-                                    <img src={notif1} alt="" className='w-14 h-14 rounded-lg'/>
-                                    <span>
-                                        <p style={{wordBreak:"break-word"}} className='font-semibold text-md text-gray-700'>Dr sultads Send you Photo</p>
-                                        <p style={{wordBreak:"break-word"}}>29 July 2020 - 02:26 PM</p>
-                                    </span>
-                                </a>
+                                {notifs?.map((noti, index) => (
+                                    <a className='flex items-center p-3 border-b gap-3'>
+                                        <img src={notif1} alt="" className='w-14 h-14 rounded-lg' />
+                                        <span>
+                                            <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>Dr sultads Send you Photo</p>
+                                            <p style={{ wordBreak: "break-word" }}>29 July 2020 - 02:26 PM</p>
+                                        </span>
+                                    </a>
                                 ))}
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
                             </div>
@@ -114,7 +113,7 @@ const Navbar = () => {
                             <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M160 826.88 273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128H296z" /><path fill={dark ? "white" : "#000000"} d="M352 512h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32zm0-192h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32z" /></svg>
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
-                        {profile || notification && <a onClick={() => {setProfile(false); setNotification(false)}} className='bg-[#80808041] cursor-pointer absolute w-screen h-screen top-0 left-0 right-0 z-10'></a>}
+                        {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] cursor-pointer absolute w-screen h-screen top-0 left-0 right-0 z-10'></a>}
                         <div className='relative hidden sm:inline-block'>
                             <a onClick={() => setProfile(!profile)} className='text-right cursor-pointer flex-col dark:text-white flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
