@@ -72,20 +72,19 @@ const Navbar = () => {
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
                         <div className='relative hidden sm:inline-block'>
-                            <a onClick={()=>setProfile(!profile)} className='text-right flex-col dark:text-white flex'>
+                            <a onClick={() => setProfile(!profile)} className='text-right flex-col dark:text-white flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
                             <a href="">
-                                
+                                <div className={`bg-white shadow mt-7 m-2 min-w-40 rounded-md w-[max-content] absolute py-3 ${profile ? "block" : "hidden"}`}>
+                                    <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
+                                    <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
+                                    <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
+                                </div>
                             </a>
-                            <div className={`bg-white shadow mt-7 m-2 min-w-40 rounded-md w-[max-content] absolute py-3 ${profile ? "block" : "hidden"}`}>
-                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
-                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
-                                <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
-                            </div>
                         </div>
-                        <a onClick={()=>setProfile(!profile)}><img src={dp} className='rounded-[50%] w-10' alt="" /></a>
+                        <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] w-10' alt="" /></a>
                     </div>
                 </section>
             </header>
