@@ -27,14 +27,14 @@ const Navbar = () => {
         setDark(!dark);
     }
 
-    useEffect(() => {
-        const theme = localStorage.getItem('theme')
-        if(theme.length > 1){
-            document.body.classList.add(theme)
-            document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
-            setDark(theme === "dark" ? true : false)
-        }
-    }, [])
+    // useEffect(() => {
+    //     const theme = localStorage.getItem('theme')
+    //     if(theme.length > 1){
+    //         document.body.classList.add(theme)
+    //         document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
+    //         setDark(theme === "dark" ? true : false)
+    //     }
+    // }, [])
 
     const notifs = [
         {
@@ -78,7 +78,7 @@ const Navbar = () => {
             time: "29 July 2020 - 02:26 PM"
         }
     ]
-    
+
     return (
         <>
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
