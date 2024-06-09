@@ -33,7 +33,7 @@ const Navbar = () => {
         if (theme) {
             document.body.classList.add(theme);
             document.body.classList.remove(theme === "light" ? "dark" : "light");
-            alert(theme === "dark");
+            setDark(theme === "dark");
         }
     }, []);
 
