@@ -39,8 +39,6 @@ const Navbar = () => {
         }
     }, []);
 
-    useEffect(()=>{
-    },[])
     const notifs = [
         {
             image: notif1,
