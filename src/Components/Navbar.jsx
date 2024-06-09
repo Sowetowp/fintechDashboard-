@@ -117,7 +117,7 @@ const Navbar = () => {
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
                             <div className={`bg-white dark:bg-[rgb(17,26,56)] shadow mt-8 -right-32 md:-right-4 rounded-md md:w-80 w-screen absolute z-20 ${notification ? "block" : "hidden"}`}>
-                                <div className='max-h-[50vh] overflow-y-scroll'>
+                                <div className='max-h-[50vh] overflow-y-scroll bestSeller'>
                                     {notifs?.map((noti, index) => (
                                         <div key={index} className='px-3'>
                                             <a className={`flex items-center py-3 gap-3 dark:border-gray-600 ${index !== 0 && "border-t"}`}>
