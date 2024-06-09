@@ -116,6 +116,6 @@
 }
 
 .bestSeller::-webkit-scrollbar-thumb {
-    background-color: pink !important;
+    background-color: rgb(235, 235, 235) !important;
     border-radius: 10px;
 }
