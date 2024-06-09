@@ -76,13 +76,13 @@ const Navbar = () => {
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
-                            <a href="" className='bg-blue-500 absolute w-screen h-screen top-0 left-0 right-0'></a>
                             <div className={`bg-white shadow mt-7 m-2 min-w-40 rounded-md w-[max-content] absolute py-3 ${profile ? "block" : "hidden"}`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
+                            <a href="" className='bg-blue-500 absolute w-screen h-screen top-0 left-0 right-0'></a>
                         <a onClick={()=>setProfile(!profile)}><img src={dp} className='rounded-[50%] w-10' alt="" /></a>
                     </div>
                 </section>
