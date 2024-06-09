@@ -29,6 +29,8 @@ const Navbar = () => {
     };
 
     useEffect(() => {
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setDark(systemPrefersDark)
         const theme = localStorage.getItem('theme');
         if (theme) {
             document.body.classList.add(theme);
@@ -38,8 +40,6 @@ const Navbar = () => {
     }, []);
 
     useEffect(()=>{
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        setDark(systemPrefersDark)
     },[])
     const notifs = [
         {
