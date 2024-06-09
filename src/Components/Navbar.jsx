@@ -166,7 +166,7 @@ const Navbar = () => {
                     </div>
                 </section>
             </header>
-            {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
+            {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen z-10'></a>}
         </>
     )
 }
