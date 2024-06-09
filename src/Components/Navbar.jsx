@@ -72,7 +72,11 @@ const Navbar = () => {
                             </a>
                             <div className={`bg-white shadow min-w-80 mt-8 -ml-[17rem] rounded-md w-[max-content] absolute z-20 ${true ? "block" : "hidden"}`}>
                                 <a>
-                                    
+                                    <img src="" alt="" />
+                                    <span>
+                                        <p></p>
+                                        <p></p>
+                                    </span>
                                 </a>
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
                             </div>
