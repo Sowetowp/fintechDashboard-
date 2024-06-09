@@ -55,6 +55,26 @@ const Navbar = () => {
             title: "Dr sultads Send you Photo",
             time: "29 July 2020 - 02:26 PM"
         },
+        {
+            image: notif1,
+            title: "Dr sultads Send you Photo",
+            time: "29 July 2020 - 02:26 PM"
+        },
+        {
+            image: notif2,
+            title: "Dr sultads Send you Photo",
+            time: "29 July 2020 - 02:26 PM"
+        },
+        {
+            image: notif3,
+            title: "Dr sultads Send you Photo",
+            time: "29 July 2020 - 02:26 PM"
+        },
+        {
+            image: notif4,
+            title: "Dr sultads Send you Photo",
+            time: "29 July 2020 - 02:26 PM"
+        }
     ]
     return (
         <>
