@@ -71,11 +71,11 @@ const Navbar = () => {
                                 <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z" /><path fill={dark ? "white" : "#000000"} d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z" /><path fill={dark ? "white" : "#000000"} d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32zm352 128h128a64 64 0 0 1-128 0z" /></svg>
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
-                            <div className={`bg-white shadow min-w-80 mt-8 -ml-[17rem] rounded-md w-[max-content] absolute z-20 ${true ? "block" : "hidden"}`}>
+                            <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
                                 <a className='flex items-center p-3 border-b gap-3'>
                                     <img src={notif1} alt="" className='w-14 h-14 rounded-lg'/>
                                     <span>
-                                        <p className='font-semibold text-md text-gray-700'>Dr sultads Send you Photo</p>
+                                        <p className='font-semibold text-md text-gray-700'>Dr sultrfffffffffffffffffffffffffffffffffffffffffffffffffffffads Send you Photo</p>
                                         <p>29 July 2020 - 02:26 PM</p>
                                     </span>
                                 </a>
