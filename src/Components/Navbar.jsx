@@ -108,7 +108,7 @@ const Navbar = () => {
                                         </a>
                                     </div>
                                 ))}
-                                <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
+                                <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md dark:border-gray-600'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
                             </div>
                         </div>
                         <div className="bg-white relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
