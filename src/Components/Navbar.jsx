@@ -82,7 +82,7 @@ const Navbar = () => {
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
-                        <a href="" className='bg-blue-500s absolute w-screen h-screen top-0 left-0 right-0'></a>
+                        <a href="" className='bg-blue-500 absolute w-screen h-screen top-0 left-0 right-0'></a>
                         <a onClick={()=>setProfile(!profile)}><img src={dp} className='rounded-[50%] w-10' alt="" /></a>
                     </div>
                 </section>
