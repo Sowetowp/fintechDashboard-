@@ -98,7 +98,7 @@ const Navbar = () => {
                             </a>
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
                                 {notifs?.map((noti, index) => (
-                                    <a className='flex items-center p-3 border-b gap-3'>
+                                    <a key={index} className='flex items-center p-3 border-b gap-3'>
                                         <img src={notif1} alt="" className='w-14 h-14 rounded-lg' />
                                         <span>
                                             <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>Dr sultads Send you Photo</p>
