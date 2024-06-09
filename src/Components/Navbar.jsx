@@ -40,6 +40,12 @@ const Navbar = () => {
         }
     }, []);
 
+    const toggleNotification = () => {
+        setNotification(!notification);
+        if (notifRef.current) {
+            notifRef.current.focus();
+        }
+    };
     const notifs = [
         {
             image: notif1,
@@ -119,11 +125,11 @@ const Navbar = () => {
                             <img className='w-4' src={dark ? day : moon} alt="" />
                         </a>
                         <div className=''>
-                            <a onClick={() => {setNotification(!notification); notifRef.current.focus();}} className="bg-white shadow relative cursor-pointer rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
+                            <a onClick={() => { setNotification(!notification); notifRef.current.focus(); }} className="bg-white shadow relative cursor-pointer rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
                                 <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M512 64a64 64 0 0 1 64 64v64H448v-64a64 64 0 0 1 64-64z" /><path fill={dark ? "white" : "#000000"} d="M256 768h512V448a256 256 0 1 0-512 0v320zm256-640a320 320 0 0 1 320 320v384H192V448a320 320 0 0 1 320-320z" /><path fill={dark ? "white" : "#000000"} d="M96 768h832q32 0 32 32t-32 32H96q-32 0-32-32t32-32zm352 128h128a64 64 0 0 1-128 0z" /></svg>
                                 <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>12</span></sup>
                             </a>
-                            <div className={`bg-white py-1 dark:bg-[rgb(17,26,56)] shadow mt-8 md:left-auto md:-ml-[17rem] left-0 rounded-md md:w-80 w-screen absolute z-20 ${notification ? "block" : "hidden"}`} onBlur={()=> setNotification(false)} tabIndex="0" ref={notifRef}>
+                            <div className={`bg-white py-1 dark:bg-[rgb(17,26,56)] shadow mt-8 md:left-auto md:-ml-[17rem] left-0 rounded-md md:w-80 w-screen absolute z-20 ${notification ? "block" : "hidden"}`} onBlur={() => setNotification(false)} tabIndex="0" ref={notifRef}>
                                 <div className='max-h-[50vh] overflow-y-scroll bestSeller'>
                                     {notifs?.map((noti, index) => (
                                         <div key={index} className='px-3'>
