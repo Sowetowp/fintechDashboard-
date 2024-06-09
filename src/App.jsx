@@ -7,7 +7,11 @@ function App() {
 
   return (
     <>
-      <Dashboard />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+        </Routes>
+      </Router>
     </>
   )
 }
