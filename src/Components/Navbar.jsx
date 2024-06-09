@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
 import cloud from "../assets/cloud-svgrepo-com.svg"
@@ -19,7 +19,7 @@ const Navbar = () => {
     const [dark, setDark] = useState(false)
     const [profile, setProfile] = useState(false)
     const [notification, setNotification] = useState(false)
-
+    const notifRef = useRef()
     const darkMode = () => {
         const newTheme = dark ? "light" : "dark";
         document.body.classList.add(newTheme);
