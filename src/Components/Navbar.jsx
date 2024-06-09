@@ -89,9 +89,10 @@ const Navbar = () => {
             time: "29 July 2020 - 02:26 PM"
         }
     ]
-
+    
     return (
         <>
+        {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
                 <section className='px-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
                     <div className='w-1/3 sm:w-1/2 flex items-center justify-between'>
@@ -166,7 +167,6 @@ const Navbar = () => {
                     </div>
                 </section>
             </header>
-            {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
         </>
     )
 }
