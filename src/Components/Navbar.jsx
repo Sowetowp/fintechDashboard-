@@ -26,16 +26,16 @@ const Navbar = () => {
         document.body.classList.remove(dark ? "dark" : "light");
         localStorage.setItem('theme', newTheme);
         setDark(!dark);
-      };
-    
-      useEffect(() => {
+    };
+
+    useEffect(() => {
         const theme = localStorage.getItem('theme');
         if (theme) {
-          document.body.classList.add(theme);
-          document.body.classList.remove(theme === "light" ? "dark" : "light");
-          setDark(theme === "dark");
+            document.body.classList.add(theme);
+            document.body.classList.remove(theme === "light" ? "dark" : "light");
+            setDark(theme === "dark");
         }
-      }, []);
+    }, []);
 
     const notifs = [
         {
