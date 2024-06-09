@@ -99,7 +99,7 @@ const Navbar = () => {
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
                                 {notifs?.map((noti, index) => (
                                     <div key={index} className='px-3'>
-                                        <a className={`flex items-center border-b py-3 gap-3 ${index === 0 ? "border-"}`}>
+                                        <a className={`flex items-center border-b py-3 gap-3 ${index === 0 ? "border-t"}`}>
                                             <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
                                             <span>
                                                 <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>{noti.title}</p>
