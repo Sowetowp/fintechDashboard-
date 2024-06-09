@@ -21,21 +21,20 @@ const Navbar = () => {
     const [notification, setNotification] = useState(false)
 
     const darkMode = () => {
-        const newTheme = dark ? "light" : "dark";
-        document.body.classList.add(newTheme);
-        document.body.classList.remove(dark ? "dark" : "light");
-        localStorage.setItem('theme', newTheme);
+        document.body.classList.add(`${!dark ? "dark" : "light"}`);
+        document.body.classList.remove(`${dark ? "dark" : "light"}`);
+        localStorage.setItem('theme', `${!dark ? "dark" : "light"}`);
         setDark(!dark);
-    };
+    }
 
     useEffect(() => {
-        const theme = localStorage.getItem('theme');
-        if (theme) {
-            document.body.classList.add(theme);
-            document.body.classList.remove(theme === "light" ? "dark" : "light");
-            setDark(theme === "dark");
+        const theme = localStorage.getItem('theme')
+        if(theme.length > 1){
+            document.body.classList.add(theme)
+            document.body.classList.remove(`${theme === "light" ? "dark" : "light"}`)
+            setDark(theme === "dark" ? true : false)
         }
-    }, []);
+    }, [])
 
     const notifs = [
         {
