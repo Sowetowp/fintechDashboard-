@@ -74,7 +74,7 @@ const Navbar = () => {
                                 <a>
                                     <img src="" alt="" />
                                     <span>
-                                        <p></p>
+                                        <p>Dr sultads Send you Photo</p>
                                         <p></p>
                                     </span>
                                 </a>
