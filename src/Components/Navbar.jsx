@@ -37,7 +37,8 @@ const Navbar = () => {
     const notifs = [
         {
             image: notif1,
-            title
+            title: "",
+            time: ""
         }
     ]
     return (
