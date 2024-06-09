@@ -46,6 +46,7 @@ const Navbar = () => {
             notifRef.current.focus();
         }
     };
+    
     const notifs = [
         {
             image: notif1,
