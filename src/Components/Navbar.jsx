@@ -38,8 +38,8 @@ const Navbar = () => {
         {
             image: notif1,
             title: "Dr sultads Send you Photo",
-            time: ""
-        }
+            time: "29 July 2020 - 02:26 PM"
+        },
     ]
     return (
         <>
