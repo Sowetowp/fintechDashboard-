@@ -98,14 +98,14 @@ const Navbar = () => {
                             </a>
                             <div className={`bg-white shadow mt-8 -ml-[17rem] rounded-md w-80 absolute z-20 ${true ? "block" : "hidden"}`}>
                                 {notifs?.map((noti, index) => (
-                                    <div key={index} className='p-3'>
-                                    <a className='flex items-center border-b gap-3'>
-                                        <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
-                                        <span>
-                                            <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>{noti.title}</p>
-                                            <p style={{ wordBreak: "break-word" }}>{noti.time}</p>
-                                        </span>
-                                    </a>
+                                    <div key={index} className='px-3'>
+                                        <a className='flex items-center border-b py-3 gap-3'>
+                                            <img src={noti.image} alt="" className='w-14 h-14 rounded-lg' />
+                                            <span>
+                                                <p style={{ wordBreak: "break-word" }} className='font-semibold text-md text-gray-700'>{noti.title}</p>
+                                                <p style={{ wordBreak: "break-word" }}>{noti.time}</p>
+                                            </span>
+                                        </a>
                                     </div>
                                 ))}
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
