@@ -113,9 +113,9 @@
 
 .bestSeller::-webkit-scrollbar {
     width: 4px !important;
-  }
-  
-  .bestSeller::-webkit-scrollbar-thumb {
+}
+
+.bestSeller::-webkit-scrollbar-thumb {
     background-color: pink !important;
     border-radius: 10px;
-  }
+}
