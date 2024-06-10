@@ -192,7 +192,10 @@ const Navbar = () => {
                         <div>
                             <p>A</p>
                             <div>
+                                <span>
+
                                 <img src={notif1} alt="" />
+                                </span>
                                 <div>
                                     <p>Archie Parker</p>
                                     <p>Kalid is online</p>
