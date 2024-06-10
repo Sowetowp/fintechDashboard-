@@ -178,7 +178,7 @@ const Navbar = () => {
                             <p>Chat List</p>
                             <p>Show All</p>
                         </span>
-                        <button>...</button>
+                        <button className='text-black bg-gray-200'>...</button>
                     </div>
                 </section>
             </header>
