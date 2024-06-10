@@ -324,6 +324,7 @@ const Navbar = () => {
                                 ))}
                             </div>
                         ))}
+                        <div className='bg-black h-5 w-full'></div>
                     </div>
                 </section>
             </header>
