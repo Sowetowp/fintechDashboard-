@@ -194,7 +194,7 @@ const Navbar = () => {
                             <div className='flex'>
                                 <span className='relative'>
                                     <div className='absolute w-2 h-2 bg-green-500 rounded-full bottom-0 right-0'></div>
-                                    <img className='w-20 rounded-full' src={notif1} alt="" />
+                                    <img className='w-16 rounded-full' src={notif1} alt="" />
                                 </span>
                                 <div>
                                     <p>Archie Parker</p>
