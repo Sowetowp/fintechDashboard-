@@ -220,7 +220,9 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div>
-                        {alphabet.map(())}
+                        {alphabet.map((alp, index)=>{
+                            
+                        })}
                         <div className='relative'>
                             <p className='py-2 static dark:text-white dark:border-gray-700 font-bold pl-3 dark:bg-[rgb(17,26,56)] border-t bg-white'>A</p>
                             <div className='flex gap-3 items-center px-4 py-2 hover:dark:bg-[rgb(17,26,56)] dark:bg-blue-950 bg-white dark:border-gray-700 border-t'>
