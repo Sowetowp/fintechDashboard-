@@ -190,7 +190,7 @@ const Navbar = () => {
                     </div>
                     <div>
                         <div>
-                            <p className='py-2 border-t'>A</p>
+                            <p className='py-2 border-t bg-white'>A</p>
                             <div>
                                 <span>
                                     <div></div>
