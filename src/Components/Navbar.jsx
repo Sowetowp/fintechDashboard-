@@ -188,6 +188,7 @@ const Navbar = () => {
                             <img className='w-4' src={dark ? menu2 : menu} alt="" />
                         </button>
                     </div>
+                    div
                 </section>
             </header>
         </>
