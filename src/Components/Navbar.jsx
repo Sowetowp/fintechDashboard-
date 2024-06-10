@@ -177,7 +177,7 @@ const Navbar = () => {
                         <button className='text-black bg-gray-200'>+</button>
                         <span>
                             <p className='font-semibold text-sm'>Chat List</p>
-                            <p className='text-sm'>Show All</p>
+                            <p className='text-xs'>Show All</p>
                         </span>
                         <button className='text-black bg-gray-200'><img className='w-3' src={menu} alt="" /></button>
                     </div>
