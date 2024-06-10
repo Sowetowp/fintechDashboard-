@@ -97,7 +97,9 @@ const Navbar = () => {
     const messages = [
         {
             alphabet: "A",
-            
+            members: {
+                
+            }
         }
     ]
     return (
