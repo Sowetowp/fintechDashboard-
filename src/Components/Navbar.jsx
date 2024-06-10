@@ -97,7 +97,7 @@ const Navbar = () => {
     const messages = [
         {
             alphabet: "A",
-            members: {
+            members: [{
                 image: notif1,
                 name: "Archie Parker",
                 status: "Kalid is online",
