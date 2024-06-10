@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from "../assets/logo.png"
 import logo2 from "../assets/logo-text.png"
 import cloud from "../assets/cloud-svgrepo-com.svg"
