@@ -125,7 +125,7 @@ const Navbar = () => {
             ]
         },
         {
-            alphabet: "A",
+            alphabet: "B",
             members: [
                 {
                     image: notif1,
@@ -154,7 +154,7 @@ const Navbar = () => {
             ]
         },
         {
-            alphabet: "A",
+            alphabet: "C",
             members: [
                 {
                     image: notif1,
