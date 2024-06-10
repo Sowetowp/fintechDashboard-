@@ -166,6 +166,7 @@ const Navbar = () => {
                 <section className='absolute right-0 h-screen top-0 bg-red-500 z-40'>
                     <main className='w-full md:w-80'>
                         <div>
+                            <a href="">HOME</a>
                             <a href=""></a>
                         </div>
                     </main>
