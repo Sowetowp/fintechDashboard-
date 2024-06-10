@@ -152,6 +152,64 @@ const Navbar = () => {
                     online: false
                 },
             ]
+        },
+        {
+            alphabet: "A",
+            members: [
+                {
+                    image: notif1,
+                    name: "Archie Parker",
+                    status: "Kalid is online",
+                    online: true
+                },
+                {
+                    image: notif2,
+                    name: "Alfie Mason",
+                    status: "Taherah left 7 mins ago",
+                    online: false
+                },
+                {
+                    image: notif3,
+                    name: "Byode Gabriel",
+                    status: "Dimeji is online",
+                    online: true
+                },
+                {
+                    image: notif4,
+                    name: "Adeniyi Abideen",
+                    status: "Taherah left 30 mins ago",
+                    online: false
+                },
+            ]
+        },
+        {
+            alphabet: "A",
+            members: [
+                {
+                    image: notif1,
+                    name: "Archie Parker",
+                    status: "Kalid is online",
+                    online: true
+                },
+                {
+                    image: notif2,
+                    name: "Alfie Mason",
+                    status: "Taherah left 7 mins ago",
+                    online: false
+                },
+                {
+                    image: notif3,
+                    name: "Byode Gabriel",
+                    status: "Dimeji is online",
+                    online: true
+                },
+                {
+                    image: notif4,
+                    name: "Adeniyi Abideen",
+                    status: "Taherah left 30 mins ago",
+                    online: false
+                },
+            ]
         }
     ]
     return (
