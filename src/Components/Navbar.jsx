@@ -16,13 +16,13 @@ import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = () => {
-    const [dark, setDark] = useState(false)
-    const [profile, setProfile] = useState(false)
-    const [notification, setNotification] = useState(false)
-    const [chat, setChat] = useState(false)
-    const [chats, setChats] = useState(true)
-    const [home, setHome] = useState(false)
-    const [alerts, setAlerts] = useState(false)
+    const [dark, setDark] = useState(false);
+    const [profile, setProfile] = useState(false);
+    const [notification, setNotification] = useState(false);
+    const [chat, setChat] = useState(false);
+    const [chats, setChats] = useState(true);
+    const [home, setHome] = useState(false);
+    const [alerts, setAlerts] = useState(false);
 
     const darkMode = () => {
         const newTheme = dark ? "light" : "dark";
