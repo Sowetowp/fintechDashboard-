@@ -167,7 +167,8 @@ const Navbar = () => {
                     <main className='w-full md:w-80'>
                         <div>
                             <a href="">HOME</a>
-                            <a href=""></a>
+                            <a href="">ALERTS</a>
+                            <a href="">CHAT</a>
                         </div>
                     </main>
                 </section>
