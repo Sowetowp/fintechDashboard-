@@ -166,7 +166,7 @@ const Navbar = () => {
                     </div>
                 </section>
                 {(profile || notification || chat) && <a onClick={() => { setProfile(false); setNotification(false); setChat(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
-                <section className={`fixed right-0 h-screen top-0 bg-red-500 z-40`} style={{transform: chat ? "translateX(0%)" : "translateX(100%)"}}>
+                <section className={`fixed right-0 h-screen top-0 bg-red-500 z-40`} style={{transform: chat ? "translateX(0%)" : "translateX(-100%)"}}>
                     <div className='flex justify-around w-full md:w-[22rem] bg-[#0099FF] pt-5 '>
                         <a onClick={()=>{setAlerts(false); setChats(false); setHome(true)}} className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
                         <a onClick={()=>{setAlerts(true); setChats(false); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : "" }`}>ALERTS</a>
