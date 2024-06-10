@@ -122,7 +122,7 @@
 
 .bestSeller2::-webkit-scrollbar {
     width: 4px !important;
-    background-color: aqua;
+    background-color: transparent;
 }
 
 .bestSeller2::-webkit-scrollbar-thumb {
