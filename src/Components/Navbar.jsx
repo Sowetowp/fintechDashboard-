@@ -162,10 +162,10 @@ const Navbar = () => {
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
                             </div>
                         </div>
-                        <a onClick={() => setProfile(true)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
+                        <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
                     </div>
                 </section>
-                {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#808080d8] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
+                {profile || notification && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
             </header>
         </>
     )
