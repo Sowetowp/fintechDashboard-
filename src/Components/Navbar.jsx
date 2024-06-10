@@ -147,12 +147,12 @@ const Navbar = () => {
                             <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M160 826.88 273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128H296z" /><path fill={dark ? "white" : "#000000"} d="M352 512h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32zm0-192h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32z" /></svg>
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </div>
-                        <div className=' inline-block'>
+                        <div className='relative inline-block'>
                             <a onClick={() => setProfile(!profile)} className='text-right cursor-pointer hidden flex-col dark:text-white md:flex'>
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
-                            <div className={`bg-white left-auto dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow mt-7 min-w-40 rounded-md w-[max-content] absolute z-20 py-3 ${profile ? "block" : "hidden"}`}>
+                            <div className={`bg-white left dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow mt-7 min-w-40 rounded-md w-[max-content] absolute z-20 py-3 ${profile ? "block" : "hidden"}`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
