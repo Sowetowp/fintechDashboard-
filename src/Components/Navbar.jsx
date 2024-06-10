@@ -185,7 +185,7 @@ const Navbar = () => {
                             <p className='text-xs text-gray-500'>Show All</p>
                         </span>
                         <button className='flex dark:bg-blue-900 items-center bg-gray-200 h-6 justify-center w-6 rounded-md'>
-                            <img className='w-4' src={menu} alt="" />
+                            <img className='w-4' src={dark ? menu2 : menu} alt="" />
                         </button>
                     </div>
                 </section>
