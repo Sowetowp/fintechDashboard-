@@ -110,6 +110,18 @@ const Navbar = () => {
                     status: "Kalid is online",
                     online: true
                 },
+                {
+                    image: notif3,
+                    name: "Archie Parker",
+                    status: "Kalid is online",
+                    online: true
+                },
+                {
+                    image: notif4,
+                    name: "Archie Parker",
+                    status: "Kalid is online",
+                    online: true
+                },
             ]
         }
     ]
