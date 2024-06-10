@@ -149,7 +149,7 @@ const Navbar = () => {
                                 <a className='flex cursor-pointer border-t border-solid text-[#0099FF] gap-4 py-3 justify-center rounded-b-md dark:border-gray-600'>See all notifications<img className='w-5' src={arrow} alt="" /></a>
                             </div>}
                         </div>
-                        <a onClick={()=> setChat(!chat)} className="bg-white cursor-pointer relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
+                        <a onClick={() => setChat(!chat)} className="bg-white cursor-pointer relative shadow rounded-[50%] h-[fit-content] p-2 flex items-center justify-center dark:bg-[rgb(17,26,56)]">
                             <svg className='w-4' viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill={dark ? "white" : "#000000"} d="M160 826.88 273.536 736H800a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64H224a64 64 0 0 0-64 64v570.88zM296 800 147.968 918.4A32 32 0 0 1 96 893.44V256a128 128 0 0 1 128-128h576a128 128 0 0 1 128 128v416a128 128 0 0 1-128 128H296z" /><path fill={dark ? "white" : "#000000"} d="M352 512h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32zm0-192h320q32 0 32 32t-32 32H352q-32 0-32-32t32-32z" /></svg>
                             <sup className='absolute'><span className='px-[4px] ml-6 text-xs text-white bg-[#0099FF] rounded-full'>5</span></sup>
                         </a>
@@ -168,19 +168,23 @@ const Navbar = () => {
                     </div>
                 </section>
                 {(profile || notification || chat) && <a onClick={() => { setProfile(false); setNotification(false); setChat(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
-                <section className={`fixed right-0 h-screen top-0 z-40`} style={{transform: chat ? "translateX(0%)" : "translateX(100%)", transition:"transform .7s ease"}}>
+                <section className={`fixed right-0 h-screen top-0 z-40`} style={{ transform: chat ? "translateX(0%)" : "translateX(100%)", transition: "transform .7s ease" }}>
                     <div className='flex justify-around w-full md:w-[22rem] bg-[#0099FF] pt-5 '>
-                        <a onClick={()=>{setAlerts(false); setChats(false); setHome(true)}} className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
-                        <a onClick={()=>{setAlerts(true); setChats(false); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : "" }`}>ALERTS</a>
-                        <a onClick={()=>{setAlerts(false); setChats(true); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
+                        <a onClick={() => { setAlerts(false); setChats(false); setHome(true) }} className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : ""}`}>HOME</a>
+                        <a onClick={() => { setAlerts(true); setChats(false); setHome(false) }} className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : ""}`}>ALERTS</a>
+                        <a onClick={() => { setAlerts(false); setChats(true); setHome(false) }} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : ""}`}>CHAT</a>
                     </div>
                     <div className='flex dark:bg-blue-950 items-center justify-around bg-white py-2 '>
-                        <button className='flex items-center dark:bg-blue-900 bg-gray-200 h-6 justify-center w-6 rounded-md'><img className='w-5' src={plus} alt="" /></button>
+                        <button className='flex items-center dark:bg-blue-900 bg-gray-200 h-6 justify-center w-6 rounded-md'>
+                            <img className='w-5' src={plus} alt="" />
+                        </button>
                         <span className='text-center'>
                             <p className='font-semibold text-sm dark:text-white'>Chat List</p>
                             <p className='text-xs text-gray-500'>Show All</p>
                         </span>
-                        <button className='flex dark:bg-blue-900 items-center bg-gray-200 h-6 justify-center w-6 rounded-md'><img className='w-4' src={menu} alt="" /></button>
+                        <button className='flex dark:bg-blue-900 items-center bg-gray-200 h-6 justify-center w-6 rounded-md'>
+                            <img className='w-4' src={menu} alt="" />
+                        </button>
                     </div>
                 </section>
             </header>
