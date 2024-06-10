@@ -119,7 +119,7 @@ const Navbar = () => {
                 {
                     image: notif4,
                     name: "Adeniyi Abideen",
-                    status: "Kalid is online",
+                    status: "Wunmi is online",
                     online: true
                 },
             ]
