@@ -98,7 +98,7 @@ const Navbar = () => {
         {
             alphabet: "A",
             members: {
-                
+                image:
             }
         }
     ]
