@@ -183,7 +183,7 @@ const Navbar = () => {
             ]
         },
         {
-            alphabet: "A",
+            alphabet: "D",
             members: [
                 {
                     image: notif1,
