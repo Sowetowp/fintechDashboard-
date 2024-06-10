@@ -168,9 +168,9 @@ const Navbar = () => {
                 {(profile || notification) && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
                 <section className='absolute right-0 h-screen top-0 bg-red-500 z-40'>
                     <div className='flex justify-around w-full md:w-[22rem] bg-[#0099FF] pt-5 '>
-                        <a href="" className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
-                        <a href="" className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : "" }`}>ALERTS</a>
-                        <a href="" className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
+                        <a onClick={()=>{setAlerts(false); setChat(false); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
+                        <a onClick={()=>{setAlerts(false); setChat(false); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : "" }`}>ALERTS</a>
+                        <a onClick={()=>{setAlerts(false); setChat(false); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
                     </div>
                 </section>
             </header>
