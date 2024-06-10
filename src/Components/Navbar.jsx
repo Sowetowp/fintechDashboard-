@@ -167,7 +167,7 @@ const Navbar = () => {
                     <main className='w-full md:w-80'>
                         <div className='flex justify-around'>
                             <a href="" className='text-white font-semibold'>HOME</a>
-                            <a href="">ALERTS</a>
+                            <a href="" className='text-white font-semibold'>ALERTS</a>
                             <a href="">CHAT</a>
                         </div>
                     </main>
