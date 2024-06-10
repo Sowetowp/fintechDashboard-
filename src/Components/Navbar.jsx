@@ -107,7 +107,7 @@ const Navbar = () => {
                 {
                     image: notif2,
                     name: "Alfie Mason",
-                    status: "Tahe is online",
+                    status: "Taherah left is online",
                     online: true
                 },
                 {
