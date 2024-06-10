@@ -190,7 +190,7 @@ const Navbar = () => {
                     </div>
                     <div>
                         <div>
-                            <p>A</p>
+                            <p className=''>A</p>
                             <div>
                                 <span>
                                     <div></div>
