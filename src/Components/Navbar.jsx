@@ -164,7 +164,7 @@ const Navbar = () => {
                 </section>
                 {(profile || notification) && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
                 <section className='absolute md:w-80 right-0 h-screen w-full top-0 bg-red-500 z-40'>
-                    <div></div>
+                    <div className='w-full md:'></div>
                 </section>
             </header>
         </>
