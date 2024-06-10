@@ -231,7 +231,7 @@ const Navbar = () => {
                                         </span>
                                         <div>
                                             <p className='font-semibold dark:text-white'>{mem.name}</p>
-                                            <p className='text-sm text-gray-400'>Kalid is online</p>
+                                            <p className='text-sm text-gray-400'>{mem.status}</p>
                                         </div>
                                     </div>
                                 ))}
