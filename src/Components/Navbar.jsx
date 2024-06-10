@@ -99,7 +99,8 @@ const Navbar = () => {
             alphabet: "A",
             members: {
                 image: notif1,
-                name: 
+                name: "Archie Parker",
+                status: ""
             }
         }
     ]
