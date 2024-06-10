@@ -120,11 +120,11 @@
     border-radius: 10px;
 }
 
-.bestSeller::-webkit-scrollbar {
+.bestSeller2::-webkit-scrollbar {
     width: 4px !important;
 }
 
-.bestSeller::-webkit-scrollbar-thumb {
+.bestSeller2::-webkit-scrollbar-thumb {
     background-color: rgb(235, 235, 235) !important;
     border-radius: 10px;
 }
