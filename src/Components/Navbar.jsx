@@ -97,12 +97,14 @@ const Navbar = () => {
     const messages = [
         {
             alphabet: "A",
-            members: [{
-                image: notif1,
-                name: "Archie Parker",
-                status: "Kalid is online",
-                online: true
-            }
+            members: [
+                {
+                    image: notif1,
+                    name: "Archie Parker",
+                    status: "Kalid is online",
+                    online: true
+                },
+            ]
         }
     ]
     return (
