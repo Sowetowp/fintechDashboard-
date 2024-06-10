@@ -176,7 +176,7 @@ const Navbar = () => {
                     <div className='flex justify-around bg-white py-2 '>
                         <button className='text-black bg-gray-200'>+</button>
                         <span>
-                            <p className=''>Chat List</p>
+                            <p className='font-semibold'>Chat List</p>
                             <p>Show All</p>
                         </span>
                         <button className='text-black bg-gray-200'><img className='w-3' src={menu} alt="" /></button>
