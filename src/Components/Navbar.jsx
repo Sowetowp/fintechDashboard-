@@ -161,7 +161,7 @@ const Navbar = () => {
                         <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
                     </div>
                 </section>
-                {(profile || notification) && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808041] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
+                {(profile || notification) && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
             </header>
         </>
     )
