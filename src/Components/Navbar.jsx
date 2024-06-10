@@ -198,7 +198,7 @@ const Navbar = () => {
                                 </span>
                                 <div>
                                     <p className='font-semibold dark:text-white'>Archie Parker</p>
-                                    <p className='text-xs text-gray-500'>Kalid is online</p>
+                                    <p className='text-sm text-gray-400'>Kalid is online</p>
                                 </div>
                             </div>
                         </div>
