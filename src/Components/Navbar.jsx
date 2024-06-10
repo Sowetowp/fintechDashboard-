@@ -153,7 +153,7 @@ const Navbar = () => {
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
-                            {profile &&<div className={`bg-white right-0 dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow md:mt-7 mt-12 mr-1 min-w-40 rounded-md w-[max-content] absolute z-20 py-3`}>
+                            {profile && <div className={`bg-white right-0 dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow md:mt-7 mt-12 mr-1 min-w-40 rounded-md w-[max-content] absolute z-20 py-3`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
@@ -164,13 +164,11 @@ const Navbar = () => {
                 </section>
                 {(profile || notification) && <a onClick={() => { setProfile(false); setNotification(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
                 <section className='absolute right-0 h-screen top-0 bg-red-500 z-40'>
-                    <main className='w-full md:w-80'>
-                        <div className='flex justify-around'>
-                            <a href="" className='text-white font-semibold'>HOME</a>
-                            <a href="" className='text-white font-semibold'>ALERTS</a>
-                            <a href="" className='text-white font-semibold'>CHAT</a>
-                        </div>
-                    </main>
+                    <div className='flex justify-around w-full md:w-80'>
+                        <a href="" className='text-white font-semibold'>HOME</a>
+                        <a href="" className='text-white font-semibold'>ALERTS</a>
+                        <a href="" className='text-white font-semibold'>CHAT</a>
+                    </div>
                 </section>
             </header>
         </>
