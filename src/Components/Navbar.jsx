@@ -179,7 +179,7 @@ const Navbar = () => {
                             <p>Chat List</p>
                             <p>Show All</p>
                         </span>
-                        <button className='text-black bg-gray-200'>...</button>
+                        <button className='text-black bg-gray-200'><img src={menu} alt="" /></button>
                     </div>
                 </section>
             </header>
