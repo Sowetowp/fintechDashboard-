@@ -306,7 +306,7 @@ const Navbar = () => {
                             <img className='w-4' src={dark ? menu2 : menu} alt="" />
                         </button>
                     </div>
-                    <div className='overflow-y-scroll bestSeller2 max-h-[90vh] pb-14 bg-white'>
+                    <div className='overflow-y-scroll bestSeller2 dark:bg-blue-950 max-h-[90vh] pb-14 bg-white'>
                         {messages.map((alp, index)=>(
                             <div key={index} className='relative'>
                                 <p className='py-2 sticky top-0 z-10 dark:text-white dark:border-gray-700 font-bold pl-3 dark:bg-[rgb(17,26,56)] border-t bg-white'>{alp.alphabet}</p>
