@@ -95,7 +95,9 @@ const Navbar = () => {
     ]
 
     const messages = [
-        
+        {
+            
+        }
     ]
     return (
         <>
