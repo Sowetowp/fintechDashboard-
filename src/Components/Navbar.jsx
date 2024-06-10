@@ -169,8 +169,8 @@ const Navbar = () => {
                 <section className='absolute right-0 h-screen top-0 bg-red-500 z-40'>
                     <div className='flex justify-around w-full md:w-[22rem] bg-[#0099FF] pt-5 '>
                         <a href="" className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
-                        <a href="" className='text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>ALERTS</a>
-                        <a href="" className='text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>CHAT</a>
+                        <a href="" className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>ALERTS</a>
+                        <a href="" className=text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>CHAT</a>
                     </div>
                 </section>
             </header>
