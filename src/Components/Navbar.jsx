@@ -20,6 +20,9 @@ const Navbar = () => {
     const [profile, setProfile] = useState(false)
     const [notification, setNotification] = useState(false)
     const [chat, setChat] = useState(false)
+    const [chats, setChats] = useState(false)
+    const [chat, setChat] = useState(false)
+    const [chat, setChat] = useState(false)
 
     const darkMode = () => {
         const newTheme = dark ? "light" : "dark";
