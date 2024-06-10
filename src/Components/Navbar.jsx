@@ -94,7 +94,9 @@ const Navbar = () => {
         }
     ]
 
-    const chat 
+    const messages = [
+        
+    ]
     return (
         <>
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
