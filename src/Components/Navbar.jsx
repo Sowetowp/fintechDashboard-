@@ -176,8 +176,9 @@ const Navbar = () => {
                         <button>+</button>
                         <span>
                             <p>Chat List</p>
-                            <p></p>
+                            <p>Show All</p>
                         </span>
+                        <button></button>
                     </div>
                 </section>
             </header>
