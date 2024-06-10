@@ -152,11 +152,11 @@ const Navbar = () => {
                                 <span className='leading-tight'>Hello,<b>Franklin</b></span>
                                 <span className='text-sm text-gray-500 dark:text-white'>super admin</span>
                             </a>
-                            <div className={`bg-white right-0 dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow md:mt-7 mt-12 mr-1 min-w-40 rounded-md w-[max-content] absolute z-20 py-3 ${profile ? "block" : "hidden"}`}>
+                            {profile &&<div className={`bg-white right-0 dark:bg-[rgb(17,26,56)] dark:text-gray-300 shadow md:mt-7 mt-12 mr-1 min-w-40 rounded-md w-[max-content] absolute z-20 py-3`}>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={profileico} alt="" />Profile</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={inbox} alt="" />Inbox</a>
                                 <a className='flex gap-4 px-5 py-2 hover:bg-gray-100'><img className='w-5' src={logout} alt="" />Logout</a>
-                            </div>
+                            </div>}
                         </div>
                         <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
                     </div>
