@@ -195,7 +195,7 @@ const Navbar = () => {
                                 <img src="" alt="" />
                                 <div>
                                     <p>Archie Parker</p>
-                                    <p></p>
+                                    <p>Kalid is online</p>
                                 </div>
                             </div>
                         </div>
