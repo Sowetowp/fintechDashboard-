@@ -92,7 +92,6 @@ const Navbar = () => {
 
     return (
         <>
-        <main className='overflow-x-hidden w-screen'>
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
                 <section className='px-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
                     <div className='w-1/3 sm:w-1/2 flex items-center justify-between'>
@@ -167,7 +166,6 @@ const Navbar = () => {
                     </div>
                 </section>
                 {(profile || notification || chat) && <a onClick={() => { setProfile(false); setNotification(false); setChat(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
-            </header>
                 <section className={`absolute right-0 h-screen top-0 bg-red-500 z-40`} style={{transform: chat ? "translateX(0%)" : "translateX(100%)"}}>
                     <div className='flex justify-around w-full md:w-[22rem] bg-[#0099FF] pt-5 '>
                         <a onClick={()=>{setAlerts(false); setChats(false); setHome(true)}} className={`text-white text-base font-semibold pb-3 ${home ? "border-b-2" : "" }`}>HOME</a>
@@ -175,7 +173,7 @@ const Navbar = () => {
                         <a onClick={()=>{setAlerts(false); setChats(true); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
                     </div>
                 </section>
-                </main>
+            </header>
         </>
     )
 }
