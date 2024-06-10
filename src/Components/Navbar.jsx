@@ -100,7 +100,8 @@ const Navbar = () => {
             members: {
                 image: notif1,
                 name: "Archie Parker",
-                status: ""
+                status: "Kalid is online",
+                online: true
             }
         }
     ]
