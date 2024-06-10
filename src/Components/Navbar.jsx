@@ -290,9 +290,9 @@ const Navbar = () => {
                 {(profile || notification || chat) && <a onClick={() => { setProfile(false); setNotification(false); setChat(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
                 <section className={`fixed right-0 h-screen top-0 z-40 w-full md:w-[22rem]`} style={{ transform: chat ? "translateX(0%)" : "translateX(100%)", transition: "transform .7s ease" }}>
                     <div className='flex justify-around bg-[#0099FF] pt-5 '>
-                        <a onClick={() => { setAlerts(false); setChats(false); setHome(true) }} className={`text-white text-base  font-semibold pb-3 ${home ? "border-b-2" : ""}`}>HOME</a>
-                        <a onClick={() => { setAlerts(true); setChats(false); setHome(false) }} className={`text-white text-base font-semibold pb-3 ${alerts ? "border-b-2" : ""}`}>ALERTS</a>
-                        <a onClick={() => { setAlerts(false); setChats(true); setHome(false) }} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : ""}`}>CHAT</a>
+                        <a onClick={() => { setAlerts(false); setChats(false); setHome(true) }} className={`text-white text-base cursor-pointer font-semibold pb-3 ${home ? "border-b-2" : ""}`}>HOME</a>
+                        <a onClick={() => { setAlerts(true); setChats(false); setHome(false) }} className={`text-white text-base cursor-pointer font-semibold pb-3 ${alerts ? "border-b-2" : ""}`}>ALERTS</a>
+                        <a onClick={() => { setAlerts(false); setChats(true); setHome(false) }} className={`text-white text-base cursor-pointer font-semibold pb-3 ${chats ? "border-b-2" : ""}`}>CHAT</a>
                     </div>
                     <div className='flex dark:bg-blue-950 items-center justify-around bg-white py-2 '>
                         <button className='flex items-center dark:bg-blue-900 bg-gray-200 h-6 justify-center w-6 rounded-md'>
