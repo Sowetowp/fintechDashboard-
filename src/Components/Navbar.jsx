@@ -230,7 +230,7 @@ const Navbar = () => {
                                             <img className='w-12 rounded-full' src={mem.image} alt="" />
                                         </span>
                                         <div>
-                                            <p className='font-semibold dark:text-white'>Archie Parker</p>
+                                            <p className='font-semibold dark:text-white'>{mem.name}</p>
                                             <p className='text-sm text-gray-400'>Kalid is online</p>
                                         </div>
                                     </div>
