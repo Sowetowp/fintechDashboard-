@@ -193,7 +193,9 @@ const Navbar = () => {
                             <p>A</p>
                             <div>
                                 <img src="" alt="" />
-                                <div></div>
+                                <div>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
