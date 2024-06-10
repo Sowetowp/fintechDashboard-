@@ -173,7 +173,7 @@ const Navbar = () => {
                         <a onClick={()=>{setAlerts(false); setChats(true); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
                     </div>
                     <div>
-                        
+                        <button>+</button>
                     </div>
                 </section>
             </header>
