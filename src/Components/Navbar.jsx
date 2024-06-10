@@ -92,7 +92,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className='w-full overflow-hidden sticky top-0 bg-white dark:bg-blue-950 '>
+            <header className='w-full overflow-hidden over sticky top-0 bg-white dark:bg-blue-950 '>
                 <section className='px-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
                     <div className='w-1/3 sm:w-1/2 flex items-center justify-between'>
                         <a href='/' className="flex gap-3 flex-row items-center">
