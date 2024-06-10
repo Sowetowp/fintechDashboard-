@@ -175,7 +175,7 @@ const Navbar = () => {
                         <a onClick={()=>{setAlerts(false); setChats(true); setHome(false)}} className={`text-white text-base font-semibold pb-3 ${chats ? "border-b-2" : "" }`}>CHAT</a>
                     </div>
                     <div className='flex items-center justify-around bg-white py-2 '>
-                        <button className='text-black px-2 flex items-center bg-gray-200 h-3 rounded-md'><img className='w-4' src={plus} alt="" /></button>
+                        <button className='text-black px-2 flex items-center bg-gray-200 h-3 w-3 rounded-md'><img className='w-4' src={plus} alt="" /></button>
                         <span className='text-center'>
                             <p className='font-semibold text-sm'>Chat List</p>
                             <p className='text-xs text-gray-500'>Show All</p>
