@@ -197,7 +197,7 @@ const Navbar = () => {
                                     <img className='w-12 rounded-full' src={notif1} alt="" />
                                 </span>
                                 <div>
-                                    <p>Archie Parker</p>
+                                    <p className='font-'>Archie Parker</p>
                                     <p>Kalid is online</p>
                                 </div>
                             </div>
