@@ -193,7 +193,7 @@ const Navbar = () => {
                             <p className='py-2 dark:text-white dark:border-gray-600 font-bold pl-3 dark:bg-[rgb(17,26,56)] border-t bg-white'>A</p>
                             <div className='flex'>
                                 <span className='relative'>
-                                    <div className='absolute w-3 h-3 border border-w bg-green-500 rounded-full bottom-0 right-0'></div>
+                                    <div className='absolute w-3 h-3 border-2 border-white bg-green-500 rounded-full bottom-0 right-0'></div>
                                     <img className='w-12 rounded-full' src={notif1} alt="" />
                                 </span>
                                 <div>
