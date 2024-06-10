@@ -122,6 +122,7 @@
 
 .bestSeller2::-webkit-scrollbar {
     width: 4px !important;
+    background-color: aqua;
 }
 
 .bestSeller2::-webkit-scrollbar-thumb {
