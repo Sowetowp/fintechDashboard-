@@ -286,7 +286,6 @@ const Navbar = () => {
                         </div>
                         <a onClick={() => setProfile(!profile)}><img src={dp} className='rounded-[50%] cursor-pointer w-10' alt="" /></a>
                     </div>
-                    classL
                 </section>
                 {(profile || notification || chat) && <a onClick={() => { setProfile(false); setNotification(false); setChat(false) }} className='bg-[#80808024] absolute w-full h-screen top-0 left-0 right-0 z-10'></a>}
                 <section className={`fixed right-0 h-screen top-0 z-40 w-[90%] md:w-[22rem]`} style={{ transform: chat ? "translateX(0%)" : "translateX(100%)", transition: "transform .7s ease" }}>
