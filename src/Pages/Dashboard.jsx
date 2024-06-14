@@ -6,6 +6,7 @@ const Dashboard = () => {
         <>
             <Navbar />
             <div className="w-full h-screen bg-slate-500">lllllll</div>
+            
         </>
     )
 }
