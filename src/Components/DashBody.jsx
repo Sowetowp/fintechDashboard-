@@ -1,4 +1,4 @@
-import React, { useReducer, useRef, useState } from 'react'
+import React, { useEffect, useReducer, useRef, useState } from 'react'
 
 const drops = {
     dashboard: false,
@@ -39,7 +39,7 @@ const DashBody = () => {
           setHeight(`${contentRef.current.scrollHeight}px`);
         }
       }, []);
-      
+
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
