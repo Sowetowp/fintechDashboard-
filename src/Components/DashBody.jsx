@@ -26,6 +26,7 @@ const dropReducer = (state, action) => {
             return state
     }
 }
+
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
 
