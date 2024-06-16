@@ -36,10 +36,10 @@ const DashBody = () => {
     const contentRef = useRef()
     useEffect(() => {
         if (contentRef.current) {
-          setHeight(`${contentRef.current.scrollHeight}px`);
+            setHeight(`${contentRef.current.scrollHeight}px`);
         }
-      }, []);
-
+    }, []);
+console.log(height)
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
