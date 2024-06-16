@@ -19,7 +19,7 @@ const dropReducer = (state, action)=>{
                 if(key === action.clicked){
                     {key: true}
                 }else{
-                    {}
+                    {key: false}
                 }
             })
     }
