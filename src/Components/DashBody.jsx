@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import React, { useReducer, useRef, useState } from 'react'
 
 const drops = {
     dashboard: false,
@@ -33,7 +33,7 @@ const dropReducer = (state, action) => {
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
     const [height, setHeight] = useState("0px")
-    const contentref
+    const contentRef = useRef()
     useEffect(() => {
         if (contentRef.current) {
           setHeight(`${contentRef.current.scrollHeight}px`);
