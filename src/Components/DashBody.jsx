@@ -79,7 +79,7 @@ const DashBody = () => {
                         ))}
                         <p className='px-8 text-xs text-gray-500 font-bold pt-14'>Mophy Payment Admin</p>
                         <p className='px-8 text-xs text-gray-500'>Dashboard © 2023 All Rights Reserved</p>
-                        <p className='px-8 text-xs pt-3 pb-8 text-gray-500'>Made with <span style={{color: "blue"}}>&#x2764;</span> by DexignZone</p>
+                        <p className='px-8 text-xs pt-3 pb-8 text-gray-500'>Made with &#x2764; by DexignZone</p>
                     </div>
                 </section>
             </main>
