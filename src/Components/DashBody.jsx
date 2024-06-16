@@ -1,5 +1,17 @@
 import React, { useReducer } from 'react'
 
+const drops = {
+    dashboard: false,
+    cms: false,
+    apps: false,
+    charts: false,
+    bootstrap: false,
+    plugins: false,
+    widget: false,
+    form: false,
+    table: false,
+    pages: false
+}
 const dropReducer = (state, action)=>{
     switch(action.type){
         case "dashboard":
@@ -8,18 +20,6 @@ const dropReducer = (state, action)=>{
 
 }
 const DashBody = () => {
-    const drops = {
-        dashboard: false,
-        cms: false,
-        apps: false,
-        charts: false,
-        bootstrap: false,
-        plugins: false,
-        widget: false,
-        form: false,
-        table: false,
-        pages: false
-    }
     const [drop, dispatch] = useReducer(dropReducer, drops)
     return (
         <>
