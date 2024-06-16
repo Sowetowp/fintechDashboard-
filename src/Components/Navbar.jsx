@@ -21,7 +21,6 @@ import "../Styles/Dashboard.css"
 
 const Navbar = (props) => {
     const {prop, prop2} = props
-    console.log(prop, prop2)
     const [dark, setDark] = useState(false);
     const [profile, setProfile] = useState(false);
     const [notification, setNotification] = useState(false);
