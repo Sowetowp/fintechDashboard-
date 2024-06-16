@@ -52,6 +52,7 @@ const DashBody = () => {
         <svg className='w-6 group-hover:fill-[#0099FF]' fill="rgb(107 114 128)" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M225.882 0h1468.236C1818.692 0 1920 101.308 1920 225.882v1468.236c0 124.574-101.308 225.882-225.882 225.882H225.882C101.308 1920 0 1818.692 0 1694.118V225.882C0 101.308 101.308 0 225.882 0Zm854.462 1694.118h614v-614h-614v614ZM225.882 839.882h614v-614h-614v614Zm0 854.236h614v-614h-614v614Zm854.236-854.236h614v-614h-614v614Z" fill-rule="evenodd"></path> </g></svg>,
         <svg className='w-6 group-hover:fill-[#0099FF]' fill="rgb(107 114 128)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 37" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M36.75,8.5V35c0,1.104-0.895,2-2,2H8.25c-1.104,0-2-0.896-2-2V8.5c0-1.104,0.896-2,2-2h26.5 C35.855,6.5,36.75,7.396,36.75,8.5z M30.75,2c0-1.104-0.895-2-2-2H2.25c-1.104,0-2,0.896-2,2v26.5c0,1.104,0.896,2,2,2 c1.105,0,2-0.896,2-2V4h24.5C29.855,4,30.75,3.104,30.75,2z"></path> </g> </g></svg>
     ]
+    
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
