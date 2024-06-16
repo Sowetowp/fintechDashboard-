@@ -46,7 +46,7 @@ const DashBody = () => {
                                 </span>
                                 <svg className='w-3 group-hover:fill-[#0099FF]' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.413 223.413" fill="rgb(107 114 128)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <polygon className='group-hover:fill-[#0099FF]' fill="rgb(107 114 128)" points="57.179,223.413 51.224,217.276 159.925,111.71 51.224,6.127 57.179,0 172.189,111.71 "></polygon> </g> </g> </g> </g></svg>
                             </a>
-                            <div className={`w-full bg-black py-2 ${drop.dashboard ? "block" : "hidDden"}`} style={{transition:"height 1s ease", height: drop.dashboard ? "100%" : "0px"}}>
+                            <div className={`w-full bg-black py-2 ${drop.dashboard ? "block" : "hidDden"}`} style={{transition:"height 1s ease", maxHeight: drop.dashboard ? "1000px" : "0px"}}>
                                 <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Profile</a>
                                 <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Email</a>
                                 <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Calendar</a>
