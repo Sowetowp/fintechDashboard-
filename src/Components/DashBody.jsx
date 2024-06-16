@@ -12,6 +12,7 @@ const DashBody = () => {
         bootstrap: false,
         plugins: false,
         widget: false,
+        form: false,
         
     }
     const [drop, dispatch] = useReducer(dropReducer, drops)
