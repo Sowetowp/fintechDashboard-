@@ -55,9 +55,9 @@ const DashBody = () => {
 
     return (
         <>
-            {/* <main className='w-full bg-white dark:bg-blue-950'>
-                <section className='max-w-7xl w-full mx-auto'> */}
-                    {/* <div className='w-[22%] h-[84vh] overflow-y-auto bestSeller bg-white dark:bg-blue-950'> */}
+            <main className='w-full bg-white dark:bg-blue-950'>
+                <section className='max-w-7xl w-full mx-auto'>
+                    <div className='w-[22%] h-[84vh] overflow-y-auto bestSeller bg-white dark:bg-blue-950'>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
                                 <a className='flex cursor-pointer justify-between px-8 flex-wrap items-center group' onClick={() => dispatch({ type: drop[dr] ? "close" : "open", val: dr })}>
@@ -77,9 +77,9 @@ const DashBody = () => {
                                 </div>
                             </div>
                         ))}
-                    {/* </div> */}
-                {/* </section>
-            </main> */}
+                    </div>
+                </section>
+            </main>
         </>
     )
 }
