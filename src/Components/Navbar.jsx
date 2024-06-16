@@ -217,7 +217,7 @@ const Navbar = (props) => {
         <>
             <header className='w-full sticky top-0 bg-white dark:bg-blue-950 '>
                 <section className='px-5 max-w-7xl w-full mx-auto py-5 flex items-center'>
-                    <div className={`w-1/3 max-w-1/3 sm:w-1/2 flex items-center ${prop ? "justify-between" : "gap-5 max-w-96"}`} style={{transition: "max-width 0.3s ease"}}>
+                    <div className={`w-1/3 sm:w-1/2 flex items-center ${prop ? "justify-between" : "gap-5"}`}>
                         <a href='/' className="flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
                             {prop && <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden lg:block`} src={logo2} alt="logo" />}
