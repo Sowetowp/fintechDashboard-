@@ -77,7 +77,7 @@ const DashBody = (prop) => {
                                 </div>
                             </div>
                         ))}
-                        {prop.prop &&
+                        {true &&
                             <>
                                 <p className='px-8 text-xs text-gray-500 font-bold pt-14'>Mophy Payment Admin</p>
                                 <p className='px-8 text-xs text-gray-500'>Dashboard © 2023 All Rights Reserved</p>
