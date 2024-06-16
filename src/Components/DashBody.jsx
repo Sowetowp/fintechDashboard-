@@ -17,6 +17,7 @@ const dropReducer = (state, action) => {
     switch (action.type) {
         case "open":
             return Object.keys(state).reduce((acc, cuu) => {
+                console.log("first")
                 acc[cuu] = cuu.toString() === action.val.toString()
                 return acc;
             }, {})
