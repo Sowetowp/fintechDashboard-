@@ -19,7 +19,8 @@ import logout from "../assets/logout-svgrepo-com.svg"
 import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
-const Navbar = () => {
+const Navbar = (props) => {
+    const {p}
     const [dark, setDark] = useState(false);
     const [profile, setProfile] = useState(false);
     const [notification, setNotification] = useState(false);
