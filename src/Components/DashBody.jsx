@@ -46,8 +46,7 @@ const DashBody = () => {
                 <section className='max-w-7xl w-full mx-auto'>
                     <div className='w-[22%] py-3'>
                         {Object.keys(drop).map(dr, index)=>(
-                            
-                        )}
+
                         <div className='py-3'>
                             <a className='flex cursor-pointer justify-around flex-wrap items-center group' onClick={() => dispatch({ type: drop.dashboard ? "close" : "open", val: "dashboard" })}>
                                 <span className="flex items-center gap-5">
@@ -65,6 +64,7 @@ const DashBody = () => {
                                 </div>
                             </div>
                         </div>
+                        )}
                     </div>
                 </section>
             </main>
