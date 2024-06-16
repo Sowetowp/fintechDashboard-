@@ -15,12 +15,7 @@ const drops = {
 const dropReducer = (state, action) => {
     switch (action.type) {
         case "dashboard":
-            return Object.keys(state).forEach((key) => {
-                if (key === action.clicked) {
-                    { key: true }
-                } else {
-                    { key: false }
-                }
+            return Object.keys(state).
             })
         default:
             return state
