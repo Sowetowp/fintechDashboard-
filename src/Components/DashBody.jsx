@@ -2,7 +2,7 @@ import React, { useReducer } from 'react'
 
 const dropReducer = (type, action)=>{
     switch(true){
-        
+        case 
     }
 
 }
