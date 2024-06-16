@@ -5,6 +5,7 @@ const dropReducer = ()=>{
 }
 const DashBody = () => {
     const drops = {
+        dashboard: false,
         
     }
     const [drop, dispatch] = useReducer(dropReducer, drops)
