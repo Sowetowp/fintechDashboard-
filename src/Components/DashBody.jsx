@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useReducer } from 'react'
 
 const DashBody = () => {
-    const []
+    const [drop, dispatch] = useReducer()
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
