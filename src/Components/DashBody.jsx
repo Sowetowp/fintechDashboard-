@@ -33,6 +33,7 @@ const dropReducer = (state, action) => {
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
     const [height, setHeight] = useState("0px")
+    const contentref
     useEffect(() => {
         if (contentRef.current) {
           setHeight(`${contentRef.current.scrollHeight}px`);
