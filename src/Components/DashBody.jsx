@@ -48,10 +48,10 @@ const DashBody = () => {
                             </a>
                             <div className={`overflow-hidden transition-all duration-1000 ease ${drop.dashboard ? 'max-h-[100vh]' : 'max-h-0'}`}>
                                 <div className={`w-full py-2`}>
-                                    <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Profile</a>
-                                    <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Email</a>
-                                    <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Calendar</a>
-                                    <a className='block hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Shop</a>
+                                    <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Profile</a>
+                                    <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Email</a>
+                                    <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Calendar</a>
+                                    <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Shop</a>
                                 </div>
                             </div>
                         </div>
