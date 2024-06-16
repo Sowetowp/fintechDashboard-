@@ -11,7 +11,7 @@ const Dashboard = () => {
     return (
         <>
             <Navbar prop={menuu} prop2={toggle}/>
-            <DashBody/>
+            <DashBody prop={menuu}/>
         </>
     )
 }
