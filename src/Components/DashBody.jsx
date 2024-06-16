@@ -15,7 +15,7 @@ const drops = {
 const dropReducer = (state, action)=>{
     switch(action.type){
         case "dashboard":
-            return 
+            return obj
     }
 }
 const DashBody = () => {
