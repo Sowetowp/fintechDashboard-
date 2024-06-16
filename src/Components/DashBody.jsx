@@ -55,8 +55,8 @@ const DashBody = () => {
 
     return (
         <>
-            <main className='w-full bg-white dark:bg-blue-950'>
-                <section className='max-w-7xl w-full mx-auto'>
+            {/* <main className='w-full bg-white dark:bg-blue-950'>
+                <section className='max-w-7xl w-full mx-auto'> */}
                     <div className='w-[22%] h-[84vh] overflow-y-auto bestSeller bg-white dark:bg-blue-950'>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
@@ -78,8 +78,8 @@ const DashBody = () => {
                             </div>
                         ))}
                     </div>
-                </section>
-            </main>
+                {/* </section>
+            </main> */}
         </>
     )
 }
