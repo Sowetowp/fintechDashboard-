@@ -15,7 +15,7 @@ const drops = {
 const dropReducer = (state, action) => {
     switch (action.type) {
         case "dashboard":
-            return Object.keys(state).reduce((acc, ))
+            return Object.keys(state).reduce((acc, ind))
         default:
             return state
     }
