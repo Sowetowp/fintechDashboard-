@@ -40,7 +40,7 @@ const Navbar = (props) => {
     };
 
     useEffect(()=>{
-alert("")
+alert(prop)
     },[prop])
     useEffect(() => {
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
