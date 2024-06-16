@@ -2,7 +2,11 @@ import React from 'react'
 
 const DashBody = () => {
   return (
-    <div>DashBody</div>
+    <>
+    <main>
+        
+    </main>
+    </>
   )
 }
 
