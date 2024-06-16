@@ -70,9 +70,9 @@ const DashBody = () => {
                                 <div ref={contentRef} className={`overflow-hidden transition-all duration-500 ease`} style={{ maxHeight: drop[dr] ? height : "0px" }}>
                                     <div className={`w-full py-2`}>
                                         <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md dark:hover:text-white dark:text-gray-300'>Profile</a>
-                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Email</a>
-                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Calendar</a>
-                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md'>Shop</a>
+                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md dark:group-hover:text-white dark:text-gray-300'>Email</a>
+                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md dark:group-hover:text-white dark:text-gray-300'>Calendar</a>
+                                        <a className='block cursor-pointer hover:text-[#0099FF] text-center text-gray-500 py-[0.3rem] text-md dark:group-hover:text-white dark:text-gray-300'>Shop</a>
                                     </div>
                                 </div>
                             </div>
