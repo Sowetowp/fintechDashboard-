@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 
-cons
+const dropReducer = 
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
     return (
