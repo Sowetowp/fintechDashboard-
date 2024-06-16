@@ -56,8 +56,8 @@ const DashBody = () => {
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
-                <section className='max-w-7xl w-full mx-auto overflow-scroll'>
-                    <div className='w-[22%] h-screen'>
+                <section className='max-w-7xl w-full mx-auto'>
+                    <div className='w-[22%] h-screen ov'>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
                                 <a className='flex cursor-pointer justify-between px-8 flex-wrap items-center group' onClick={() => dispatch({ type: drop[dr] ? "close" : "open", val: dr })}>
