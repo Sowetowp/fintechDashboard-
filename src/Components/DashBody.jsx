@@ -77,9 +77,9 @@ const DashBody = () => {
                                 </div>
                             </div>
                         ))}
-                        <p className='py-3'>Mophy Payment Admin</p>
-                        <p className='py-3'>Dashboard © 2023 All Rights Reserved</p>
-                        <p className='py-3'>Made with &#10084; by DexignZone</p>
+                        <p className='px-3'>Mophy Payment Admin</p>
+                        <p className='px-3'>Dashboard © 2023 All Rights Reserved</p>
+                        <p className='px-3'>Made with &#10084; by DexignZone</p>
                     </div>
                 </section>
             </main>
