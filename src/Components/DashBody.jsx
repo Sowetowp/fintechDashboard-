@@ -17,11 +17,10 @@ const dropReducer = (state, action)=>{
         case "dashboard":
             return 
     }
-
 }
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
-    
+
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
