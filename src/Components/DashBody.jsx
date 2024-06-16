@@ -32,7 +32,12 @@ const dropReducer = (state, action) => {
 
 const DashBody = () => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
-
+    const [heigh]
+    useEffect(() => {
+        if (contentRef.current) {
+          setHeight(`${contentRef.current.scrollHeight}px`);
+        }
+      }, [review, addReview]);
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
