@@ -12,17 +12,17 @@ const drops = {
     table: false,
     pages: false
 }
-const dropReducer = (state, action)=>{
-    switch(action.type){
+const dropReducer = (state, action) => {
+    switch (action.type) {
         case "dashboard":
-            return Object.keys(state).forEach((key)=>{
-                if(key === action.clicked){
-                    {key: true}
-                }else{
-                    {key: false}
+            return Object.keys(state).forEach((key) => {
+                if (key === action.clicked) {
+                    { key: true }
+                } else {
+                    { key: false }
                 }
             })
-        default :
+        default:
             return state
     }
 }
