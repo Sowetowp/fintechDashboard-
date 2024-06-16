@@ -38,7 +38,7 @@ const DashBody = () => {
             <main className='w-full bg-white dark:bg-blue-950'>
                 <section className='max-w-7xl w-full mx-auto'>
                     <div className='w-[22%] py-3'>
-                        <div onClick={()=> dispatch({type: drop.dashboard ? "close" : "open", val: "dashboard"})} className='flex justify-around flex-wrap items-center group'>
+                        <div className='flex justify-around flex-wrap items-center group'>
                             <span className="flex items-center gap-5">
                                 <svg className='w-6' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path stroke="rgb(107 114 128)" className='group-hover:stroke-[#0099FF]' strokeWidth="2" d="M4 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5ZM14 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5ZM4 16a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3ZM14 13a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-6Z"></path> </g></svg>
                                 <p className='text-slate-500 group-hover:text-[#0099FF] font-semibold'>Dashboard</p>
