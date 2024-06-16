@@ -20,7 +20,7 @@ import arrow from "../assets/arrow-sm-right-svgrepo-com.svg"
 import "../Styles/Dashboard.css"
 
 const Navbar = (props) => {
-    const {p}
+    const {prop, prop2} = props
     const [dark, setDark] = useState(false);
     const [profile, setProfile] = useState(false);
     const [notification, setNotification] = useState(false);
