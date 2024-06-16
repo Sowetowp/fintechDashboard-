@@ -17,7 +17,7 @@ const dropReducer = (state, action) => {
         case "dashboard":
             return Object.keys(state).reduce((acc, cuu)={
                 acc[cuu]: 
-            })
+            }, {})
         default:
             return state
     }
