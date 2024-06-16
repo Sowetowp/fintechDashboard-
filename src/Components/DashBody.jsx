@@ -3,8 +3,8 @@ import React from 'react'
 const DashBody = () => {
   return (
     <>
-    <main>
-        
+    <main className='m'>
+
     </main>
     </>
   )
