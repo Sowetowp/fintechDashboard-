@@ -17,7 +17,7 @@ const dropReducer = (state, action)=>{
         case "dashboard":
             return Object.keys(state).forEach((key)=>{
                 if(key === action.clicked){
-                    
+                    {key: true}
                 }
             })
     }
