@@ -1,7 +1,7 @@
 import React from 'react'
 
 const DashBody = () => {
-    
+    const []
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
