@@ -1,7 +1,8 @@
 import React, { useReducer } from 'react'
 
-const dropReducer = ()=>{
-    
+const dropReducer = (type, action)=>{
+    switch()
+
 }
 const DashBody = () => {
     const drops = {
