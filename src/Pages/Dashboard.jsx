@@ -6,7 +6,6 @@ const Dashboard = () => {
     const [menuu, setMenuu] = useState(true);
     const toggle = ()=>{
         setMenuu(!menuu)
-        alert("l")
     }
 
     return (
