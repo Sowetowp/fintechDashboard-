@@ -13,10 +13,10 @@ const DashBody = () => {
                             </span>
                             <svg className='w-3 group-hover:fill-[#0099FF]' version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.413 223.413" fill="rgb(107 114 128)"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <polygon className='group-hover:fill-[#0099FF]' fill="rgb(107 114 128)" points="57.179,223.413 51.224,217.276 159.925,111.71 51.224,6.127 57.179,0 172.189,111.71 "></polygon> </g> </g> </g> </g></svg>
                             <div className='w-full'>
-                                <a className='block text-center text-gray-500 py-2 text-sm' href="">Profile</a>
-                                <a className='block text-center text-gray-500 py-2 text-sm' href="">Email</a>
-                                <a className='block text-center text-gray-500 py-2 text-sm' href="">Calendar</a>
-                                <a className='block text-center text-gray-500 py-2 text-sm' href="">Shop</a>
+                                <a className='block text-center text-gray-500 py-2 text-md' href="">Profile</a>
+                                <a className='block text-center text-gray-500 py-2 text-md' href="">Email</a>
+                                <a className='block text-center text-gray-500 py-2 text-md' href="">Calendar</a>
+                                <a className='block text-center text-gray-500 py-2 text-md' href="">Shop</a>
                             </div>
                         </div>
                     </div>
