@@ -60,7 +60,7 @@ const DashBody = () => {
                     <div className='w-[22%]'>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
-                                <a className='flex cursor-pointer justify-between px-8 flex-wrap items-center group' onClick={() => dispatch({ type: drop[dr] ? "close" : "open", val: dr })}>
+                                <a className='flex w-full cursor-pointer justify-between px-8 flex-wrap items-center group' onClick={() => dispatch({ type: drop[dr] ? "close" : "open", val: dr })}>
                                     <span className="flex items-center gap-5">
                                         {images[index]}
                                         <p className='text-slate-500 group-hover:text-[#0099FF] font-semibold'>{dr.charAt(0).toUpperCase() + dr.slice(1)}</p>
