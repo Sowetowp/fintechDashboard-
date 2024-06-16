@@ -5,8 +5,8 @@ const DashBody = () => {
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
                 <section className='max-w-7xl w-full mx-auto'>
-                    <div className='w-[22%] bg-black'>
-                        
+                    <div className='w-[22%]'>
+
                     </div>
                 </section>
             </main>
