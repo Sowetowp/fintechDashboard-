@@ -15,7 +15,8 @@ const DashBody = () => {
                             <div className='w-full'>
                                 <a href="">Profile</a>
                                 <a href="">Email</a>
-                                <a href=""></a>
+                                <a href="">Calendar</a>
+                                <a href="">Shop</a>
                             </div>
                         </div>
                     </div>
