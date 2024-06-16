@@ -4,7 +4,7 @@ const dropReducer = ()=>{
 
 }
 const DashBody = () => {
-    const drops = 
+    const drops = []
     const [drop, dispatch] = useReducer(dropReducer, drops)
     return (
         <>
