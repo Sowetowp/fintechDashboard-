@@ -79,7 +79,7 @@ const DashBody = () => {
                         ))}
                         <p>Mophy Payment Admin</p>
                         <p>Dashboard © 2023 All Rights Reserved</p>
-                        <p>Made with  by DexignZone</p>
+                        <p>Made with &#heart; by DexignZone</p>
                     </div>
                 </section>
             </main>
