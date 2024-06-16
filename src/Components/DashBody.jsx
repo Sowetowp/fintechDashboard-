@@ -4,7 +4,9 @@ const DashBody = () => {
   return (
     <>
     <main className='w-full bg-white dark:bg-blue-950'>
-<section></section>
+<section>
+    
+</section>
     </main>
     </>
   )
