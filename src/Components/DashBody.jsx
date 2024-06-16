@@ -1,6 +1,6 @@
 import React, { useReducer } from 'react'
 
-const dropReducer = (type, action)=>{
+const dropReducer = (state, action)=>{
     switch(true){
         case 
     }
