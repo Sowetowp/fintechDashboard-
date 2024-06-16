@@ -2,7 +2,8 @@ import React, { useReducer } from 'react'
 
 const dropReducer = (state, action)=>{
     switch(action.type){
-        case 
+        case "dashboard":
+            
     }
 
 }
