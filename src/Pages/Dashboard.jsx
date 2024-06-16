@@ -5,7 +5,7 @@ import DashBody from '../Components/DashBody'
 const Dashboard = () => {
     const [menuu, setMenuu] = useState(true);
     const toggle = ()=>{
-        setMenuu(false)
+        setMenuu(!menuu)
     }
 
     return (
