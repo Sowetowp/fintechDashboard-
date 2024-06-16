@@ -16,7 +16,12 @@ const drops = {
 const dropReducer = (state, action) => {
     switch (action.type) {
         case true:
-            return Object.keys(state).reduce((acc, cuu)=>{
+            return Object.keys(state).reduce((acc, cuu) => {
+                acc[cuu] = cuu === action.val
+                return acc;
+            }, {})
+        case false:
+            return Object.keys(state).reduce((acc, cuu) => {
                 acc[cuu] = cuu === action.val
                 return acc;
             }, {})
