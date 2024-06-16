@@ -78,7 +78,7 @@ const DashBody = () => {
                             </div>
                         ))}
                         <p>Mophy Payment Admin</p>
-                        <p></p>
+                        <p>Dashboard © 2023 All Rights Reserved</p>
                     </div>
                 </section>
             </main>
