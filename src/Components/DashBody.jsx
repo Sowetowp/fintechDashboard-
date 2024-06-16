@@ -22,6 +22,7 @@ const dropReducer = (state, action)=>{
                     {key: false}
                 }
             })
+        default
     }
 }
 const DashBody = () => {
