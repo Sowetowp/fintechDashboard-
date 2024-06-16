@@ -222,7 +222,7 @@ const Navbar = (props) => {
                     <div className='w-1/3 sm:w-1/2 flex items-center justify-between'>
                         <a href='/' className="flex gap-3 flex-row items-center">
                             <img className='w-14' src={logo} alt="logo" />
-                            {prop && <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden lg:block`} src={logo2} alt="logo" />}
+                            {prop && <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden lg:block `} src={logo2} alt="logo" />}
                         </a>
                         <div className='items-center gap-9 flex'>
                             <a onClick={()=>prop2()} className='lg:flex sm:hidden'>
