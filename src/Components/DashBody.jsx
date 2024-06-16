@@ -38,7 +38,8 @@ const DashBody = () => {
         if (contentRef.current) {
           setHeight(`${contentRef.current.scrollHeight}px`);
         }
-      }, [review, addReview]);
+      }, []);
+      
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
