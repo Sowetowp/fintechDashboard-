@@ -12,6 +12,7 @@ const drops = {
     table: false,
     pages: false
 }
+
 const dropReducer = (state, action) => {
     switch (action.type) {
         case "dashboard":
