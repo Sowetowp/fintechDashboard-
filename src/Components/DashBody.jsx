@@ -22,7 +22,7 @@ const dropReducer = (state, action) => {
             }, {})
         case false:
             return Object.keys(state).reduce((acc, cuu) => {
-                acc[cuu] = cuu === action.val
+                acc[cuu] = false
                 return acc;
             }, {})
         default:
