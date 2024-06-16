@@ -39,9 +39,6 @@ const Navbar = (props) => {
         setDark(!dark);
     };
 
-    useEffect(()=>{
-alert(prop)
-    },[prop])
     useEffect(() => {
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         setDark(systemPrefersDark)
