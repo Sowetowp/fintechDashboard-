@@ -7,10 +7,10 @@ const Dashboard = () => {
     const toggle = ()=>{
         setMenuu(!menuu)
     }
-    
+
     return (
         <>
-            <Navbar />
+            <Navbar prop={menuu} prop2={toggle}/>
             <DashBody/>
         </>
     )
