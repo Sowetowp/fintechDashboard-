@@ -225,7 +225,7 @@ const Navbar = (props) => {
                             {prop && <img className={`w-28 ${dark && "invert brightness-[10%]"} hidden lg:block`} src={logo2} alt="logo" />}
                         </a>
                         <div className='items-center gap-9 flex'>
-                            <a onClick={prop2()} className='lg:flex sm:hidden'>
+                            <a onClick={()=>prop2()} className='lg:flex sm:hidden'>
                                 <label className={dark ? "buttons__burgerr w-5 h-5 sm:w-6 sm:h-5" : "buttons__burger w-4 h-4 sm:w-6 sm:h-5"} htmlFor="burger">
                                     <input type="checkbox" id="burger" />
                                     <span></span>
