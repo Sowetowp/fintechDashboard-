@@ -18,6 +18,8 @@ const dropReducer = (state, action)=>{
             return Object.keys(state).forEach((key)=>{
                 if(key === action.clicked){
                     {key: true}
+                }else{
+                    
                 }
             })
     }
