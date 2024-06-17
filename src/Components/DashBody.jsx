@@ -93,7 +93,7 @@ const DashBody = (prop) => {
                                 <div className='md:w-1/2 w-full'>
                                     <div className='w-2/3'>
                                         <div className='w-full cards py-10 rounded-xl px-8'>
-                                            <p>Main Balance</p>
+                                            <p className='text-white'>Main Balance</p>
                                             <p>$673,412.66</p>
                                             <div>
                                                 <img src="" alt="" />
