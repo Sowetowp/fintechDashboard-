@@ -96,7 +96,7 @@ const DashBody = (prop) => {
                                             <p className='text-white text-lg'>Main Balance</p>
                                             <p className='text-white text-4xl font-semibold mt-2'>$673,412.66</p>
                                             <div className='flex items-center'>
-                                                <img src={card} alt="" />
+                                                <img className='w-14' src={card} alt="" />
                                                 <div>
                                                     <p>**** **** ****</p>
                                                     <p>1234</p>
