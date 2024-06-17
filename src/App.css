@@ -3,5 +3,5 @@
 @tailwind utilities;
 @tailwind variants;
 *{
-    background-image: url(./assets/);
+    background-image: url(./assets/card.png);
 }
