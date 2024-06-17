@@ -57,15 +57,15 @@ const DashBody = (prop) => {
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
                 <section className='max-w-7xl w-full mx-auto flex'>
-                    <div className={`${prop.prop ? "w-[17rem]" : "w-[0rem] md:w-[5.5rem]"}  md:sticky fixed top-[5.5rem] h-[83vh] overflow-y-auto bestSeller overflow-x-hidden bg-white dark:bg-blue-950`} style={{transition:"width .5s ease"}}>
+                    <div className={`${prop.prop ? "w-[17rem]" : "w-[0rem] md:w-[5.5rem]"}  md:sticky fixed top-[5.5rem] h-[83vh] overflow-y-auto bestSeller overflow-x-hidden bg-white dark:bg-blue-950`} style={{ transition: "width .5s ease" }}>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
                                 <a className='flex cursor-pointer justify-between px-8 flex-wrap items-center group' onClick={() => dispatch({ type: drop[dr] ? "close" : "open", val: dr })}>
                                     <span className="flex items-center gap-5">
                                         {images[index]}
-                                        {true && <p style={{transition:"opacity .5s ease"}} className={`${prop.prop ? "opacity-100" : "opacity-0"} text-slate-500 group-hover:text-[#0099FF] dark:group-hover:text-white dark:text-gray-300 font-semibold`}>{dr.charAt(0).toUpperCase() + dr.slice(1)}</p>}
+                                        {true && <p style={{ transition: "opacity .5s ease" }} className={`${prop.prop ? "opacity-100" : "opacity-0"} text-slate-500 group-hover:text-[#0099FF] dark:group-hover:text-white dark:text-gray-300 font-semibold`}>{dr.charAt(0).toUpperCase() + dr.slice(1)}</p>}
                                     </span>
-                                    {true && <svg style={{transition:"opacity .5s ease"}} className={`${prop.prop ? "opacity-100" : "opacity-0"} w-3 group-hover:fill-[#0099FF] dark:group-hover:fill-[white] fill-[rgb(107,114,128)] dark:fill-[rgb(209,213,219)] ${drop[dr] ? "rotate-[450deg]" : ""}`} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.413 223.413"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <polygon points="57.179,223.413 51.224,217.276 159.925,111.71 51.224,6.127 57.179,0 172.189,111.71 "></polygon> </g> </g> </g> </g></svg>}
+                                    {true && <svg style={{ transition: "opacity .5s ease" }} className={`${prop.prop ? "opacity-100" : "opacity-0"} w-3 group-hover:fill-[#0099FF] dark:group-hover:fill-[white] fill-[rgb(107,114,128)] dark:fill-[rgb(209,213,219)] ${drop[dr] ? "rotate-[450deg]" : ""}`} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223.413 223.413"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <polygon points="57.179,223.413 51.224,217.276 159.925,111.71 51.224,6.127 57.179,0 172.189,111.71 "></polygon> </g> </g> </g> </g></svg>}
                                 </a>
                                 <div ref={contentRef} className={`overflow-hidden transition-all duration-500 ease`} style={{ maxHeight: drop[dr] ? height : "0px" }}>
                                     <div className={`w-full py-2`}>
@@ -85,9 +85,9 @@ const DashBody = (prop) => {
                             </>
                         }
                     </div>
-                    <div className={`h-[200vh] ${prop.prop ? "md:w-[calc(100%-17rem)] w-full" : "w-full md:w-[calc(100%-5.5rem)]"} bg-gray-100 dark:bg-[rgb(17,26,56)] p-5`} style={{transition:"width .5s ease"}}>
+                    <div className={`h-[200vh] ${prop.prop ? "md:w-[calc(100%-17rem)] w-full" : "w-full md:w-[calc(100%-5.5rem)]"} bg-gray-100 dark:bg-[rgb(17,26,56)] p-5`} style={{ transition: "width .5s ease" }}>
                         <div>
-<h1 className='dark:text-white'>Dashboard</h1>
+                            <h1 className='dark:text-white'>Dashboard</h1>
                         </div>
                     </div>
                 </section>
