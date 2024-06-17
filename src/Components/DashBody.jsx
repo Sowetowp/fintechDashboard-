@@ -99,7 +99,7 @@ const DashBody = (prop) => {
                                                 <img className='w-14' src={card} alt="" />
                                                 <p className='text-white text-xl font-semibold'>**** **** **** 1234</p>
                                             </div>
-                                            <div className='flex justify-between mt-9'>
+                                            <div className='flex justify-between mt-10'>
                                                 <div>
                                                     <p className='text-[#ffffff8a] text-sm'>VALID THRU</p>
                                                     <p className='text-white text-lg'>08/21</p>
