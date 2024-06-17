@@ -97,7 +97,9 @@ const DashBody = (prop) => {
                                             <p>$673,412.66</p>
                                             <div>
                                                 <img src="" alt="" />
-                                                
+                                                <div>
+                                                    
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
