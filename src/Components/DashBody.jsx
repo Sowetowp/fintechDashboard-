@@ -91,7 +91,7 @@ const DashBody = (prop) => {
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div className='w-full mt-5'>
                                 <div className='md:w-1/2 w-full'>
-                                    <div className='w-2/3 relative'>
+                                    <div className='w-2/3'>
                                         <div className='w-full cards py-10 rounded-xl px-8'>
                                             <p className='text-white text-lg'>Main Balance</p>
                                             <p className='text-white text-4xl font-semibold mt-2'>$673,412.66</p>
@@ -110,7 +110,7 @@ const DashBody = (prop) => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className='shadow rounded-full w-[100%] h-16 absolute flex items-center justify-center m-auto'>
+                                        <div className='shadow rounded-full w-16 h-16 absolute flex items-center justify-center m-auto'>
                                             <svg className='w-4' fill="grey" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></g></svg>
                                         </div>
                                         <div className='w-[80%] m-auto shadow rounded-b-xl h-8'></div>
