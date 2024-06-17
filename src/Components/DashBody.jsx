@@ -120,6 +120,8 @@ const DashBody = (prop) => {
                                     </div>
                                     <div className='md:w-2/3 w-full'>
                                         <p>Limit</p>
+                                        <p>$4,000</p>
+                                        <p></p>
                                     </div>
                                 </div>
                                 <div></div>
