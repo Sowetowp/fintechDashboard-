@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
-import card from 
+import card from "../assets/card.png"
 const drops = {
     dashboard: false,
     cms: false,
