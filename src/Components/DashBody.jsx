@@ -95,7 +95,7 @@ const DashBody = (prop) => {
                                         <div className='w-full cards py-10 rounded-xl px-8'>
                                             <p className='text-white text-lg'>Main Balance</p>
                                             <p className='text-white text-4xl font-semibold mt-2'>$673,412.66</p>
-                                            <div className='flex items-center mt-9'>
+                                            <div className='flex justify-between flex-wrap items-center mt-9'>
                                                 <img className='w-14' src={card} alt="" />
                                                 <p className='text-white text-xl font-semibold'>**** **** **** 1234</p>
                                             </div>
