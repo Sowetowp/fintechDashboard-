@@ -95,7 +95,10 @@ const DashBody = (prop) => {
                                         <div className='w-full cards'>
                                             <p>Main Balance</p>
                                             <p>$673,412.66</p>
-                                            
+                                            <div>
+                                                <img src="" alt="" />
+                                                
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
