@@ -105,7 +105,7 @@ const DashBody = (prop) => {
                                                     <p className='text-white text-lg'>08/21</p>
                                                 </div>
                                                 <div>
-                                                    <p>CARD HOLDER</p>
+                                                    <p className='text-[#ffffff8a] text-sm'>CARD HOLDER</p>
                                                     <p>Franklin Jr.</p>
                                                 </div>
                                             </div>
