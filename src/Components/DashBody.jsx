@@ -90,7 +90,7 @@ const DashBody = (prop) => {
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div>
                                 <div>
-                                    
+                                    <div></div>
                                 </div>
                                 <div></div>
                             </div>
