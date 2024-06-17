@@ -98,7 +98,8 @@ const DashBody = (prop) => {
                                             <div>
                                                 <img src="" alt="" />
                                                 <div>
-                                                    
+                                                    <p>**** **** ****</p>
+                                                    <p></p>
                                                 </div>
                                             </div>
                                         </div>
