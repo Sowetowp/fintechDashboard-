@@ -98,7 +98,7 @@ const DashBody = (prop) => {
                                             <div className='flex items-center'>
                                                 <img className='w-14' src={card} alt="" />
                                                 <div>
-                                                    <p className='text-white'>**** **** ****</p>
+                                                    <p className='text-white text-lg'>**** **** ****</p>
                                                     <p>1234</p>
                                                 </div>
                                             </div>
