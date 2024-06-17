@@ -102,7 +102,7 @@ const DashBody = (prop) => {
                                             <div className='flex justify-between'>
                                                 <div>
                                                     <p className='text-[#ffffff8a] text-sm'>VALID THRU</p>
-                                                    <p>08/21</p>
+                                                    <p className=''>08/21</p>
                                                 </div>
                                                 <div>
                                                     <p>CARD HOLDER</p>
