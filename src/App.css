@@ -3,5 +3,5 @@
 @tailwind utilities;
 @tailwind variants;
 *{
-    background-image: url(../);
+    background-image: url(./assets/);
 }
