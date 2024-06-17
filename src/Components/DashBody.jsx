@@ -106,7 +106,7 @@ const DashBody = (prop) => {
                                                 </div>
                                                 <div>
                                                     <p className='text-[#ffffff8a] text-sm'>CARD HOLDER</p>
-                                                    <p>Franklin Jr.</p>
+                                                    <p className='text-white text-lg'>Franklin Jr.</p>
                                                 </div>
                                             </div>
                                         </div>
