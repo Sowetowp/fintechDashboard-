@@ -85,7 +85,7 @@ const DashBody = (prop) => {
                             </>
                         }
                     </div>
-                    <div className={`h-[200vh] ${prop.prop ? "w-[17rem]" : "w-[0rem] md:w-[5.5rem]"}  fixed top-[5.5rem] h-[83vh] overflow-y-auto bestSeller overflow-x-hidden bg-white dark:bg-blue-950`}></div>
+                    <div className={`h-[200vh] ${prop.prop ? "w-[17rem]" : "w-[0rem] md:w-[5.5rem]"} bg-white dark:bg-blue-950`}></div>
                 </section>
             </main>
         </>
