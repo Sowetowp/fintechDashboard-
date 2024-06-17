@@ -131,4 +131,6 @@
 }
 .cards{
     background-image: url(../assets/card.png);
+    object-fit: cover;
+    ob
 }
