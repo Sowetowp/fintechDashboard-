@@ -133,5 +133,5 @@
     background-image: url(../assets/card.png);
     object-fit: cover;
     background-repeat: no-repeat;
-    
+    background-position: 30%;
 }
