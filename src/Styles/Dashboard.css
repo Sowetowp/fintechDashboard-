@@ -129,3 +129,6 @@
     background-color: rgb(30 58 138) !important;
     border-radius: 10px;
 }
+.cards{
+    background-image: url(../assets/card.png);
+}
