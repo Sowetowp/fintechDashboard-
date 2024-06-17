@@ -92,7 +92,7 @@ const DashBody = (prop) => {
                             <div className='w-full'>
                                 <div className='md:w-1/2 w-full'>
                                     <div className='w-2/3'>
-                                        <div className='cards'>
+                                        <div className='w-full cards'>
                                             kkkkkkkkk
                                         </div>
                                     </div>
