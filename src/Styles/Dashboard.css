@@ -132,5 +132,6 @@
 .cards{
     background-image: url(../assets/card.png);
     object-fit: cover;
-    background-repeat: ;
+    background-repeat: no-repeat;
+    
 }
