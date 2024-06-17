@@ -119,7 +119,7 @@ const DashBody = (prop) => {
                                         <div className='w-[60%] bg-white m-auto shadow rounded-b-xl h-8'></div>
                                     </div>
                                     <div className='md:w-2/3 w-full'>
-                                        
+                                        <p>Limit</p>
                                     </div>
                                 </div>
                                 <div></div>
