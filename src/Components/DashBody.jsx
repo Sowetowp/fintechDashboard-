@@ -102,7 +102,10 @@ const DashBody = (prop) => {
                                                     <p>1234</p>
                                                 </div>
                                                 <div>
-                                                    
+                                                    <div>
+                                                        <p>VALID THRU</p>
+                                                        <p></p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
