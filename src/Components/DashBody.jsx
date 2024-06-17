@@ -91,7 +91,7 @@ const DashBody = (prop) => {
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div className='w-full mt-5'>
                                 <div className='md:w-1/2 w-full'>
-                                    <div className='w-2/3'>
+                                    <div className='md:w-2/3 w-full'>
                                         <div className='w-full cards py-10 rounded-xl px-8'>
                                             <p className='text-white text-lg'>Main Balance</p>
                                             <p className='text-white text-4xl font-semibold mt-2'>$673,412.66</p>
