@@ -111,6 +111,8 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div></div>
+                                        <div></div>
+                                        <div></div>
                                     </div>
                                 </div>
                                 <div></div>
