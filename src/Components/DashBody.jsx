@@ -91,7 +91,7 @@ const DashBody = (prop) => {
                             <div className='w-full'>
                                 <div className='md:w-1/2 w-full'>
                                     <div className=''>
-                                        <img src="" alt="" />
+                                        <img src={card} alt="" />
                                     </div>
                                 </div>
                                 <div></div>
