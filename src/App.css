@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
-h1{
-    width: calc(100%-17rem);
-}
