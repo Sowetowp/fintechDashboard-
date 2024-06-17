@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+*{
+    background-image: url(../);
+}
