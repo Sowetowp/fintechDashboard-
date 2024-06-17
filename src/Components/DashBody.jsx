@@ -108,7 +108,7 @@ const DashBody = (prop) => {
                                                     </div>
                                                     <div>
                                                         <p>CARD HOLDER</p>
-                                                        <p></p>
+                                                        <p>Franklin Jr.</p>
                                                     </div>
                                                 </div>
                                             </div>
