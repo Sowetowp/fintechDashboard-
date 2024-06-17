@@ -95,21 +95,21 @@ const DashBody = (prop) => {
                                         <div className='w-full cards py-10 rounded-xl px-8'>
                                             <p className='text-white text-lg'>Main Balance</p>
                                             <p className='text-white text-4xl font-semibold mt-2'>$673,412.66</p>
-                                            <div>
+                                            <div className='flex'>
                                                 <img src={card} alt="" />
                                                 <div>
                                                     <p>**** **** ****</p>
                                                     <p>1234</p>
                                                 </div>
+                                            </div>
+                                            <div>
                                                 <div>
-                                                    <div>
-                                                        <p>VALID THRU</p>
-                                                        <p>08/21</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>CARD HOLDER</p>
-                                                        <p>Franklin Jr.</p>
-                                                    </div>
+                                                    <p>VALID THRU</p>
+                                                    <p>08/21</p>
+                                                </div>
+                                                <div>
+                                                    <p>CARD HOLDER</p>
+                                                    <p>Franklin Jr.</p>
                                                 </div>
                                             </div>
                                         </div>
