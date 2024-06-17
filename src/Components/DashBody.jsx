@@ -86,7 +86,9 @@ const DashBody = (prop) => {
                         }
                     </div>
                     <div className={`h-[200vh] ${prop.prop ? "md:w-[calc(100%-17rem)] w-full" : "w-full md:w-[calc(100%-5.5rem)]"} bg-gray-100 dark:bg-[rgb(17,26,56)]`} style={{transition:"width .5s ease"}}>
-                        
+                        <div>
+                            
+                        </div>
                     </div>
                 </section>
             </main>
