@@ -99,7 +99,7 @@ const DashBody = (prop) => {
                                                 <img className='w-14' src={card} alt="" />
                                                 <div>
                                                     <p className='text-white text-xl font-semibold'>**** **** ****</p>
-                                                    <p>1234</p>
+                                                    <p className='text-white text-xl font-semibold'>1234</p>
                                                 </div>
                                             </div>
                                             <div>
