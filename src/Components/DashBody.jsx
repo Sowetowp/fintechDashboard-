@@ -111,7 +111,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div></div>
-                                        <div className='w-[80%] m-auto shadow-sm h-8'></div>
+                                        <div className='w-[80%] m-auto shadow-md h-8'></div>
                                         <div className='w-[60%] m-auto shadow h-8'></div>
                                     </div>
                                 </div>
