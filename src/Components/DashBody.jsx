@@ -89,7 +89,7 @@ const DashBody = (prop) => {
                         <div>
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div className='w-full'>
-                                <div className=''>
+                                <div className='md:w-1/2 w-full'>
                                     <div>
                                         <img src="" alt="" />
                                     </div>
