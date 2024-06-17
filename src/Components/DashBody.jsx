@@ -104,6 +104,9 @@ const DashBody = (prop) => {
                                                 <div>
                                                     <div>
                                                         <p>VALID THRU</p>
+                                                        <p>08/21</p>
+                                                    </div>
+                                                    <div>
                                                         <p></p>
                                                     </div>
                                                 </div>
