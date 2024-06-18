@@ -70,8 +70,8 @@ const DashBody = (prop) => {
         const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
         // Chart dimensions
-        const chartWidth = 100;
-        const chartHeight = 100;
+        const chartWidth = 600;
+        const chartHeight = 400;
         const padding = 50;
 
         // Canvas dimensions
