@@ -192,7 +192,7 @@ const DashBody = (prop) => {
                                         <p className='text-slate-500'>/$10,000</p>
                                         <div className='w-full'>
                                             <h1>Curved Line Chart</h1>
-                                            <canvas ref={canvasRef}></canvas>
+                                            <canvas className='w-full' ref={canvasRef}></canvas>
                                         </div>
                                     </div>
                                 </div>
