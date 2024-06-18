@@ -8,21 +8,21 @@ const Dashboard = () => {
 
     useEffect(() => {
         const handleResize = () => {
-          setIsSmallScreen(window.matchMedia('(max-width: 768px)').matches);
+            setIsSmallScreen(window.matchMedia('(max-width: 768px)').matches);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-      }, []);
-      
-    const toggle = ()=>{
+    }, []);
+
+    const toggle = () => {
         setMenuu(!menuu)
     }
 
     return (
         <>
-            <Navbar prop={menuu} prop2={toggle}/>
-            <DashBody prop={menuu}/>
+            <Navbar prop={menuu} prop2={toggle} />
+            <DashBody prop={menuu} />
         </>
     )
 }
