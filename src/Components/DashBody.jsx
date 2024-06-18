@@ -95,7 +95,7 @@ const DashBody = (prop) => {
         ctx.beginPath();
         ctx.moveTo(points[0].x, points[0].y);
         for (let i = 0; i < points.length - 1; i++) {
-            const cp1x = points[i].x + xStep / 2;
+            const cp1x = points[i].x ;
             const cp1y = points[i].y;
             const cp2x = points[i + 0].x - xStep / 2;
             const cp2y = points[i + 0].y;
