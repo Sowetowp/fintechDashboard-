@@ -190,7 +190,7 @@ const DashBody = (prop) => {
                                         <p className=''>Limit</p>
                                         <p className='font-bold text-xl mt-1'>$4,000</p>
                                         <p className='text-slate-500'>/$10,000</p>
-                                        <div>
+                                        <div className='w-full'>
                                             <h1>Curved Line Chart</h1>
                                             <canvas ref={canvasRef}></canvas>
                                         </div>
