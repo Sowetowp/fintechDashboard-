@@ -66,7 +66,7 @@ const DashBody = (prop) => {
 
     const drawChart = (ctx) => {
         // Example data
-        const data = [65, 59, 80, 81, 56, 55, 40];
+        const data = [40, 80, 40, 80, 40, 80, 40];
         const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
         // Chart dimensions
