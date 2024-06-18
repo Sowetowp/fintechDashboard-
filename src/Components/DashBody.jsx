@@ -123,12 +123,12 @@ const DashBody = (prop) => {
         });
 
         // Draw labels
-        ctx.fillStyle = 'black';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        points.forEach((point, index) => {
-            ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
-        });
+        // ctx.fillStyle = 'black';
+        // ctx.textAlign = 'center';
+        // ctx.textBaseline = 'middle';
+        // points.forEach((point, index) => {
+        //     ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
+        // });
     };
 
     return (
