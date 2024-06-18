@@ -6,6 +6,15 @@ const Dashboard = () => {
     const [menuu, setMenuu] = useState(true);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
+    useEffect(() => {
+        const handleResize = () => {
+          setIsSmallScreen(window.matchMedia('(max-width: 768px)').matches);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+      
     const toggle = ()=>{
         setMenuu(!menuu)
     }
