@@ -80,7 +80,7 @@ const DashBody = (prop) => {
         ctx.canvas.color = "red";
 
         // Clear canvas
-        ctx.clearRect(10, 10, chartWidth, chartHeight);
+        ctx.clearRect(0, 0, chartWidth, chartHeight);
 
         // Calculate points
         const xStep = (chartWidth - 2 * padding) / (data.length - 1);
