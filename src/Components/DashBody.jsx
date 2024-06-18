@@ -120,7 +120,7 @@ const DashBody = (prop) => {
                                     </div>
                                     <div className='md:w-1/3 w-full bg-[#d7edfd] text-center'>
                                         <p className=''>Limit</p>
-                                        <p className='font-semibold text-2xl'>$4,000</p>
+                                        <p className='font-bold text-xl'>$4,000</p>
                                         <p>/$10,000</p>
                                     </div>
                                 </div>
