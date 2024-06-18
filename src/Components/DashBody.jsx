@@ -124,7 +124,7 @@ const DashBody = (prop) => {
                                         <p>/$10,000</p>
                                     </div>
                                 </div>
-                                <div className=' bg-slate-500 h-2 w-full'></div>
+                                <div className=' bg-slate-500 h-2 w-1/2'></div>
                             </div>
                         </div>
                     </div>
