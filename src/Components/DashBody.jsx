@@ -79,7 +79,7 @@ const DashBody = (prop) => {
         ctx.canvas.height = chartHeight;
 
         // Clear canvas
-        ctx.clearRect(0, 0, chartWidth, 1000000);
+        // ctx.clearRect(0, 0, chartWidth, chartHeight);
 
         // Calculate points
         const xStep = (chartWidth - 2 * padding) / (data.length - 1);
