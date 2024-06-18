@@ -110,9 +110,9 @@ const DashBody = (prop) => {
         ctx.fill();
 
         // Draw the curve outline
-        ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
-        ctx.lineWidth = 2;
-        ctx.stroke();
+        // ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
+        // ctx.lineWidth = 2;
+        // ctx.stroke();
 
         // Draw points
         // ctx.fillStyle = 'rgba(75, 192, 192, 1)';
