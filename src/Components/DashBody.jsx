@@ -72,7 +72,7 @@ const DashBody = (prop) => {
         // Chart dimensions
         const chartWidth = 600;
         const chartHeight = 400;
-        const padding = 0;
+        const padding = 50;
 
         // Canvas dimensions
         ctx.canvas.width = chartWidth;
@@ -91,7 +91,7 @@ const DashBody = (prop) => {
             y: chartHeight - padding - value * yStep
         }));
 
-        // Draw curve
+        // Draw curve and fill
         ctx.beginPath();
         ctx.moveTo(points[0].x, points[0].y);
         for (let i = 0; i < points.length - 1; i++) {
@@ -101,6 +101,15 @@ const DashBody = (prop) => {
             const cp2y = points[i + 1].y;
             ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
         }
+
+        // Fill the area under the curve
+        ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
+        ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
+        ctx.closePath();
+        ctx.fillStyle = 'rgba(75, 192, 192, 0.2)';
+        ctx.fill();
+
+        // Draw the curve outline
         ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
         ctx.lineWidth = 2;
         ctx.stroke();
