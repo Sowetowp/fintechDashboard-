@@ -77,7 +77,7 @@ const DashBody = (prop) => {
         // Canvas dimensions
         ctx.canvas.width = chartWidth;
         ctx.canvas.height = chartHeight;
-        ctx.canvas.color = "red";
+        ctx.canvas.color = "red"
 
         // Clear canvas
         ctx.clearRect(0, 0, chartWidth, chartHeight);
@@ -103,7 +103,7 @@ const DashBody = (prop) => {
             ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
         }
         ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
-        ctx.lineWidth = 20;
+        ctx.lineWidth = 2;
         ctx.stroke();
 
         // Draw points
