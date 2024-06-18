@@ -55,6 +55,72 @@ const DashBody = (prop) => {
         <svg className={`w-6 ${prop.prop ? "" : "hidden md:block"}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 2L16.5 2L21 6.5V19" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M3 20.5V6.5C3 5.67157 3.67157 5 4.5 5H14.2515C14.4106 5 14.5632 5.06321 14.6757 5.17574L17.8243 8.32426C17.9368 8.43679 18 8.5894 18 8.74853V20.5C18 21.3284 17.3284 22 16.5 22H4.5C3.67157 22 3 21.3284 3 20.5Z" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M14 8.4V5.35355C14 5.15829 14.1583 5 14.3536 5C14.4473 5 14.5372 5.03725 14.6036 5.10355L17.8964 8.39645C17.9628 8.46275 18 8.55268 18 8.64645C18 8.84171 17.8417 9 17.6464 9H14.6C14.2686 9 14 8.73137 14 8.4Z" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
     ]
 
+    const canvasRef = useRef(null);
+
+    useEffect(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        drawChart(ctx);
+    }, []);
+
+    const drawChart = (ctx) => {
+        // Example data
+        const data = [65, 59, 80, 81, 56, 55, 40];
+        const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+
+        // Chart dimensions
+        const chartWidth = 600;
+        const chartHeight = 400;
+        const padding = 50;
+
+        // Canvas dimensions
+        ctx.canvas.width = chartWidth;
+        ctx.canvas.height = chartHeight;
+
+        // Clear canvas
+        ctx.clearRect(0, 0, chartWidth, chartHeight);
+
+        // Calculate points
+        const xStep = (chartWidth - 2 * padding) / (data.length - 1);
+        const yMax = Math.max(...data);
+        const yStep = (chartHeight - 2 * padding) / yMax;
+
+        const points = data.map((value, index) => ({
+            x: padding + index * xStep,
+            y: chartHeight - padding - value * yStep
+        }));
+
+        // Draw curve
+        ctx.beginPath();
+        ctx.moveTo(points[0].x, points[0].y);
+        for (let i = 0; i < points.length - 1; i++) {
+            const cp1x = points[i].x + xStep / 2;
+            const cp1y = points[i].y;
+            const cp2x = points[i + 1].x - xStep / 2;
+            const cp2y = points[i + 1].y;
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
+        }
+        ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Draw points
+        ctx.fillStyle = 'rgba(75, 192, 192, 1)';
+        points.forEach(point => {
+            ctx.beginPath();
+            ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
+            ctx.fill();
+        });
+
+        // Draw labels
+        ctx.fillStyle = 'black';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        points.forEach((point, index) => {
+            ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
+        });
+    };
+
     return (
         <>
             <main className='w-full bg-white dark:bg-blue-950'>
