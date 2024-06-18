@@ -36,7 +36,7 @@ const DashBody = (prop) => {
     const [height, setHeight] = useState("0px")
     const contentRef = useRef()
     const canvasRef = useRef(null);
-    
+
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
@@ -70,7 +70,7 @@ const DashBody = (prop) => {
         const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
         // Chart dimensions
-        const chartWidth = 600;
+        const chartWidth = 900;
         const chartHeight = 400;
         const padding = 50;
 
