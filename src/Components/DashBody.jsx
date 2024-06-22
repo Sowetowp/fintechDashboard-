@@ -71,7 +71,7 @@ const DashBody = (prop) => {
 
         // Chart dimensions
         const chartWidth = 600;
-        const chartHeight = 280;
+        const chartHeight = 980;
         const padding = 0;
 
         // Canvas dimensions
