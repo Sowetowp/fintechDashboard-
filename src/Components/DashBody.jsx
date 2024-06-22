@@ -90,6 +90,10 @@ const DashBody = (prop) => {
             x: padding + index * xStep,
             y: 280 - padding - value * yStep
         }));
+        const points = data.map((value, index) => ({
+            x: padding + index * xStep,
+            y: 280 - padding - value * yStep
+        }));
 
         // Draw curve and fill
         ctx.beginPath();
