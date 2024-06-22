@@ -84,11 +84,11 @@ const DashBody = (prop) => {
         // Calculate points
         const xStep = (chartWidth - 2 * padding) / (data.length - 1);
         const yMax = Math.max(...data);
-        const yStep = (chartHeight - 2 * padding) / yMax;
+        const yStep = (280 - 2 * padding) / yMax;
 
         const points = data.map((value, index) => ({
             x: padding + index * xStep,
-            y: chartHeight - padding - value * yStep
+            y: 280 - padding - value * yStep
         }));
 
         // Draw curve and fill
