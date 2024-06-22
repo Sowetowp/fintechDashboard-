@@ -108,7 +108,7 @@ const DashBody = (prop) => {
             const cp1y = points[i].y -20;
             const cp2x = points[i + 1].x - xStep / 2;
             const cp2y = points[i + 1].y -20;
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y -20);
         }
 
         // Fill the area under the curve
