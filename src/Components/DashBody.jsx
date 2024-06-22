@@ -105,7 +105,7 @@ const DashBody = (prop) => {
         ctx.moveTo(points[0].x, points[0].y -20);
         for (let i = 0; i < points.length - 1; i++) {
             const cp1x = points[i].x + xStep / 2;
-            const cp1y = points[i].y;
+            const cp1y = points[i].y -20;
             const cp2x = points[i + 1].x - xStep / 2;
             const cp2y = points[i + 1].y;
             ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
