@@ -91,6 +91,28 @@ const DashBody = (prop) => {
             y: 280 - padding - value * yStep
         }));
 
+        let animationProgress = 0; // Initial progress of the animation
+    const animationDuration = 2000; // Duration of the animation in milliseconds
+    const startTime = performance.now(); // Start time of the animation
+
+    const animate = () => {
+        const currentTime = performance.now();
+        animationProgress = Math.min((currentTime - startTime) / animationDuration, 1); // Calculate animation progress
+
+        // Clear canvas
+        ctx.clearRect(0, 0, chartWidth, chartHeight);
+
+        // Draw curves and fill areas
+        ['red', 'blue', 'green'].forEach((color, index) => {
+            drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125 * animationProgress, color);
+        });
+
+        // If animation is not complete, request the next frame
+        if (animationProgress < 1) {
+            requestAnimationFrame(animate);
+        }
+    };
+
         // Draw curve and fill
         ctx.beginPath();
         ctx.moveTo(points[0].x, points[0].y);
