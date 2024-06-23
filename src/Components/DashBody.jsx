@@ -126,13 +126,13 @@ const DashBody = (prop) => {
         ctx.fill();
 
         // Draw curve and fill
-        ctx.moveTo(points[0].x, points[0].y + 300);
+        ctx.moveTo(points[0].x, points[0].y + 350);
         for (let i = 0; i < points.length - 1; i++) {
             const cp1x = points[i].x + xStep / 2;
-            const cp1y = points[i].y + 300;
+            const cp1y = points[i].y + 350;
             const cp2x = points[i + 1].x - xStep / 2;
-            const cp2y = points[i + 1].y + 300;
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 300);
+            const cp2y = points[i + 1].y + 350;
+            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 350);
         }
 
         // Fill the area under the curve
