@@ -102,7 +102,7 @@ const DashBody = (prop) => {
             ctx.clearRect(0, 0, chartWidth, chartHeight);
     
             // Draw curves and fill areas
-            ['#aedaf9', '#77c5fd', 'green'].forEach((color, index) => {
+            ['#aedaf9', '#77c5fd', '#37a9fb'].forEach((color, index) => {
                 drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125, color, animationProgress);
             });
     
