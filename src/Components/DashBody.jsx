@@ -239,7 +239,7 @@ const DashBody = (prop) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className=' bg-[#bfe1fa] h-2 w-1/2'></div>
+                                <div className=' bg-[#aedaf9] h-2 w-1/2'></div>
                             </div>
                         </div>
                     </div>
