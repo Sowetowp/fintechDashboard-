@@ -110,6 +110,7 @@ const DashBody = (prop) => {
 
         // Draw curve and fill
         ctx.moveTo(points[0].x, points[0].y + 125);
+        ctx.beginPath();
         for (let i = 0; i < points.length - 1; i++) {
             const cp1x = points[i].x + xStep / 2;
             const cp1y = points[i].y + 125;
