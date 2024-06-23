@@ -310,7 +310,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className=''>
+                                    <div className='bg-white dark:bg-blue-950'>
                                         <h2>Transaction Overview</h2>
                                     </div>
                                 </div>
