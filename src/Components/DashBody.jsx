@@ -90,7 +90,7 @@ const DashBody = (prop) => {
         }));
     
         let animationProgress = 0; // Initial progress of the animation
-        const animationDuration = 2000; // Duration of the animation in milliseconds
+        const animationDuration = 1000; // Duration of the animation in milliseconds
         const startTime = performance.now(); // Start time of the animation
     
         const animate = () => {
