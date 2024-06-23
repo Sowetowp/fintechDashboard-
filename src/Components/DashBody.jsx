@@ -105,7 +105,7 @@ const DashBody = (prop) => {
         ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
         ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
         ctx.closePath();
-        ctx.fillStyle = 'rgba(75, 192, 192, 0.2)';
+        ctx.fillStyle = 'red';
         ctx.fill();
 
         // Draw curve and fill
@@ -122,7 +122,7 @@ const DashBody = (prop) => {
         ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
         ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
         ctx.closePath();
-        ctx.fillStyle = 'rgba(75, 192, 192, 0.2)';
+        ctx.fillStyle = 'blue';
         ctx.fill();
 
         // Draw curve and fill
@@ -139,7 +139,7 @@ const DashBody = (prop) => {
         ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
         ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
         ctx.closePath();
-        ctx.fillStyle = 'rgba(75, 192, 192, 0.2)';
+        ctx.fillStyle = 'green';
         ctx.fill();
 
         // Draw the curve outline
