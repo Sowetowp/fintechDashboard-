@@ -298,7 +298,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div className='w-[80%] bg-white dark:bg-blue-950 m-auto shadow rounded-b-xl h-8 relative'></div>
-                                        <div className='w-[60%] bg-white m-auto shadow rounded-b-xl h-8'></div>
+                                        <div className='w-[60%] bg-white dark:bg-blue-950 m-auto shadow rounded-b-xl h-8'></div>
                                     </div>
                                     <div className='md:w-1/3 pt-4 rounded-xl w-full bg-[#d7edfd] h-[fit-content] text-center overflow-hidden'>
                                         <p className=''>Limit</p>
