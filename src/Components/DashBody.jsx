@@ -124,12 +124,12 @@ const DashBody = (prop) => {
             }
     
             // Fill the area under the curve
-            const yBase = chartHeight - padding;
-            ctx.lineTo(points[points.length - 1].x, yBase); // Line down to the x-axis
-            ctx.lineTo(points[0].x, yBase); // Line back to the starting point on the x-axis
-            ctx.closePath();
-            ctx.fillStyle = color;
-            ctx.fill();
+            // const yBase = chartHeight - padding;
+            // ctx.lineTo(points[points.length - 1].x, yBase); // Line down to the x-axis
+            // ctx.lineTo(points[0].x, yBase); // Line back to the starting point on the x-axis
+            // ctx.closePath();
+            // ctx.fillStyle = color;
+            // ctx.fill();
         };
     
         // Start the animation
