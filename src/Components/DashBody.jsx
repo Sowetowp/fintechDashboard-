@@ -234,7 +234,7 @@ const DashBody = (prop) => {
                                         <p className=''>Limit</p>
                                         <p className='font-bold text-xl mt-1'>$4,000</p>
                                         <p className='text-slate-500'>/$10,000</p>
-                                        <div className='w-full mt-28 off'>
+                                        <div className='w-full mt-28'>
                                             <canvas className='w-full' ref={canvasRef}></canvas>
                                         </div>
                                     </div>
