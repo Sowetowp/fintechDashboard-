@@ -75,7 +75,10 @@ const DashBody = (prop) => {
     
         // Canvas dimensions
         ctx.canvas.width = chartWidth;
-        ctx.canvas.height = chartHeight;
+        ctx.canvas.height = chartHeight - 150;
+    
+        // Clear canvas
+        ctx.clearRect(0, 0, chartWidth, chartHeight);
     
         // Calculate points
         const xStep = (chartWidth - 2 * padding) / (data.length - 1);
@@ -100,7 +103,7 @@ const DashBody = (prop) => {
     
             // Draw curves and fill areas
             ['red', 'blue', 'green'].forEach((color, index) => {
-                drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125 * animationProgress, color);
+                drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125, color, animationProgress);
             });
     
             // If animation is not complete, request the next frame
@@ -109,15 +112,15 @@ const DashBody = (prop) => {
             }
         };
     
-        const drawCurveAndFill = (ctx, points, xStep, chartHeight, padding, yOffset, color) => {
+        const drawCurveAndFill = (ctx, points, xStep, chartHeight, padding, yOffset, color, progress) => {
             ctx.beginPath();
-            ctx.moveTo(points[0].x, points[0].y + yOffset);
+            ctx.moveTo(points[0].x, (chartHeight - padding) - (chartHeight - padding - points[0].y - yOffset) * progress);
             for (let i = 0; i < points.length - 1; i++) {
                 const cp1x = points[i].x + xStep / 2;
-                const cp1y = points[i].y + yOffset;
+                const cp1y = (chartHeight - padding) - (chartHeight - padding - points[i].y - yOffset) * progress;
                 const cp2x = points[i + 1].x - xStep / 2;
-                const cp2y = points[i + 1].y + yOffset;
-                ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + yOffset);
+                const cp2y = (chartHeight - padding) - (chartHeight - padding - points[i + 1].y - yOffset) * progress;
+                ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, (chartHeight - padding) - (chartHeight - padding - points[i + 1].y - yOffset) * progress);
             }
     
             // Fill the area under the curve
