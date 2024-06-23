@@ -64,129 +64,129 @@ const DashBody = (prop) => {
         drawChart(ctx);
     }, []);
 
-    const drawChart = (ctx) => {
-        // Example data
-        const data = [10, 20, 10, 20, 10, 20, 10];
-        // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    // const drawChart = (ctx) => {
+    //     // Example data
+    //     const data = [10, 20, 10, 20, 10, 20, 10];
+    //     // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
-        // Chart dimensions
-        const chartWidth = 600;
-        const chartHeight = 980;
-        const padding = 0;
+    //     // Chart dimensions
+    //     const chartWidth = 600;
+    //     const chartHeight = 980;
+    //     const padding = 0;
 
-        // Canvas dimensions
-        ctx.canvas.width = chartWidth;
-        ctx.canvas.height = chartHeight - 150;
+    //     // Canvas dimensions
+    //     ctx.canvas.width = chartWidth;
+    //     ctx.canvas.height = chartHeight - 150;
 
-        // Clear canvas
-        ctx.clearRect(0, 0, chartWidth, chartHeight);
+    //     // Clear canvas
+    //     ctx.clearRect(0, 0, chartWidth, chartHeight);
 
-        // Calculate points
-        const xStep = (chartWidth - 2 * padding) / (data.length - 1);
-        const yMax = Math.max(...data);
-        const yStep = (280 - 2 * padding) / yMax;
+    //     // Calculate points
+    //     const xStep = (chartWidth - 2 * padding) / (data.length - 1);
+    //     const yMax = Math.max(...data);
+    //     const yStep = (280 - 2 * padding) / yMax;
 
-        const points = data.map((value, index) => ({
-            x: padding + index * xStep,
-            y: 280 - padding - value * yStep
-        }));
+    //     const points = data.map((value, index) => ({
+    //         x: padding + index * xStep,
+    //         y: 280 - padding - value * yStep
+    //     }));
 
-        let animationProgress = 0; // Initial progress of the animation
-        const animationDuration = 2000; // Duration of the animation in milliseconds
-        const startTime = performance.now(); // Start time of the animation
+    //     let animationProgress = 0; // Initial progress of the animation
+    //     const animationDuration = 2000; // Duration of the animation in milliseconds
+    //     const startTime = performance.now(); // Start time of the animation
 
-        const animate = () => {
-            const currentTime = performance.now();
-            animationProgress = Math.min((currentTime - startTime) / animationDuration, 1); // Calculate animation progress
+    //     const animate = () => {
+    //         const currentTime = performance.now();
+    //         animationProgress = Math.min((currentTime - startTime) / animationDuration, 1); // Calculate animation progress
 
-            // Clear canvas
-            ctx.clearRect(0, 0, chartWidth, chartHeight);
+    //         // Clear canvas
+    //         ctx.clearRect(0, 0, chartWidth, chartHeight);
 
-            // Draw curves and fill areas
-            ['red', 'blue', 'green'].forEach((color, index) => {
-                drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125 * animationProgress, color);
-            });
+    //         // Draw curves and fill areas
+    //         ['red', 'blue', 'green'].forEach((color, index) => {
+    //             drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125 * animationProgress, color);
+    //         });
 
-            // If animation is not complete, request the next frame
-            if (animationProgress < 1) {
-                requestAnimationFrame(animate);
-            }
-        };
+    //         // If animation is not complete, request the next frame
+    //         if (animationProgress < 1) {
+    //             requestAnimationFrame(animate);
+    //         }
+    //     };
 
-        // Draw curve and fill
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y);
-        for (let i = 0; i < points.length - 1; i++) {
-            const cp1x = points[i].x + xStep / 2;
-            const cp1y = points[i].y;
-            const cp2x = points[i + 1].x - xStep / 2;
-            const cp2y = points[i + 1].y;
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
-        }
-        // Fill the area under the curve
-        ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
-        ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
-        ctx.closePath();
-        ctx.fillStyle = '#aedaf9';
-        ctx.fill();
+    //     // Draw curve and fill
+    //     ctx.beginPath();
+    //     ctx.moveTo(points[0].x, points[0].y);
+    //     for (let i = 0; i < points.length - 1; i++) {
+    //         const cp1x = points[i].x + xStep / 2;
+    //         const cp1y = points[i].y;
+    //         const cp2x = points[i + 1].x - xStep / 2;
+    //         const cp2y = points[i + 1].y;
+    //         ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
+    //     }
+    //     // Fill the area under the curve
+    //     ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
+    //     ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
+    //     ctx.closePath();
+    //     ctx.fillStyle = '#aedaf9';
+    //     ctx.fill();
 
-        // Draw curve and fill
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y + 125);
-        for (let i = 0; i < points.length - 1; i++) {
-            const cp1x = points[i].x + xStep / 2;
-            const cp1y = points[i].y + 125;
-            const cp2x = points[i + 1].x - xStep / 2;
-            const cp2y = points[i + 1].y + 125;
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 125);
-        }
+    //     // Draw curve and fill
+    //     ctx.beginPath();
+    //     ctx.moveTo(points[0].x, points[0].y + 125);
+    //     for (let i = 0; i < points.length - 1; i++) {
+    //         const cp1x = points[i].x + xStep / 2;
+    //         const cp1y = points[i].y + 125;
+    //         const cp2x = points[i + 1].x - xStep / 2;
+    //         const cp2y = points[i + 1].y + 125;
+    //         ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 125);
+    //     }
 
-        // Fill the area under the curve
-        ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
-        ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
-        ctx.closePath();
-        ctx.fillStyle = '#77c5fd';
-        ctx.fill();
+    //     // Fill the area under the curve
+    //     ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
+    //     ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
+    //     ctx.closePath();
+    //     ctx.fillStyle = '#77c5fd';
+    //     ctx.fill();
 
-        // Draw curve and fill
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y + 250);
-        for (let i = 0; i < points.length - 1; i++) {
-            const cp1x = points[i].x + xStep / 2;
-            const cp1y = points[i].y + 250;
-            const cp2x = points[i + 1].x - xStep / 2;
-            const cp2y = points[i + 1].y + 250;
-            ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 250);
-        }
+    //     // Draw curve and fill
+    //     ctx.beginPath();
+    //     ctx.moveTo(points[0].x, points[0].y + 250);
+    //     for (let i = 0; i < points.length - 1; i++) {
+    //         const cp1x = points[i].x + xStep / 2;
+    //         const cp1y = points[i].y + 250;
+    //         const cp2x = points[i + 1].x - xStep / 2;
+    //         const cp2y = points[i + 1].y + 250;
+    //         ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + 250);
+    //     }
 
-        // Fill the area under the curve
-        ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
-        ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
-        ctx.closePath();
-        ctx.fillStyle = '#37a9fb';
-        ctx.fill();
+    //     // Fill the area under the curve
+    //     ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
+    //     ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
+    //     ctx.closePath();
+    //     ctx.fillStyle = '#37a9fb';
+    //     ctx.fill();
 
-        // Draw the curve outline
-        // ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
-        // ctx.lineWidth = 2;
-        // ctx.stroke();
+    //     // Draw the curve outline
+    //     // ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
+    //     // ctx.lineWidth = 2;
+    //     // ctx.stroke();
 
-        // Draw points
-        // ctx.fillStyle = 'rgba(75, 192, 192, 1)';
-        // points.forEach(point => {
-        //     ctx.beginPath();
-        //     ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
-        //     ctx.fill();
-        // });
+    //     // Draw points
+    //     // ctx.fillStyle = 'rgba(75, 192, 192, 1)';
+    //     // points.forEach(point => {
+    //     //     ctx.beginPath();
+    //     //     ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
+    //     //     ctx.fill();
+    //     // });
 
-        // Draw labels
-        // ctx.fillStyle = 'black';
-        // ctx.textAlign = 'center';
-        // ctx.textBaseline = 'middle';
-        // points.forEach((point, index) => {
-        //     ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
-        // });
-    };
+    //     // Draw labels
+    //     // ctx.fillStyle = 'black';
+    //     // ctx.textAlign = 'center';
+    //     // ctx.textBaseline = 'middle';
+    //     // points.forEach((point, index) => {
+    //     //     ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
+    //     // });
+    // };
 
     return (
         <>
