@@ -272,6 +272,9 @@ const DashBody = (prop) => {
                         <div>
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div className='w-full mt-5 flex flex-wrap md:flex-nowrap gap-8'>
+                                <div>
+                                    
+                                </div>
                                 <div className='md:w-1/2 w-full flex flex-wrap md:flex-nowrap gap-8'>
                                     <div className='md:w-2/3 w-full'>
                                         <div className='w-full cards py-10 rounded-xl px-8'>
