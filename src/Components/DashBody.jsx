@@ -76,7 +76,7 @@ const DashBody = (prop) => {
 
         // Canvas dimensions
         ctx.canvas.width = chartWidth;
-        ctx.canvas.height = chartHeight;
+        ctx.canvas.height = chartHeight - 200;
 
         // Clear canvas
         ctx.clearRect(0, 0, chartWidth, chartHeight);
