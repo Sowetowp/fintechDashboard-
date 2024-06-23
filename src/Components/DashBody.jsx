@@ -124,11 +124,11 @@ const DashBody = (prop) => {
             ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y);
         }
         // Fill the area under the curve
-        ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
-        ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
-        ctx.closePath();
-        ctx.fillStyle = '#aedaf9';
-        ctx.fill();
+        // ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
+        // ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
+        // ctx.closePath();
+        // ctx.fillStyle = '#aedaf9';
+        // ctx.fill();
 
         // Draw curve and fill
         ctx.beginPath();
