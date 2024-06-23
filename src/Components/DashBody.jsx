@@ -153,7 +153,7 @@ const DashBody = (prop) => {
         ctx.fillStyle = 'rgba(75, 192, 192, 1)';
         points.forEach(point => {
             ctx.beginPath();
-            ctx.arc(point.x, point.y, 5, 0, 20 * Math.PI);
+            ctx.arc(point.x, point.y, 50, 0, 2 * Math.PI);
             ctx.fill();
         });
 
