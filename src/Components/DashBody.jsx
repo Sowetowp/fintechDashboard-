@@ -134,6 +134,7 @@ const DashBody = (prop) => {
         // Start the animation
         animate();
     };
+    
     // const drawChart = (ctx) => {
     //     // Example data
     //     const data = [10, 20, 10, 20, 10, 20, 10];
