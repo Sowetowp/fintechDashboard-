@@ -150,20 +150,20 @@ const DashBody = (prop) => {
         // ctx.stroke();
 
         // Draw points
-        // ctx.fillStyle = 'rgba(75, 192, 192, 1)';
-        // points.forEach(point => {
-        //     ctx.beginPath();
-        //     ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
-        //     ctx.fill();
-        // });
+        ctx.fillStyle = 'rgba(75, 192, 192, 1)';
+        points.forEach(point => {
+            ctx.beginPath();
+            ctx.arc(point.x, point.y, 5, 0, 2 * Math.PI);
+            ctx.fill();
+        });
 
         // Draw labels
-        // ctx.fillStyle = 'black';
-        // ctx.textAlign = 'center';
-        // ctx.textBaseline = 'middle';
-        // points.forEach((point, index) => {
-        //     ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
-        // });
+        ctx.fillStyle = 'black';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        points.forEach((point, index) => {
+            ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
+        });
     };
 
     return (
