@@ -67,7 +67,7 @@ const DashBody = (prop) => {
     const drawChart = (ctx) => {
         // Example data
         const data = [10, 20, 10, 20, 10, 20, 10];
-        const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+        // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
         // Chart dimensions
         const chartWidth = 600;
@@ -158,12 +158,12 @@ const DashBody = (prop) => {
         });
 
         // Draw labels
-        ctx.fillStyle = 'black';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        points.forEach((point, index) => {
-            ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
-        });
+        // ctx.fillStyle = 'black';
+        // ctx.textAlign = 'center';
+        // ctx.textBaseline = 'middle';
+        // points.forEach((point, index) => {
+        //     ctx.fillText(labels[index], point.x, chartHeight - padding + 20);
+        // });
     };
 
     return (
