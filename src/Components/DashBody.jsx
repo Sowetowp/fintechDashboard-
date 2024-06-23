@@ -63,7 +63,75 @@ const DashBody = (prop) => {
         const ctx = canvas.getContext('2d');
         drawChart(ctx);
     }, []);
-
+    const drawChart = (ctx) => {
+        // Example data
+        const data = [10, 20, 10, 20, 10, 20, 10];
+        // const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+    
+        // Chart dimensions
+        const chartWidth = 600;
+        const chartHeight = 980;
+        const padding = 0;
+    
+        // Canvas dimensions
+        ctx.canvas.width = chartWidth;
+        ctx.canvas.height = chartHeight;
+    
+        // Calculate points
+        const xStep = (chartWidth - 2 * padding) / (data.length - 1);
+        const yMax = Math.max(...data);
+        const yStep = (280 - 2 * padding) / yMax;
+    
+        const points = data.map((value, index) => ({
+            x: padding + index * xStep,
+            y: 280 - padding - value * yStep
+        }));
+    
+        let animationProgress = 0; // Initial progress of the animation
+        const animationDuration = 2000; // Duration of the animation in milliseconds
+        const startTime = performance.now(); // Start time of the animation
+    
+        const animate = () => {
+            const currentTime = performance.now();
+            animationProgress = Math.min((currentTime - startTime) / animationDuration, 1); // Calculate animation progress
+    
+            // Clear canvas
+            ctx.clearRect(0, 0, chartWidth, chartHeight);
+    
+            // Draw curves and fill areas
+            ['red', 'blue', 'green'].forEach((color, index) => {
+                drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125 * animationProgress, color);
+            });
+    
+            // If animation is not complete, request the next frame
+            if (animationProgress < 1) {
+                requestAnimationFrame(animate);
+            }
+        };
+    
+        const drawCurveAndFill = (ctx, points, xStep, chartHeight, padding, yOffset, color) => {
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y + yOffset);
+            for (let i = 0; i < points.length - 1; i++) {
+                const cp1x = points[i].x + xStep / 2;
+                const cp1y = points[i].y + yOffset;
+                const cp2x = points[i + 1].x - xStep / 2;
+                const cp2y = points[i + 1].y + yOffset;
+                ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, points[i + 1].y + yOffset);
+            }
+    
+            // Fill the area under the curve
+            const yBase = color === 'green' ? chartHeight - padding - 250 : chartHeight - padding;
+            ctx.lineTo(points[points.length - 1].x, yBase); // Line down to the x-axis
+            ctx.lineTo(points[0].x, yBase); // Line back to the starting point on the x-axis
+            ctx.closePath();
+            ctx.fillStyle = color;
+            ctx.fill();
+        };
+    
+        // Start the animation
+        animate();
+    };
     // const drawChart = (ctx) => {
     //     // Example data
     //     const data = [10, 20, 10, 20, 10, 20, 10];
