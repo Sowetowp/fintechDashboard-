@@ -65,7 +65,7 @@ const DashBody = (prop) => {
     }, []);
     const drawChart = (ctx) => {
         // Example data
-        const data = [10, 20, 10, 20, 10, 20, 10];
+        const data = [5, 20, 10, 20, 10, 20, 10];
     
         // Chart dimensions
         const chartWidth = 600;
