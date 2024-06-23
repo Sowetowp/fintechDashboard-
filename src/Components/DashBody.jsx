@@ -60,7 +60,7 @@ const DashBody = (prop) => {
 
     useEffect(() => {
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext('3d');
+        const ctx = canvas.getContext('2d');
         drawChart(ctx);
     }, []);
 
