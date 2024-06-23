@@ -134,6 +134,9 @@ const DashBody = (prop) => {
     
         // Start the animation
         animate();
+        ctx.strokeStyle = 'rgba(75, 192, 192, 1)';
+        // ctx.lineWidth = 2;
+        // ctx.stroke();
     };
     // const drawChart = (ctx) => {
     //     // Example data
