@@ -66,51 +66,51 @@ const DashBody = (prop) => {
     const drawChart = (ctx) => {
         // Example data
         const data = [10, 20, 10, 20, 10, 20, 10];
-    
+
         // Chart dimensions
         const chartWidth = 600;
         const chartHeight = 980;
         const padding = 0;
-    
+
         // Canvas dimensions
         ctx.canvas.width = chartWidth;
         ctx.canvas.height = chartHeight - 150;
-    
+
         // Clear canvas
         ctx.clearRect(0, 0, chartWidth, chartHeight);
-    
+
         // Calculate points
         const xStep = (chartWidth - 2 * padding) / (data.length - 1);
         const yMax = Math.max(...data);
         const yStep = (280 - 2 * padding) / yMax;
-    
+
         const points = data.map((value, index) => ({
             x: padding + index * xStep,
             y: 280 - padding - value * yStep
         }));
-    
+
         let animationProgress = 0; // Initial progress of the animation
         const animationDuration = 1000; // Duration of the animation in milliseconds
         const startTime = performance.now(); // Start time of the animation
-    
+
         const animate = () => {
             const currentTime = performance.now();
             animationProgress = Math.min((currentTime - startTime) / animationDuration, 1); // Calculate animation progress
-    
+
             // Clear canvas
             ctx.clearRect(0, 0, chartWidth, chartHeight);
-    
+
             // Draw curves and fill areas
             ['#aedaf9', '#77c5fd', '#37a9fb'].forEach((color, index) => {
                 drawCurveAndFill(ctx, points, xStep, chartHeight, padding, index * 125, color, animationProgress);
             });
-    
+
             // If animation is not complete, request the next frame
             if (animationProgress < 1) {
                 requestAnimationFrame(animate);
             }
         };
-    
+
         const drawCurveAndFill = (ctx, points, xStep, chartHeight, padding, yOffset, color, progress) => {
             ctx.beginPath();
             ctx.moveTo(points[0].x, (chartHeight - padding) - (chartHeight - padding - points[0].y - yOffset) * progress);
@@ -121,7 +121,7 @@ const DashBody = (prop) => {
                 const cp2y = (chartHeight - padding) - (chartHeight - padding - points[i + 1].y - yOffset) * progress;
                 ctx.bezierCurveTo(cp1x, cp1y, cp2x, cp2y, points[i + 1].x, (chartHeight - padding) - (chartHeight - padding - points[i + 1].y - yOffset) * progress);
             }
-    
+
             // Fill the area under the curve
             ctx.lineTo(points[points.length - 1].x, chartHeight - padding); // Line down to the x-axis
             ctx.lineTo(points[0].x, chartHeight - padding); // Line back to the starting point on the x-axis
@@ -129,7 +129,7 @@ const DashBody = (prop) => {
             ctx.fillStyle = color;
             ctx.fill();
         };
-    
+
         // Start the animation
         animate();
     };
@@ -315,7 +315,7 @@ const DashBody = (prop) => {
                                         <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                         <div>
                                             <button>
-                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Download"> <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g> </g></svg>
+                                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Download"> <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path> </g> </g></svg>
                                                 Download Report
                                             </button>
                                         </div>
