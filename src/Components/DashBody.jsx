@@ -39,6 +39,56 @@ const DashBody = (prop) => {
     const canvasRef = useRef(null);
     const canvasRef2 = useRef(null);
     useEffect(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas.getContext('2d');
+        const chartWidth = canvas.width;
+        const chartHeight = canvas.height;
+        const padding = 50;
+        const barWidth = (chartWidth - 2 * padding) / data.length;
+        const maxValue = Math.max(...data);
+        const scaleFactor = (chartHeight - 2 * padding) / maxValue;
+    
+        // Clear the canvas
+        ctx.clearRect(0, 0, chartWidth, chartHeight);
+    
+        // Draw the bars
+        data.forEach((value, index) => {
+          const barHeight = value * scaleFactor;
+          const x = padding + index * barWidth;
+          const y = chartHeight - padding - barHeight;
+    
+          ctx.fillStyle = colors[index % colors.length];
+          ctx.fillRect(x, y, barWidth - 10, barHeight);
+    
+          // Add labels
+          ctx.fillStyle = '#000';
+          ctx.textAlign = 'center';
+          ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
+        });
+    
+        // Draw axes
+        ctx.strokeStyle = '#000';
+        ctx.beginPath();
+        ctx.moveTo(padding, chartHeight - padding);
+        ctx.lineTo(padding, padding);
+        ctx.lineTo(chartWidth - padding, chartHeight - padding);
+        ctx.stroke();
+    
+        // Add title
+        if (title) {
+          ctx.textAlign = 'center';
+          ctx.font = '20px Arial';
+          ctx.fillText(title, chartWidth / 2, padding / 2);
+        }
+    
+        // Add labels to x-axis
+        labels.forEach((label, index) => {
+          const x = padding + index * barWidth + (barWidth - 10) / 2;
+          ctx.fillText(label, x, chartHeight - padding + 20);
+        });
+      }, [data, labels, colors, title]);
+      
+    useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
         }
