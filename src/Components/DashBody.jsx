@@ -44,68 +44,45 @@ const DashBody = (prop) => {
     const canvasRef = useRef(null);
     const canvasRef2 = useRef(null);
     useEffect(() => {
-        const canvas = canvasRef2.current;
-        const ctx = canvas.getContext('2d');
-        const chartWidth = canvas.width;
-        const chartHeight = canvas.height;
-        const padding = 50;
-        const barWidth = (chartWidth - 2 * padding) / data.length;
-        const maxValue = Math.max(...data);
-        const scaleFactor = (chartHeight - 2 * padding) / maxValue;
+        const canvas = canvasRef.current.getContext('2d');
     
-        // Clear the canvas
-        ctx.clearRect(0, 0, chartWidth, chartHeight);
-    
-        // Draw the bars
-        data.forEach((value, index) => {
-          const barHeight = value * scaleFactor;
-          const x = padding + index * barWidth;
-          const y = chartHeight - padding - barHeight;
-    
-          ctx.fillStyle = colors[index % colors.length];
-          ctx.fillRect(x, y, barWidth - 10, barHeight);
-    
-          // Add labels above bars
-          ctx.fillStyle = '#000';
-          ctx.textAlign = 'center';
-          ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
+        new Chart(canvas, {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                data: data,
+                backgroundColor: colors,
+              },
+            ],
+          },
+          options: {
+            plugins: {
+              legend: { display: false },
+              title: {
+                display: true,
+                text: title,
+              },
+            },
+            scales: {
+              x: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Days of the Week',
+                },
+              },
+              y: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: 'Value',
+                },
+              },
+            },
+          },
         });
-    
-        // Draw x and y axes
-        ctx.strokeStyle = '#000';
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        ctx.moveTo(padding, chartHeight - padding);
-        ctx.lineTo(padding, padding);
-        ctx.lineTo(chartWidth - padding, chartHeight - padding);
-        ctx.stroke();
-    
-        // Draw x-axis labels
-        ctx.textAlign = 'center';
-        labels.forEach((label, index) => {
-          const x = padding + index * barWidth + (barWidth - 10) / 2;
-          ctx.fillText(label, x, chartHeight - padding + 20);
-        });
-    
-        // Draw y-axis labels and tick marks
-        const numTicks = 10;
-        const tickSpacing = maxValue / numTicks;
-        for (let i = 0; i <= numTicks; i++) {
-          const yValue = i * tickSpacing;
-          const y = chartHeight - padding - yValue * scaleFactor;
-          ctx.fillText(yValue, padding - 30, y);
-          ctx.moveTo(padding - 5, y);
-          ctx.lineTo(padding, y);
-        }
-        ctx.stroke();
-    
-        // Add title
-        if (title) {
-          ctx.textAlign = 'center';
-          ctx.font = '20px Arial';
-          ctx.fillText(title, chartWidth / 2, padding / 2);
-        }
-      }, [data, labels, colors, title]);
     
 
     useEffect(() => {
