@@ -37,7 +37,7 @@ const DashBody = (prop) => {
     const [height, setHeight] = useState("0px")
     const contentRef = useRef()
     const canvasRef = useRef(null);
-
+    const canvasRef2 = useRef(null);
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
