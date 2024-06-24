@@ -36,7 +36,7 @@ const DashBody = (prop) => {
     const [height, setHeight] = useState("0px")
     const contentRef = useRef()
     const canvasRef = useRef(null);
-    const canvasRef = useRef(null);
+    const canvasRef2 = useRef(null);
 
     useEffect(() => {
       const canvas = canvasRef.current;
@@ -76,7 +76,7 @@ const DashBody = (prop) => {
       ctx.lineTo(chartWidth - padding, chartHeight - padding);
       ctx.stroke();
     }, [data]);
-    
+
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
