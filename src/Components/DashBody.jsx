@@ -15,6 +15,11 @@ const drops = {
     pages: false
 }
 
+const data = [55, 49, 44, 24, 15];
+const labels = ["Italy", "France", "Spain", "USA", "Argentina"];
+const colors = ["red", "green", "blue", "orange", "brown"];
+const title = "World Wine Production 2018";
+
 const dropReducer = (state, action) => {
     switch (action.type) {
         case "open":
