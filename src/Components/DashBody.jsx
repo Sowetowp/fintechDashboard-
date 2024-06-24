@@ -40,7 +40,7 @@ const DashBody = (prop) => {
     const data = [10, 20, 30, 15, 25, 35, 45];
 
     useEffect(() => {
-      const canvas = canvasRef.current;
+      const canvas = canvasRef2.current;
       const ctx = canvas.getContext('2d');
       const chartWidth = canvas.width;
       const chartHeight = canvas.height;
