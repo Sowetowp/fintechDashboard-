@@ -335,8 +335,8 @@ const DashBody = (prop) => {
                                                 },
                                             ]}
                                             // width={500}
-                                            // height={300}
-                                            className='w-full h-4'
+                                            height={300}
+                                            className='w-full'
                                         />
                                     </div>
                                 </div>
