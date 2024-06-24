@@ -36,7 +36,47 @@ const DashBody = (prop) => {
     const [height, setHeight] = useState("0px")
     const contentRef = useRef()
     const canvasRef = useRef(null);
+    const canvasRef = useRef(null);
 
+    useEffect(() => {
+      const canvas = canvasRef.current;
+      const ctx = canvas.getContext('2d');
+      const chartWidth = canvas.width;
+      const chartHeight = canvas.height;
+  
+      // Chart dimensions
+      const padding = 50;
+      const barWidth = (chartWidth - 2 * padding) / data.length;
+      const maxValue = Math.max(...data);
+      const scaleFactor = (chartHeight - 2 * padding) / maxValue;
+  
+      // Clear the canvas
+      ctx.clearRect(0, 0, chartWidth, chartHeight);
+  
+      // Draw the bars
+      data.forEach((value, index) => {
+        const barHeight = value * scaleFactor;
+        const x = padding + index * barWidth;
+        const y = chartHeight - padding - barHeight;
+  
+        ctx.fillStyle = '#3498db';
+        ctx.fillRect(x, y, barWidth - 10, barHeight);
+  
+        // Add labels
+        ctx.fillStyle = '#000';
+        ctx.textAlign = 'center';
+        ctx.fillText(value, x + barWidth / 2 - 5, y - 5);
+      });
+  
+      // Draw axes
+      ctx.strokeStyle = '#000';
+      ctx.beginPath();
+      ctx.moveTo(padding, chartHeight - padding);
+      ctx.lineTo(padding, padding);
+      ctx.lineTo(chartWidth - padding, chartHeight - padding);
+      ctx.stroke();
+    }, [data]);
+    
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
