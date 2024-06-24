@@ -44,7 +44,7 @@ const DashBody = (prop) => {
     const canvasRef = useRef(null);
     const canvasRef2 = useRef(null);
     useEffect(() => {
-        const canvas = canvasRef2.current;
+        const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
         const chartWidth = canvas.width;
         const chartHeight = canvas.height;
@@ -65,18 +65,38 @@ const DashBody = (prop) => {
           ctx.fillStyle = colors[index % colors.length];
           ctx.fillRect(x, y, barWidth - 10, barHeight);
     
-          // Add labels
+          // Add labels above bars
           ctx.fillStyle = '#000';
           ctx.textAlign = 'center';
           ctx.fillText(value, x + (barWidth - 10) / 2, y - 5);
         });
     
-        // Draw axes
+        // Draw x and y axes
         ctx.strokeStyle = '#000';
+        ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(padding, chartHeight - padding);
         ctx.lineTo(padding, padding);
         ctx.lineTo(chartWidth - padding, chartHeight - padding);
+        ctx.stroke();
+    
+        // Draw x-axis labels
+        ctx.textAlign = 'center';
+        labels.forEach((label, index) => {
+          const x = padding + index * barWidth + (barWidth - 10) / 2;
+          ctx.fillText(label, x, chartHeight - padding + 20);
+        });
+    
+        // Draw y-axis labels and tick marks
+        const numTicks = 10;
+        const tickSpacing = maxValue / numTicks;
+        for (let i = 0; i <= numTicks; i++) {
+          const yValue = i * tickSpacing;
+          const y = chartHeight - padding - yValue * scaleFactor;
+          ctx.fillText(yValue, padding - 30, y);
+          ctx.moveTo(padding - 5, y);
+          ctx.lineTo(padding, y);
+        }
         ctx.stroke();
     
         // Add title
@@ -85,13 +105,8 @@ const DashBody = (prop) => {
           ctx.font = '20px Arial';
           ctx.fillText(title, chartWidth / 2, padding / 2);
         }
-    
-        // Add labels to x-axis
-        labels.forEach((label, index) => {
-          const x = padding + index * barWidth + (barWidth - 10) / 2;
-          ctx.fillText(label, x, chartHeight - padding + 20);
-        });
       }, [data, labels, colors, title]);
+    
 
     useEffect(() => {
         if (contentRef.current) {
