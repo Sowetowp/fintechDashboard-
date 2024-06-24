@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
-
+import { BarChart } from '@mui/x-charts'
 const drops = {
     dashboard: false,
     cms: false,
