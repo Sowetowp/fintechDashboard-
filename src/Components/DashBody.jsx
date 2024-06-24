@@ -84,6 +84,10 @@ const DashBody = (prop) => {
           },
         });
     
+        return () => {
+            canvas.destroy();
+          };
+        }, [data, labels, colors, title]);
 
     useEffect(() => {
         if (contentRef.current) {
