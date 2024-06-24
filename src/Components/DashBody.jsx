@@ -306,7 +306,7 @@ const DashBody = (prop) => {
                                             <p className='font-bold text-xl mt-1'>$4,000</p>
                                             <p className='text-slate-500'>/$10,000</p>
                                             <div className='w-full mt-28 rounded-xl'>
-                                                <canvas className='w-full rou' ref={canvasRef}></canvas>
+                                                <canvas className='w-full rounded-b-xl' ref={canvasRef}></canvas>
                                             </div>
                                         </div>
                                     </div>
