@@ -16,9 +16,9 @@ const drops = {
 }
 
 const data = [55, 49, 44, 24, 15];
-const labels = ["Italy", "France", "Spain", "USA", "Argentina"];
-const colors = ["red", "green", "blue", "orange", "brown"];
-const title = "World Wine Production 2018";
+const labels = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const colors = ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF', '#FF9F40', '#FF6384'];
+const title = 'Weekly Analytics';
 
 const dropReducer = (state, action) => {
     switch (action.type) {
