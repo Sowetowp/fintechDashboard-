@@ -38,7 +38,7 @@ const DashBody = (prop) => {
     const canvasRef = useRef(null);
     const canvasRef2 = useRef(null);
     useEffect(() => {
-        const ctx = canvasRef.current.getContext('2d');
+        const ctx = canvasRef2.current.getContext('2d');
         
         const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
         const yValues = [55, 49, 44, 24, 15];
@@ -64,7 +64,7 @@ const DashBody = (prop) => {
           }
         });
       }, []);
-      
+
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
