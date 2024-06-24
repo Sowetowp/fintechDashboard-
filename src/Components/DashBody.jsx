@@ -64,6 +64,7 @@ const DashBody = (prop) => {
           }
         });
       }, []);
+      
     useEffect(() => {
         if (contentRef.current) {
             setHeight(`${contentRef.current.scrollHeight}px`);
