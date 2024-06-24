@@ -315,7 +315,7 @@ const DashBody = (prop) => {
                                         <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                         <div>
                                             <button>
-                                                
+                                                Download Report
                                             </button>
                                         </div>
                                     </div>
