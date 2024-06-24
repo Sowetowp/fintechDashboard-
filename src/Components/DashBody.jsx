@@ -1,5 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
+import Chart from 'chart.js/auto';
 
 const drops = {
     dashboard: false,
