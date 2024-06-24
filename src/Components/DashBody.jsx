@@ -37,7 +37,8 @@ const DashBody = (prop) => {
     const contentRef = useRef()
     const canvasRef = useRef(null);
     const canvasRef2 = useRef(null);
-
+    const data = [10, 20, 30, 15, 25, 35, 45];
+    
     useEffect(() => {
       const canvas = canvasRef.current;
       const ctx = canvas.getContext('2d');
