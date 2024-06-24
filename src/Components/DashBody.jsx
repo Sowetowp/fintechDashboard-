@@ -268,7 +268,7 @@ const DashBody = (prop) => {
                             </>
                         }
                     </div>
-                    <div className={`h-[200vh] ${prop.prop ? "md:w-[calc(100%-17rem)] w-full" : "w-full md:w-[calc(100%-5.5rem)]"} bg-gray-100 dark:bg-[rgb(17,26,56)] p-6`} style={{ transition: "width .5s ease" }}>
+                    <div className={`${prop.prop ? "md:w-[calc(100%-17rem)] w-full" : "w-full md:w-[calc(100%-5.5rem)]"} bg-gray-100 dark:bg-[rgb(17,26,56)] p-6`} style={{ transition: "width .5s ease" }}>
                         <div>
                             <h1 className='dark:text-white text-2xl font-semibold'>Dashboard</h1>
                             <div className='w-full mt-5 flex flex-wrap md:flex-nowrap gap-8'>
