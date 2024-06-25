@@ -328,7 +328,7 @@ const DashBody = (prop) => {
             id: 'barCategories',
             data: ['bar A', 'bar B', 'bar C'],
             scaleType: 'band',
-            width: 25, // Adjust this value to reduce the width of the bars
+            width: "2", // Adjust this value to reduce the width of the bars
         },
     ]}
     series={[
