@@ -334,8 +334,8 @@ const DashBody = (prop) => {
                                                     data: [2, 5, 3],
                                                 },
                                             ]}
-                                            width={800}
-                                            height={300}
+                                            width={500}
+                                            height={500}
                                             className=''
                                         />
                                     </div>
