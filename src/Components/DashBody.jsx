@@ -336,7 +336,7 @@ const DashBody = (prop) => {
             data: [2, 5, 3],
         },
     ]}
-    width={500}
+    width={50}
     height={500}
     paddingInner={0.3} // Adjust this value to reduce the width of the bars
     paddingOuter={0.1} // Optional: adjust the outer padding
