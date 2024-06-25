@@ -334,6 +334,7 @@ const DashBody = (prop) => {
                                                     data: [2, 5, 3],
                                                 },
                                             ]}
+                                            xs={{bg}}
                                             width={500}
                                             height={500}
                                         />
