@@ -328,6 +328,7 @@ const DashBody = (prop) => {
                                                     id: 'barCategories',
                                                     data: ['bar A', 'bar B', 'bar C'],
                                                     scaleType: 'band',
+                                                    className: ""
                                                 },
                                             ]}
                                             series={[
