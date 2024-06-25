@@ -336,9 +336,9 @@ const DashBody = (prop) => {
             data: [2, 5, 3],
         },
     ]}
-    
+
     width={200}
-    marginLeft={500}
+    marginLeft={"500 !important"}
     padding={500}
     height={500}
     // paddingInner={0.3} // Adjust this value to reduce the width of the bars
