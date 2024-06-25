@@ -336,6 +336,7 @@ const DashBody = (prop) => {
             data: [2, 5, 3],
         },
     ]}
+    
     width={200}
     marginLeft={500}
     padding={500}
