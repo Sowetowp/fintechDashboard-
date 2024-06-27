@@ -506,7 +506,7 @@ const DashBody = (prop) => {
                                 </div>
                             </div>
                             <div className='w-full text-center pt-12'>
-                                <p className='dark:text-white'>Copyright © Developed by <span className='text-[#0099FF] dark:hover:text-white'>Abdulmalik</span> 2023</p>
+                                <p className='dark:text-white text-gray-600'>Copyright © Developed by <span className='text-[#0099FF] dark:hover:text-white'>Abdulmalik</span> 2023</p>
                             </div>
                         </div>
                     </div>
