@@ -334,7 +334,6 @@ const DashBody = (prop) => {
                                                 { data: [51, 6, 49, 30, 60, 50, 15], id: 'cyc' }
                                             ]}
                                             height={290}
-                                            leftAxis={}
                                             grid={{ horizontal: true }}
                                             borderRadius={50}
                                             colors={['rgb(225, 225, 225)', 'rgb(239, 239, 239)']}
