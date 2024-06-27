@@ -105,7 +105,6 @@ const DashBody = (prop) => {
     ]
 
     const scrollRef = useRef(null);
-    const scrollRef = useRef(null);
 
   const handleScroll = () => {
     if (scrollRef.current) {
