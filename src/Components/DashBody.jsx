@@ -356,7 +356,7 @@ const DashBody = (prop) => {
                                             <div>
                                                 <img src={notif1} alt="" className='w-20 rounded-xl'/>
                                                 <p className='dark:text-white text-lg text-center'>Samuel</p>
-                                                <p>@sam224</p>
+                                                <p className='text-gray-500 text-xs'>@sam224</p>
                                             </div>
                                         </div>
                                     </div>
