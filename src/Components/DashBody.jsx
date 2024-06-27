@@ -352,7 +352,7 @@ const DashBody = (prop) => {
                                             <div>
                                                 <img src="" alt="" />
                                                 <p>Samuel</p>
-                                                <p></p>
+                                                <p>@sam224</p>
                                             </div>
                                         </div>
                                     </div>
