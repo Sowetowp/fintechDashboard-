@@ -107,7 +107,6 @@ const DashBody = (prop) => {
     const scrollRef = useRef(null);
     const [items, setItems] = useState([...quickTransfer, ...quickTransfer]);
     const [middleItem, setMiddleItem] = useState(null);
-    const scrollRef = useRef(null);
   
     const calculateMiddleItem = () => {
       if (scrollRef.current) {
