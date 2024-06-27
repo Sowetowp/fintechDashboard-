@@ -429,12 +429,12 @@ const DashBody = (prop) => {
                                         </div> */}
                                         <div className="infinite-scroll-container">
       <div className="infinite-scroll-content">
-        {data.map((item, index) => (
+        {quickTransfer.map((item, index) => (
           <div key={index} className="infinite-scroll-item">
             {item.}
           </div>
         ))}
-        {data.map((item, index) => (
+        {quickTransfer.map((item, index) => (
           <div key={`clone-${index}`} className="infinite-scroll-item">
             {item}
           </div>
