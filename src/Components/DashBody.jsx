@@ -390,7 +390,7 @@ const DashBody = (prop) => {
                                     <div className='bg-white dark:bg-blue-950 mt-12 shadow p-6 rounded-lg'>
                                         <div className='flex flex-wrap justify-between items-center'>
                                             <span>
-                                                <h2 className='dark:text-white text-xl'>Quick Transfer</h2>
+                                                <h2 className='dark:text-white text-xl font-medium'>Quick Transfer</h2>
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
