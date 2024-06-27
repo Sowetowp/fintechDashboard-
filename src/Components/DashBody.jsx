@@ -105,7 +105,8 @@ const DashBody = (prop) => {
     ]
 
     const scrollRef = useRef(null);
-
+    const [items, setItems] = useState([...data, ...data, ...data]);
+  
   const handleScroll = () => {
     if (scrollRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
