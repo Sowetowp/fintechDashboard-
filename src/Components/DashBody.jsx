@@ -427,6 +427,14 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
+                                        <Slider {...settings}>
+            {items.map((item, index) => (
+                <div key={index}>
+                    <img src={item.image} alt={item.name} />
+                    <p>{item.name}</p>
+                </div>
+            ))}
+        </Slider>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
