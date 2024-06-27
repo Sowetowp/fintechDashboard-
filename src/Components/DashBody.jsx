@@ -425,7 +425,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        <div className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
+                                        {/* <div className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
                                             {quickTransfer.map((qt, index) => (
                                                 <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}>
                                                     <img src={qt.image} alt="" className='md:min-w-[5.5rem] w-full  rounded-xl' />
@@ -433,7 +433,24 @@ const DashBody = (prop) => {
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
                                             ))}
-                                        </div>
+                                        </div> */}
+                                        <div
+            ref={containerRef}
+            className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'
+        >
+            {quickTransfer.map((qt, index) => (
+                <div
+                    key={index}
+                    data-index={index}
+                    ref={el => itemsRef.current[index] = el}
+                    className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}
+                >
+                    <img src={qt.image} alt="" className='md:min-w-[5.5rem] w-full rounded-xl' />
+                    <p className='dark:text-white text-lg text-center mt-3 font-medium'>{qt.name}</p>
+                    <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
+                </div>
+            ))}
+        </div>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
