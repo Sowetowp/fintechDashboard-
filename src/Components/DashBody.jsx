@@ -429,7 +429,7 @@ const DashBody = (prop) => {
                                             height={100}
                                             sx={{
                                                 [`& .${lineElementClasses.root}`]: {
-                                                  display: 'none',
+                                                  width:4
                                                 },
                                               }}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
