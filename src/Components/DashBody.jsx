@@ -416,6 +416,7 @@ const DashBody = (prop) => {
                                     <div>
                                         <p className='text-gray-500 text-sm'>Income</p>
                                         <p className='dark:text-white text-xl font-bold'>$65,123</p>
+                                        <p className='text-gray-500 text-sm'></p>
                                     </div>
                                     </div>
                                 </div>
