@@ -106,23 +106,39 @@ const DashBody = (prop) => {
 
     const scrollRef = useRef(null);
     const [items, setItems] = useState([...quickTransfer, ...quickTransfer]);
-  useEffect(() => {
-    const handleScroll = () => {
+    const [middleItem, setMiddleItem] = useState(null);
+    const scrollRef = useRef(null);
+  
+    const calculateMiddleItem = () => {
       if (scrollRef.current) {
-        const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-        if (scrollLeft + clientWidth >= scrollWidth - 10) {
-          setItems((prevItems) => [...prevItems, ...quickTransfer]);
-        } else if (scrollLeft === 0) {
-          setItems((prevItems) => [...quickTransfer, ...prevItems]);
-          scrollRef.current.scrollLeft = scrollWidth;
-        }
+        const { scrollLeft, clientWidth } = scrollRef.current;
+        const middlePoint = scrollLeft + clientWidth / 2;
+        const itemWidth = scrollRef.current.children[0].children[0].offsetWidth;
+        const middleIndex = Math.floor(middlePoint / itemWidth);
+        setMiddleItem(items[middleIndex]);
       }
     };
-
-    const ref = scrollRef.current;
-    ref.addEventListener('scroll', handleScroll);
-    return () => ref.removeEventListener('scroll', handleScroll);
-  }, [quickTransfer]);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (scrollRef.current) {
+          const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+          if (scrollLeft + clientWidth >= scrollWidth - 10) {
+            setItems((prevItems) => [...prevItems, ...data]);
+          } else if (scrollLeft === 0) {
+            setItems((prevItems) => [...data, ...prevItems]);
+            scrollRef.current.scrollLeft = scrollWidth;
+          }
+          calculateMiddleItem();
+        }
+      };
+  
+      const ref = scrollRef.current;
+      ref.addEventListener('scroll', handleScroll);
+      calculateMiddleItem(); // Initial calculation
+      return () => ref.removeEventListener('scroll', handleScroll);
+    }, [data, items]);
+  
 
     useEffect(() => {
         const canvas = canvasRef.current;
