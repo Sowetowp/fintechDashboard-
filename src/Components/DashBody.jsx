@@ -404,7 +404,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <div className='mt-10 flex justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
-                                            <div>
+                                            <div className='flex items-center bg-gray-500'>
                                                 <input type="text"/>
                                                 <button></button>
                                             </div>
