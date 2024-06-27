@@ -107,20 +107,18 @@ const DashBody = (prop) => {
     const scrollerRef = useRef(null);
 
     useEffect(() => {
-      const scroller = scrollerRef.current;
-  
-      // Duplicate the items to create a seamless scroll
-      const duplicateItems = [...quickTransfer, ...quickTransfer];
-  
-      const handleScroll = () => {
-        const scrollWidth = scroller.scrollWidth / 2;
-        if (scroller.scrollLeft >= scrollWidth) {
-          scroller.scrollLeft = 0;
-        }
-      };
-  
-      scroller.addEventListener('scroll', handleScroll);
-      return () => scroller.removeEventListener('scroll', handleScroll);
+        const scroller = scrollerRef.current;
+        const duplicateItems = [...quickTransfer, ...quickTransfer];
+
+        const handleScroll = () => {
+            const scrollWidth = scroller.scrollWidth / 2;
+            if (scroller.scrollLeft >= scrollWidth) {
+                scroller.scrollLeft = 0;
+            }
+        };
+
+        scroller.addEventListener('scroll', handleScroll);
+        return () => scroller.removeEventListener('scroll', handleScroll);
     }, []);
 
     useEffect(() => {
