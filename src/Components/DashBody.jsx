@@ -478,6 +478,7 @@ const DashBody = (prop) => {
                                         <div>
                                             <span>
                                             <p className='text-gray-500 text-sm'>Weekly Wallet Usage</p>
+                                            <p className='text-gray-500 text-sm'></p>
                                             </span>
                                         </div>
                                     </div>
