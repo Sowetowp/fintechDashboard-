@@ -328,7 +328,7 @@ const DashBody = (prop) => {
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80] },
-                                                { data: [51, 6, 49, 30, 60, 50, 15] },{ ..., color: '#fdb462'}
+                                                { data: [51, 6, 49, 30, 60, 50, 15] },{ color: '#fdb462'}
                                             ]}
                                             height={290}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band' }]}
