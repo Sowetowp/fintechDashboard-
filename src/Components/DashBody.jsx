@@ -431,7 +431,7 @@ const DashBody = (prop) => {
       <div className="infinite-scroll-content">
         {data.map((item, index) => (
           <div key={index} className="infinite-scroll-item">
-            {item}
+            {item.}
           </div>
         ))}
         {data.map((item, index) => (
