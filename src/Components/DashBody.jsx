@@ -403,6 +403,7 @@ const DashBody = (prop) => {
                                             ))}
                                         </div>
                                         <div>
+                                            <p>Amount</p>
                                             
                                         </div>
                                     </div>
