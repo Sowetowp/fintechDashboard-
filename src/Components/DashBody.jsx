@@ -48,7 +48,7 @@ const DashBody = (prop) => {
         }
     }, []);
 
-    const quickTransfer = [
+    const [items, setItems] = useState([
         {
             image: notif1,
             name: "Samuel",
