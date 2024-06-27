@@ -422,7 +422,7 @@ const DashBody = (prop) => {
                                             xAxis={[{ data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 21, 27, 30], disableLine: true, disableTicks: true }]}
                                             series={[
                                                 {
-                                                    data: [0, 4, 2.5, 6, 3, 5, 2, 4, 1, 7, 2, 8, 3, 0],
+                                                    data: [0, 4, 2.5, 6, 3, 5, 2, 4, 1, 7, 2, 8, , 0],
                                                     showMark: false
                                                 },
                                             ]}
