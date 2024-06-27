@@ -140,9 +140,9 @@
     background-color: #0099ff2a;
 }
 .scrooler{
-    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    scrollbar-width: none;
 }
 
 .scrooler::-webkit-scrollbar {
-  display: none; /* Hide scrollbar in Webkit browsers */
+  display: none;
 }
