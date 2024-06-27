@@ -324,21 +324,17 @@ const DashBody = (prop) => {
                                         <BarChart
                                             sx={(theme) => ({
                                                 [`.MuiBarElement-series-run`]: {
-                                                    borderRadius: 20,
-                                                    strokeWidth:9
-                                                },
-                                                [`.MuiBarElement-series-cyc`]: {
-                                                    borderRadius: 20,
-                                                },
-                                                stroke: "grey",
-                                                strokeWidth: "0.5",
+                                                    padding: 20,
+                                                  },
+                                                stroke:"grey",
+                                                strokeWidth:"0.5"
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80], id: 'run' },
-                                                { data: [51, 6, 49, 30, 60, 50, 15], id: 'cyc' },
+                                                { data: [51, 6, 49, 30, 60, 50, 15], id: 'cyc' }
                                             ]}
                                             height={290}
-                                            borderRadius={[10, 10]}
+                                            borderRadius={[10,10]}
                                             colors={['rgb(225, 225, 225)', 'rgb(239, 239, 239)']}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band' }]}
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
