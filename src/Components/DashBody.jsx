@@ -48,7 +48,7 @@ const DashBody = (prop) => {
         }
     }, []);
 
-    const items = [
+    const quickTransfer = [
         {
             image: notif1,
             name: "Samuel",
@@ -105,51 +105,26 @@ const DashBody = (prop) => {
     ]
 
     const scrollerRef = useRef(null);
-    const wrapperRef = useRef(null);
 
     useEffect(() => {
         const scroller = scrollerRef.current;
-        const wrapper = wrapperRef.current;
-
-        // Clone items for seamless looping
-        wrapper.innerHTML = items.map(item => (
-            `<div class="item">${item.name}</div>`
-        )).join('');
-
+    
+        // Set initial scroll position to the middle
+        const halfScrollWidth = scroller.scrollWidth / 2;
+        scroller.scrollLeft = halfScrollWidth;
+    
         const handleScroll = () => {
-            if (scroller.scrollLeft === 0) {
-                scroller.scrollLeft = wrapper.scrollWidth / 2;
-            } else if (scroller.scrollLeft >= wrapper.scrollWidth / 2) {
-                scroller.scrollLeft = 0;
-            }
+          const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+          if (scroller.scrollLeft === 0) {
+            scroller.scrollLeft = halfScrollWidth;
+          } else if (scroller.scrollLeft >= maxScrollLeft) {
+            scroller.scrollLeft = halfScrollWidth;
+          }
         };
-
-        let scrollInterval = null;
-
-        const startScrolling = () => {
-            scrollInterval = setInterval(() => {
-                scroller.scrollLeft += 1; // Adjust scroll speed as needed
-            }, 10); // Adjust scroll speed interval as needed
-        };
-
-        const stopScrolling = () => {
-            clearInterval(scrollInterval);
-        };
-
-        scroller.addEventListener('mouseenter', stopScrolling);
-        scroller.addEventListener('mouseleave', startScrolling);
+    
         scroller.addEventListener('scroll', handleScroll);
-
-        startScrolling();
-
-        return () => {
-            clearInterval(scrollInterval);
-            scroller.removeEventListener('mouseenter', stopScrolling);
-            scroller.removeEventListener('mouseleave', startScrolling);
-            scroller.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
+        return () => scroller.removeEventListener('scroll', handleScroll);
+      }, []);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -440,7 +415,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        {/* <div className='mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler' ref={scrollerRef}>
+                                        <div className='mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler' ref={scrollerRef}>
                                             {quickTransfer.concat(quickTransfer, quickTransfer).map((qt, index) => (
                                                 <div key={index} className='w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl'>
                                                     <img src={qt.image} alt="" className='min-w-20 rounded-xl' />
@@ -448,9 +423,6 @@ const DashBody = (prop) => {
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
                                             ))}
-                                        </div> */}
-                                        <div className="scroller mt-10 snap-x " ref={scrollerRef}>
-                                            <div className="wrapper flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler" ref={wrapperRef}></div>
                                         </div>
                                     </div>
                                 </div>
