@@ -324,7 +324,7 @@ const DashBody = (prop) => {
                                         <BarChart
                                             sx={(theme) => ({
                                                 [`.${barElementClasses.root}`]: {
-                                                    border: "red",
+                                                    bordert: "red",
                                                   },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5"
