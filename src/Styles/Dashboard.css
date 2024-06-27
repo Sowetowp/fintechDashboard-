@@ -143,6 +143,6 @@
     scrollbar-width: none; /* Hide scrollbar in Firefox */
 }
 
-.scroller::-webkit-scrollbar {
+.scrooler::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Webkit browsers */
 }
