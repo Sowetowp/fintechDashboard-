@@ -323,7 +323,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                [`.MuiBarElement-series-l_id`]: {
+                                                [`.MuiBarElement-series-run`]: {
                                                     borderRadius: "100px",
                                                   },
                                                 stroke:"grey",
