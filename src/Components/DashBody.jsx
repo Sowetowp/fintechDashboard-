@@ -352,7 +352,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        <div>
+                                        <div className='mt-7'>
                                             <div className='w-[fit-content] bg-[#0099ff2a] py-3 px-1 rounded-xl'>
                                                 <img src={notif1} alt="" className='w-24 rounded-xl'/>
                                                 <p className='dark:text-white text-lg text-center mt-3'>Samuel</p>
