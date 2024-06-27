@@ -335,7 +335,7 @@ const DashBody = (prop) => {
                                             borderRadius={50}
                                             colors={['rgb(225, 225, 225)', 'rgb(239, 239, 239)']}
                                             yAxis={[{disableLine:true, disableTicks:true}]}
-                                            xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band', categoryGapRatio: 0.5, barGapRatio: 0.3, disableLine: true }]}
+                                            xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band', categoryGapRatio: 0.6, barGapRatio: 0.3, disableLine: true }]}
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
                                             
                                         />
