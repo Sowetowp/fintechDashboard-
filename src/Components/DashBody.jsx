@@ -419,6 +419,9 @@ const DashBody = (prop) => {
                                             <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
                                         </div>
                                         <LineChart
+                                        sx={{
+                                            width:"100%"
+                                        }}
                                             xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
                                             series={[
                                                 {
