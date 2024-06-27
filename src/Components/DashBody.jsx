@@ -504,7 +504,7 @@ const DashBody = (prop) => {
                                         />
                                     </div>
                                     <div className='dark:bg-blue-950 shadow mt-7 w-full rounded-xl'>
-
+                                    <h2 className='dark:text-white text-xl font-medium'>Quick Transfer</h2>
                                     </div>
                                 </div>
                             </div>
