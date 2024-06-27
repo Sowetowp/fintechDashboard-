@@ -323,8 +323,8 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                stroke:"grey",
-                                                strokeWidth:"0.5",
+                                                stroke: "grey",
+                                                strokeWidth: "0.5",
                                             })}
                                             series={[
                                                 { data: [35, 90, 24, 85, 15, 25, 80], id: 'run' },
@@ -334,11 +334,14 @@ const DashBody = (prop) => {
                                             grid={{ horizontal: true }}
                                             borderRadius={500}
                                             colors={['rgb(215, 215, 215)', 'rgb(239, 239, 239)']}
-                                            yAxis={[{disableLine:true, disableTicks:true}]}
+                                            yAxis={[{ disableLine: true, disableTicks: true }]}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band', categoryGapRatio: 0.6, barGapRatio: 0.3, disableLine: true }]}
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
-                                            
+
                                         />
+                                    </div>
+                                    <div className='bg-white dark:bg-blue-950 mt-12 shadow p-6 rounded-lg'>
+                                        
                                     </div>
                                 </div>
                                 <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
