@@ -5,6 +5,9 @@ import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
 import notif4 from "../assets/4.jpg"
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const drops = {
     dashboard: false,
