@@ -429,7 +429,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <div ref={scrollRef} className='mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
                                             {items.map((qt, index) => (
-                                                <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start ${bg-[#0099ff2a] py-3 px-1 rounded-xl`}>
+                                                <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start ${bg-[#0099ff2a]} py-3 px-1 rounded-xl`}>
                                                     <img src={qt.image} alt="" className='md:min-w-20 w-full  rounded-xl' />
                                                     <p className='dark:text-white text-lg text-center mt-3 font-medium'>{qt.name}</p>
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
