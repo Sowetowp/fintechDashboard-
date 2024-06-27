@@ -96,7 +96,7 @@ const DashBody = (prop) => {
     const [hasMore, setHasMore] = useState(true);
 
     const fetchMoreData = () => {
-        if (quickTransfer.length >= 100) {
+        if (items.length >= 100) {
             setHasMore(false);
             return;
         }
@@ -417,7 +417,7 @@ const DashBody = (prop) => {
                                             ))}
                                         </div>
                                         <InfiniteScroll
-            dataLength={quickTransfer.length}
+            dataLength={items.length}
             next={fetchMoreData}
             hasMore={hasMore}
             loader={<h4>Loading...</h4>}
@@ -427,7 +427,7 @@ const DashBody = (prop) => {
                 </p>
             }
         >
-            {quickTransfer.map((_, index) => (
+            {items.map((_, index) => (
                 <div key={index} className="item">
                     Item {index}
                 </div>
