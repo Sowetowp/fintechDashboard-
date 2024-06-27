@@ -324,7 +324,8 @@ const DashBody = (prop) => {
                                         <BarChart
                                             sx={(theme) => ({
                                                 stroke:"grey",
-                                                strokeWidth:"0.5"
+                                                strokeWidth:"0.5",
+                                                border:"solid"
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80] },
