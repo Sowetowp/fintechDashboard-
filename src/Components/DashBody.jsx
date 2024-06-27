@@ -332,7 +332,7 @@ const DashBody = (prop) => {
                                             ]}
                                             height={290}
                                             borderRadius={[10,10]}
-                                            colors={['rgb(225, 225, 225)', '#EC407A']}
+                                            colors={['rgb(225, 225, 225)', 'rgb(246, 246, 246)']}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band' }]}
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
                                         />
