@@ -417,7 +417,10 @@ const DashBody = (prop) => {
                                             <div className='pt-7 px-7 pb-2'>
                                                 <p className='text-gray-500 text-sm'>Income</p>
                                                 <p className='dark:text-white text-2xl font-bold mt-1'>$65,123</p>
-                                                <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
+                                                <p className='text-gray-500 text-xs mt-1'>
+                                                    
+                                                    {"4% (30 days)"}
+                                                </p>
                                             </div>
                                             <LineChart
                                                 xAxis={[{ data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 21, 24, 27, 30], disableLine: true, disableTicks: true }]}
