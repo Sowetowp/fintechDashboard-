@@ -536,7 +536,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div>
-                                            <div cl></div>
+                                            <div className='w-1/2 rounded-xl '></div>
                                         </div>
                                     </div>
                                 </div>
