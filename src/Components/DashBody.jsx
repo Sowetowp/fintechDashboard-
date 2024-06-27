@@ -492,7 +492,7 @@ const DashBody = (prop) => {
                                         <LineChart
   width={500}
   height={300}
-  series={[{ data: uData, label: 'uv', area: true, showMark: false }]}
+  series={[{ data: [4000, 3000, 2000, 2780, 1890, 2390, 3490], label: 'uv', area: true, showMark: false }]}
   xAxis={[{ scaleType: 'point', data: xLabels }]}
   sx={{
     [`& .${lineElementClasses.root}`]: {
