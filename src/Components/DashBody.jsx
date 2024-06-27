@@ -414,7 +414,7 @@ const DashBody = (prop) => {
                                 <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
                             </div>
                             <div className='w-full text-center pt-12'>
-                                <p className='dark:text-white'>Copyright © Designed & Developed by DexignZone 2023</p>
+                                <p className='dark:text-white'>Copyright © Developed by DexignZone 2023</p>
                             </div>
                         </div>
                     </div>
