@@ -325,6 +325,7 @@ const DashBody = (prop) => {
                                             sx={(theme) => ({
                                                 [`.MuiBarElement-series-run`]: {
                                                     rx: 20
+                                                    m
                                                   },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5"
