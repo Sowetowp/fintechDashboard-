@@ -395,7 +395,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        <div className='mt-10 snap-x flex gap-5 overflow-x-scroll' style={{animation: `swipe ${4}ms linear infinite`}}>
+                                        <div className='mt-10 snap-x flex gap-5 overflow-x-scroll'>
                                             <marquee behavior="" direction="">
                                             {quickTransfer.map((qt, index) => (
                                                 <div key={index} className='w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl'>
