@@ -68,22 +68,7 @@ const DashBody = (prop) => {
             image: notif4,
             name: "Samuel",
             handle: "@sam224"
-        },
-        {
-            image: notif1,
-            name: "Samuel",
-            handle: "@sam224"
-        },
-        {
-            image: notif2,
-            name: "Samuel",
-            handle: "@sam224"
-        },
-        {
-            image: notif3,
-            name: "Samuel",
-            handle: "@sam224"
-        },
+        }
     ]
 
     const images = [
