@@ -432,7 +432,7 @@ const DashBody = (prop) => {
                                                     stroke: "#0099FF",
                                                     strokeWidth: 4,
                                                 },
-                                                stroke
+                                                stroke:"red"
                                             }}
                                             colors={["#0099FF"]}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
