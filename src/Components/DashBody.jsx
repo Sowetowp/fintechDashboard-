@@ -506,7 +506,7 @@ const DashBody = (prop) => {
                                     <div className='dark:bg-blue-950 shadow mt-7 p-7 w-full rounded-xl'>
                                         <h2 className='dark:text-white text-xl font-medium'>Spendings</h2>
                                         <div>
-                                            <div >
+                                            <div className='flex items-center'>
                                                 <div className='p-3 bg-purple-500 inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Investment</p>
