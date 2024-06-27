@@ -109,18 +109,7 @@ const DashBody = (prop) => {
     useEffect(() => {
         const scroller = scrollerRef.current;
     
-        // Event listener for smooth scrolling behavior
-        scroller.addEventListener('scroll', () => {
-          scroller.scrollTo({
-            left: Math.floor(scroller.scrollLeft / scroller.clientWidth) * scroller.clientWidth,
-            behavior: 'smooth'
-          });
-        });
-    
-        return () => {
-          scroller.removeEventListener('scroll', () => {});
-        };
-      }, []);
+        // Eve
 
     useEffect(() => {
         const canvas = canvasRef.current;
