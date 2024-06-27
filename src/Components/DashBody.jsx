@@ -406,7 +406,7 @@ const DashBody = (prop) => {
                                             <p>Amount</p>
                                             <div>
                                                 <input type="text" />
-                                                
+                                                <button></button>
                                             </div>
                                         </div>
                                     </div>
