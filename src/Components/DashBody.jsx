@@ -412,7 +412,7 @@ const DashBody = (prop) => {
                                     </div>
                                 </div>
                                 <div className='w-1/2'>
-                                    
+                                    <div className=''></div>
                                 </div>
                             </div>
                             <div className='w-full text-center pt-12'>
