@@ -443,7 +443,7 @@ const DashBody = (prop) => {
                                         <div className='dark:bg-blue-950 md:w-1/2 w-full rounded-xl pb-3'>
                                             <div className='pt-7 px-7 pb-2'>
                                                 <p className='text-gray-500 text-sm'>Outome</p>
-                                                <p className='dark:text-white text-2xl font-bold mt-1'>$65,123</p>
+                                                <p className='dark:text-white text-2xl font-bold mt-1'>$24,551</p>
                                                 <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
                                             </div>
                                             <LineChart
