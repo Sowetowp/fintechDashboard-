@@ -489,6 +489,7 @@ const DashBody = (prop) => {
                                                 {"4% (30 days)"}
                                             </p>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
