@@ -427,11 +427,16 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div> */}
-                                        <div className="infinite-scroll-container" ref={scrollRef}>
+                                        <div className="infinite-scroll-container">
       <div className="infinite-scroll-content">
-        {items.map((item, index) => (
+        {data.map((item, index) => (
           <div key={index} className="infinite-scroll-item">
-            {item.name}
+            {item}
+          </div>
+        ))}
+        {data.map((item, index) => (
+          <div key={`clone-${index}`} className="infinite-scroll-item">
+            {item}
           </div>
         ))}
       </div>
