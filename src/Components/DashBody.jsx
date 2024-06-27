@@ -96,7 +96,7 @@ const DashBody = (prop) => {
     const [hasMore, setHasMore] = useState(true);
 
     const fetchMoreData = () => {
-        if (items.length >= 100) {
+        if (quickTransfer.length >= 100) {
             setHasMore(false);
             return;
         }
