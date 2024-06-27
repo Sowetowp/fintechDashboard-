@@ -344,7 +344,7 @@ const DashBody = (prop) => {
                                                 // },
 
                                                 border: `1px solid rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1)`,
-                                                backgroundImage: `linear-gradient(rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px)`,
+                                                backgroundImage: `linear-gradient(rgba(${theme.palette.mode !== 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px)`,
                                                 backgroundSize: '35px 35px',
                                                 backgroundPosition: '20px 20px, 20px 20px',
                                             })}
