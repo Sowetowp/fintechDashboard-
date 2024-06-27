@@ -507,6 +507,7 @@ const DashBody = (prop) => {
                                         <h2 className='dark:text-white text-xl font-medium'>Spendings</h2>
                                         <div>
                                             <div>
+                                                <div></div>
                                                 
                                             </div>
                                         </div>
