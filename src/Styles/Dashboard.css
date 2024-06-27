@@ -149,14 +149,13 @@
 
 .infinite-scroll-container {
     display: flex;
-    overflow-x: scroll;
+    overflow: hidden;
     width: 100%;
-    scroll-behavior: smooth;
-    white-space: nowrap;
   }
   
   .infinite-scroll-content {
-    display: inline-flex;
+    display: flex;
+    animation: scroll 10s linear infinite;
   }
   
   .infinite-scroll-item {
@@ -166,5 +165,14 @@
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     text-align: center;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
   
