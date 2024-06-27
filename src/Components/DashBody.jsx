@@ -422,19 +422,18 @@ const DashBody = (prop) => {
                                             xAxis={[{ data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26], disableLine: true, disableTicks: true }]}
                                             series={[
                                                 {
-                                                    data: [0, 4, 2.5, 6, 3, 5, 2, 4, 1, 7, 2, 8, 3, 0], 
+                                                    data: [0, 4, 2.5, 6, 3, 5, 2, 4, 1, 7, 2, 8, 3, 0],
                                                     showMark: false
                                                 },
                                             ]}
                                             height={90}
                                             sx={{
                                                 [`& .${lineElementClasses.root}`]: {
-                                                  stroke: "red",
-                                                  strokeWidth: 4,
+                                                    stroke: "red",
+                                                    strokeWidth: 4,
                                                 }
-                                              }}
-                                              
-                                              colors={["red"]}
+                                            }}
+                                            colors={["red"]}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
