@@ -412,7 +412,7 @@ const DashBody = (prop) => {
                                     </div>
                                 </div>
                                 <div className='lg:w-1/2 w-full'>
-                                    <div className="w-full flex gap-7 md:flex-wrap">
+                                    <div className="w-full flex gap-7 md:flex-nowrap flex-wrap">
                                         <div className='dark:bg-blue-950 md:w-1/2 w-full rounded-xl pb-3'>
                                             <div className='pt-7 px-7 pb-2'>
                                                 <p className='text-gray-500 text-sm'>Income</p>
