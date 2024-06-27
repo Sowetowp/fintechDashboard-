@@ -417,7 +417,7 @@ const DashBody = (prop) => {
                                             ))}
                                         </div>
                                         <InfiniteScroll
-            dataLength={items.length}
+            dataLength={quickTransfer.length}
             next={fetchMoreData}
             hasMore={hasMore}
             loader={<h4>Loading...</h4>}
