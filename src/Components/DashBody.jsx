@@ -420,7 +420,6 @@ const DashBody = (prop) => {
                                         </div>
                                         <LineChart
                                         sx={{
-                                            width:"100%",
                                             bgcolor:"red"
                                         }}
                                             xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
