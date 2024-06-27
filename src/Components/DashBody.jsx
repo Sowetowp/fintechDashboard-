@@ -514,7 +514,7 @@ const DashBody = (prop) => {
                                                 </span>
                                             </div>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
-                                                <div className='p-[0.45rem] bg-green-300 rounded-xl inline-block'></div>
+                                                <div className='p-[0.45rem] bg-green-200 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Installment</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$1,567 <span className='text-gray-500'>/$5,000</span></p>
