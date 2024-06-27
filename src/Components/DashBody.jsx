@@ -325,7 +325,8 @@ const DashBody = (prop) => {
                                             sx={(theme) => ({
                                                 backgroundColor: "red",
                                                 color:"yellow",
-                                                
+                                                stroke:"blue",
+                                                fill:"blue"
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80] },
