@@ -323,7 +323,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                // stroke:"grey",
+                                                stroke:"grey",
                                                 strokeWidth:"0.5",
                                             })}
                                             series={[
