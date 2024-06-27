@@ -328,7 +328,7 @@ const DashBody = (prop) => {
                                                 categoryGapRatio: 0.3,
                                                 barGapRatio: 0.1
                                             }]}
-                                                />
+                                        />
                                     </div>
                                 </div>
                                 <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
