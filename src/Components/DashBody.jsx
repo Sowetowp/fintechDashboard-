@@ -324,10 +324,10 @@ const DashBody = (prop) => {
                                         <BarChart
                                             sx={(theme) => ({
                                                 [`.MuiBarElement-series-run`]: {
-                                                    
-                                                  },
+                                                    margin: 90
+                                                },
                                                 stroke:"grey",
-                                                strokeWidth:"0.5"
+                                                strokeWidth:"0.5",
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80], id: 'run' },
@@ -335,10 +335,11 @@ const DashBody = (prop) => {
                                             ]}
                                             height={290}
                                             grid={{ horizontal: true }}
-                                            
+                                            borderRadius={50}
                                             colors={['rgb(225, 225, 225)', 'rgb(239, 239, 239)']}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band' }]}
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
+                                            
                                         />
                                     </div>
                                 </div>
