@@ -416,7 +416,7 @@ const DashBody = (prop) => {
                 },
             }}
         >
-            {items.map((item, index) => (
+            {quickTransfer.map((item, index) => (
                 <SwiperSlide key={index}>
                     <img src={item.image} alt={item.name} />
                     <p>{item.name}</p>
