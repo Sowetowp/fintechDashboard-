@@ -406,7 +406,7 @@ const DashBody = (prop) => {
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex items-center bg-gray-100 rounded-xl'>
                                                 <input type="text" className='outline-0 bg-transparent px-4'/>
-                                                <button className='bg-[#0099FF] py-3 px-4 text-xs font-medium text-white rounded-xl'>TRANSFER NOW</button>
+                                                <button className='bg-[#0099FF] py-3 px-5 text-xs font-medium text-white rounded-xl'>TRANSFER NOW</button>
                                             </div>
                                         </div>
                                     </div>
