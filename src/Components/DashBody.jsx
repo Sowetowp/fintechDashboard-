@@ -396,7 +396,7 @@ const DashBody = (prop) => {
                                         <div className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
                                             {quickTransfer.map((qt, index) => (
                                                 <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}>
-                                                    <img src={qt.image} alt="" className='md:min-w-24 w-full  rounded-xl' />
+                                                    <img src={qt.image} alt="" className='md:min-w-[5.5rem] w-full  rounded-xl' />
                                                     <p className='dark:text-white text-lg text-center mt-3 font-medium'>{qt.name}</p>
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
