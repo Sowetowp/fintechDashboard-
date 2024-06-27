@@ -416,6 +416,24 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
+                                        <InfiniteScroll
+            dataLength={items.length}
+            next={fetchMoreData}
+            hasMore={hasMore}
+            loader={<h4>Loading...</h4>}
+            endMessage={
+                <p style={{ textAlign: 'center' }}>
+                    <b>Yay! You have seen it all</b>
+                </p>
+            }
+        >
+            {items.map((_, index) => (
+                <div key={index} className="item">
+                    Item {index}
+                </div>
+            ))}
+        </InfiniteScroll>
+
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
