@@ -328,7 +328,7 @@ const DashBody = (prop) => {
                                             })}
                                             series={[
                                                 { data: [35, 90, 24, 85, 15, 25, 80], id: 'run' },
-                                                { data: [80, 6, 49, 30, 60, 50, 15], id: 'cyc' }
+                                                { data: [80, 6, 49, 95, 60, 50, 15], id: 'cyc' }
                                             ]}
                                             height={350}
                                             grid={{ horizontal: true }}
