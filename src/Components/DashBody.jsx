@@ -506,8 +506,8 @@ const DashBody = (prop) => {
                                     <div className='dark:bg-blue-950 shadow mt-7 p-7 w-full rounded-xl'>
                                         <h2 className='dark:text-white text-xl font-medium'>Spendings</h2>
                                         <div>
-                                            <div className='flex gap-3'>
-                                                <div className='p-2 bg-purple-500 inline-block'></div>
+                                            <div className='flex gap-4'>
+                                                <div className='p-2 bg-purple-500 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Investment</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$1,415 <span className='text-gray-500'>/$2,000</span></p>
