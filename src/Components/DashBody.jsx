@@ -418,7 +418,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        <div ref={scrollRef} className='mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
+                                        {/* <div ref={scrollRef} className='mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
                                             {items.map((qt, index) => (
                                                 <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}>
                                                     <img src={qt.image} alt="" className='md:min-w-20 w-full  rounded-xl' />
@@ -426,7 +426,16 @@ const DashBody = (prop) => {
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
                                             ))}
-                                        </div>
+                                        </div> */}
+                                        <div className="infinite-scroll-container" ref={scrollRef}>
+      <div className="infinite-scroll-content">
+        {items.map((item, index) => (
+          <div key={index} className="infinite-scroll-item">
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
