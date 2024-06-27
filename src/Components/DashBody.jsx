@@ -110,7 +110,7 @@ const DashBody = (prop) => {
       const scroller = scrollerRef.current;
   
       // Duplicate the items to create a seamless scroll
-      const duplicateItems = [...items, ...items];
+      const duplicateItems = [...quickTransfer, ...quickTransfer];
   
       const handleScroll = () => {
         const scrollWidth = scroller.scrollWidth / 2;
