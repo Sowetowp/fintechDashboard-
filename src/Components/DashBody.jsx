@@ -432,7 +432,7 @@ const DashBody = (prop) => {
                                                   stroke: "red",
                                                   strokeWidth: 4,
                                                 },
-                                                ba
+                                                backgroundColor:"red"
                                               }}
                                               
                                               colors={["red"]}
