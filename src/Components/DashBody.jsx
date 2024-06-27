@@ -435,7 +435,7 @@ const DashBody = (prop) => {
                                             }}
                                             colors={["red"]}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
-                                            margin={{ left: 0, right: -40, top: -20, bottom: 40 }}
+                                            margin={{ left: 0, right: -40, top: 0, bottom: 40 }}
                                         />
                                     </div>
                                 </div>
