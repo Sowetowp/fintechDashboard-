@@ -427,16 +427,20 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div> */}
-                                        <div className="infinite-scroll-container" ref={scrollRef}>
+                                        <div className="infinite-scroll-container">
       <div className="infinite-scroll-content">
-        {items.map((item, index) => (
+        {quickTransfer.map((item, index) => (
           <div key={index} className="infinite-scroll-item">
+            {item.name}
+          </div>
+        ))}
+        {quickTransfer.map((item, index) => (
+          <div key={`clone-${index}`} className="infinite-scroll-item">
             {item.name}
           </div>
         ))}
       </div>
     </div>
-
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
