@@ -322,12 +322,15 @@ const DashBody = (prop) => {
                                             <svg className='w-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12Z" className='fill-black dark:fill-white'></path> <path d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z" className='fill-black dark:fill-white'></path> <path d="M21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12Z" className='fill-black dark:fill-white'></path> </g></svg>
                                         </div>
                                         <BarChart
-                                            xAxis={[{
-                                                scaleType: 'band',
-                                                data: ['Page 1', 'Page 2', 'Page 3'],
-                                                categoryGapRatio: 0.3,
-                                                barGapRatio: 0.1
-                                            }]}
+                                            series={[
+                                                { data: [35, 44, 24, 34] },
+                                                { data: [51, 6, 49, 30] },
+                                                { data: [15, 25, 30, 50] },
+                                                { data: [60, 50, 15, 25] },
+                                            ]}
+                                            height={290}
+                                            xAxis={[{ data: ['Q1', 'Q2', 'Q3', 'Q4'], scaleType: 'band' }]}
+                                            margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
                                         />
                                     </div>
                                 </div>
