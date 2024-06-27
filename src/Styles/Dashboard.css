@@ -139,3 +139,6 @@
 #barCategories{
     background-color: #0099ff2a;
 }
+.blockg{
+    display: block !important;
+}
