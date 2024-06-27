@@ -105,50 +105,50 @@ const DashBody = (prop) => {
     ]
 
     const scrollerRef = useRef(null);
-  const wrapperRef = useRef(null);
+    const wrapperRef = useRef(null);
 
-  useEffect(() => {
-    const scroller = scrollerRef.current;
-    const wrapper = wrapperRef.current;
+    useEffect(() => {
+        const scroller = scrollerRef.current;
+        const wrapper = wrapperRef.current;
 
-    // Clone items for seamless looping
-    wrapper.innerHTML = items.map(item => (
-      `<div class="item">${item.name}</div>`
-    )).join('');
+        // Clone items for seamless looping
+        wrapper.innerHTML = items.map(item => (
+            `<div class="item">${item.name}</div>`
+        )).join('');
 
-    const handleScroll = () => {
-      if (scroller.scrollLeft === 0) {
-        scroller.scrollLeft = wrapper.scrollWidth / 2;
-      } else if (scroller.scrollLeft >= wrapper.scrollWidth / 2) {
-        scroller.scrollLeft = 0;
-      }
-    };
+        const handleScroll = () => {
+            if (scroller.scrollLeft === 0) {
+                scroller.scrollLeft = wrapper.scrollWidth / 2;
+            } else if (scroller.scrollLeft >= wrapper.scrollWidth / 2) {
+                scroller.scrollLeft = 0;
+            }
+        };
 
-    let scrollInterval = null;
+        let scrollInterval = null;
 
-    const startScrolling = () => {
-      scrollInterval = setInterval(() => {
-        scroller.scrollLeft += 1; // Adjust scroll speed as needed
-      }, 10); // Adjust scroll speed interval as needed
-    };
+        const startScrolling = () => {
+            scrollInterval = setInterval(() => {
+                scroller.scrollLeft += 1; // Adjust scroll speed as needed
+            }, 10); // Adjust scroll speed interval as needed
+        };
 
-    const stopScrolling = () => {
-      clearInterval(scrollInterval);
-    };
+        const stopScrolling = () => {
+            clearInterval(scrollInterval);
+        };
 
-    scroller.addEventListener('mouseenter', stopScrolling);
-    scroller.addEventListener('mouseleave', startScrolling);
-    scroller.addEventListener('scroll', handleScroll);
+        scroller.addEventListener('mouseenter', stopScrolling);
+        scroller.addEventListener('mouseleave', startScrolling);
+        scroller.addEventListener('scroll', handleScroll);
 
-    startScrolling();
+        startScrolling();
 
-    return () => {
-      clearInterval(scrollInterval);
-      scroller.removeEventListener('mouseenter', stopScrolling);
-      scroller.removeEventListener('mouseleave', startScrolling);
-      scroller.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        return () => {
+            clearInterval(scrollInterval);
+            scroller.removeEventListener('mouseenter', stopScrolling);
+            scroller.removeEventListener('mouseleave', startScrolling);
+            scroller.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     useEffect(() => {
@@ -450,8 +450,8 @@ const DashBody = (prop) => {
                                             ))}
                                         </div> */}
                                         <div className="scroller" ref={scrollerRef}>
-        <div className="wrapper" ref={wrapperRef}></div>
-      </div>
+                                            <div className="wrapper" ref={wrapperRef}></div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
