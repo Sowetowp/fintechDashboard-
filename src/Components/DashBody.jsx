@@ -427,7 +427,7 @@ const DashBody = (prop) => {
                 </p>
             }
         >
-            {items.map((_, index) => (
+            {quickTransfer.map((_, index) => (
                 <div key={index} className="item">
                     Item {index}
                 </div>
