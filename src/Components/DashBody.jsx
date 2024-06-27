@@ -65,7 +65,7 @@ const DashBody = (prop) => {
             handle: "@sam224"
         },
         {
-            image: notif1,
+            image: notif4,
             name: "Samuel",
             handle: "@sam224"
         },
@@ -75,12 +75,12 @@ const DashBody = (prop) => {
             handle: "@sam224"
         },
         {
-            image: notif1,
+            image: notif2,
             name: "Samuel",
             handle: "@sam224"
         },
         {
-            image: notif1,
+            image: notif3,
             name: "Samuel",
             handle: "@sam224"
         },
