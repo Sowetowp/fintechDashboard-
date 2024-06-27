@@ -323,26 +323,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                // [`.${barElementClasses.root}`]: {
-                                                //     fill: theme.palette.background.paper,
-                                                //     strokeWidth: 2,
-                                                // },
-                                                // [`.MuiBarElement-series-l_id`]: {
-                                                //     stroke: colors[0],
-                                                // },
-                                                // [`.MuiBarElement-series-r_id`]: {
-                                                //     stroke: colors[1],
-                                                // },
-                                                // [`.${axisClasses.root}`]: {
-                                                //     [`.${axisClasses.tick}, .${axisClasses.line}`]: {
-                                                //         stroke: '#006BD6',
-                                                //         strokeWidth: 3,
-                                                //     },
-                                                //     [`.${axisClasses.tickLabel}`]: {
-                                                //         fill: '#006BD6',
-                                                //     },
-                                                // },
-
+                                                backgroundColor: "red"
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80] },
