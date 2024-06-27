@@ -404,7 +404,10 @@ const DashBody = (prop) => {
                                         </div>
                                         <div>
                                             <p>Amount</p>
-                                            
+                                            <div>
+                                                <input type="text" />
+                                                
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
