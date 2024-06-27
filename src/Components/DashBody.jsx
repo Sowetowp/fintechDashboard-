@@ -411,7 +411,9 @@ const DashBody = (prop) => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
+                                <div className='w-1/2'>
+                                    
+                                </div>
                             </div>
                             <div className='w-full text-center pt-12'>
                                 <p className='dark:text-white'>Copyright © Developed by <span className='text-[#0099FF] hover:text-white'>Abdulmalik</span> 2023</p>
