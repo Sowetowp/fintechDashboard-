@@ -5,7 +5,6 @@ import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
 import notif4 from "../assets/4.jpg"
-import InfiniteScroll from 'react-infinite-scroll-component';
 
 const drops = {
     dashboard: false,
@@ -91,19 +90,6 @@ const DashBody = (prop) => {
             handle: "@sam224"
         }
     ]
-
-    const [items, setItems] = useState(Array.from({ length: 20 }));
-    const [hasMore, setHasMore] = useState(true);
-
-    const fetchMoreData = () => {
-        if (items.length >= 100) {
-            setHasMore(false);
-            return;
-        }
-        setTimeout(() => {
-            setItems(items.concat(Array.from({ length: 20 })));
-        }, 1500);
-    };
 
     const images = [
         <svg className={`w-6 ${prop.prop ? "" : "hidden md:block"}`} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path className='group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]' strokeWidth="2" d="M4 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5ZM14 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5ZM4 16a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3ZM14 13a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-6Z"></path> </g></svg>,
@@ -416,24 +402,6 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <InfiniteScroll
-            dataLength={items.length}
-            next={fetchMoreData}
-            hasMore={hasMore}
-            loader={<h4>Loading...</h4>}
-            endMessage={
-                <p style={{ textAlign: 'center' }}>
-                    <b>Yay! You have seen it all</b>
-                </p>
-            }
-        >
-            {items.map((_, index) => (
-                <div key={index} className="item">
-                    Item {index}
-                </div>
-            ))}
-        </InfiniteScroll>
-
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
