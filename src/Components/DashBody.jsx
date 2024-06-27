@@ -431,7 +431,8 @@ const DashBody = (prop) => {
                                                 [`& .${lineElementClasses.root}`]: {
                                                   stroke: "red",
                                                   strokeWidth: 4,
-                                                }
+                                                },
+                                                bgcolor:"red"
                                               }}
                                               
                                               colors={["red"]}
