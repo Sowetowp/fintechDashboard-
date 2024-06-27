@@ -426,7 +426,7 @@ const DashBody = (prop) => {
                                                     showMark: false
                                                 },
                                             ]}
-                                            height={200}
+                                            height={100}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
