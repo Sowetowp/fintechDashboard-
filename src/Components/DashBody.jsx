@@ -427,6 +427,7 @@ const DashBody = (prop) => {
                                                 },
                                             ]}
                                             height={90}
+                                            width={"100%"}
                                             sx={{
                                                 [`& .${lineElementClasses.root}`]: {
                                                   stroke: "red",
