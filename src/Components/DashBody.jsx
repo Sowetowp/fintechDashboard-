@@ -326,6 +326,9 @@ const DashBody = (prop) => {
                                                 [`.MuiBarElement-series-run`]: {
                                                     width: 9
                                                 },
+                                                .MuiSlider-root {
+                                                    color: #20b2aa;
+                                                  }
                                                 stroke:"grey",
                                                 strokeWidth:"0.5",
                                             })}
