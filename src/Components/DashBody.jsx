@@ -460,7 +460,7 @@ const DashBody = (prop) => {
                                                         showMark: false
                                                     },
                                                 ]}
-                                                height={70}
+                                                height={75}
                                                 sx={{
                                                     [`& .${lineElementClasses.root}`]: {
                                                         stroke: "#0099FF",
