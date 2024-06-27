@@ -104,6 +104,38 @@ const DashBody = (prop) => {
         <svg className={`w-6 ${prop.prop ? "" : "hidden md:block"}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 2L16.5 2L21 6.5V19" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M3 20.5V6.5C3 5.67157 3.67157 5 4.5 5H14.2515C14.4106 5 14.5632 5.06321 14.6757 5.17574L17.8243 8.32426C17.9368 8.43679 18 8.5894 18 8.74853V20.5C18 21.3284 17.3284 22 16.5 22H4.5C3.67157 22 3 21.3284 3 20.5Z" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M14 8.4V5.35355C14 5.15829 14.1583 5 14.3536 5C14.4473 5 14.5372 5.03725 14.6036 5.10355L17.8964 8.39645C17.9628 8.46275 18 8.55268 18 8.64645C18 8.84171 17.8417 9 17.6464 9H14.6C14.2686 9 14 8.73137 14 8.4Z" className="group-hover:stroke-[#0099FF] dark:group-hover:stroke-[white] stroke-[rgb(107,114,128)] dark:stroke-[rgb(209,213,219)]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
     ]
 
+    const containerRef = useRef(null);
+    const itemsRef = useRef([]);
+
+    useEffect(() => {
+        const container = containerRef.current;
+        const items = itemsRef.current;
+
+        const observerOptions = {
+            root: container,
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Center item index:', entry.target.dataset.index);
+                }
+            });
+        }, observerOptions);
+
+        items.forEach(item => {
+            if (item) observer.observe(item);
+        });
+
+        // Cleanup observer on component unmount
+        return () => {
+            items.forEach(item => {
+                if (item) observer.unobserve(item);
+            });
+        };
+    }, [quickTransfer]);
+
     useEffect(() => {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext('2d');
@@ -393,7 +425,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
-                                        <div className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
+                                        {/* <div className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'>
                                             {quickTransfer.map((qt, index) => (
                                                 <div key={index} className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}>
                                                     <img src={qt.image} alt="" className='md:min-w-[5.5rem] w-full  rounded-xl' />
@@ -401,7 +433,24 @@ const DashBody = (prop) => {
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
                                             ))}
-                                        </div>
+                                        </div> */}
+                                        <div
+            ref={containerRef}
+            className='mt-10 snap-x flex gap-3 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler'
+        >
+            {quickTransfer.map((qt, index) => (
+                <div
+                    key={index}
+                    data-index={index}
+                    ref={el => itemsRef.current[index] = el}
+                    className={`w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl`}
+                >
+                    <img src={qt.image} alt="" className='md:min-w-[5.5rem] w-full rounded-xl' />
+                    <p className='dark:text-white text-lg text-center mt-3 font-medium'>{qt.name}</p>
+                    <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
+                </div>
+            ))}
+        </div>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
