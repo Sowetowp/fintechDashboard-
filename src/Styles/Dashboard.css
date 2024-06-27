@@ -146,3 +146,25 @@
 .scrooler::-webkit-scrollbar {
   display: none;
 }
+
+.infinite-scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+  }
+  
+  .infinite-scroll-content {
+    display: inline-flex;
+  }
+  
+  .infinite-scroll-item {
+    min-width: 200px; /* Adjust this value as needed */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
