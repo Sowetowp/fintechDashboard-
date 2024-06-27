@@ -7,7 +7,7 @@ const Dashboard = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setMenuu(!window.matchMedia('(max-width: 768px)').matches);
+            setMenuu(!window.matchMedia('(max-width: 1024px)').matches);
         };
         handleResize();
         window.addEventListener('resize', handleResize);
