@@ -405,8 +405,8 @@ const DashBody = (prop) => {
                                         <div className='mt-10 flex justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex items-center bg-gray-100 rounded-xl'>
-                                                <input type="text" className='outline-0 bg-transparent'/>
-                                                <button className='bg-[#0099FF] py-3 px-3 text-xs font-medium text-white'>TRANSFER NOW</button>
+                                                <input type="text" className='outline-0 bg-transparent px-4'/>
+                                                <button className='bg-[#0099FF] py-3 px-3 text-xs font-medium text-white rounded-xl'>TRANSFER NOW</button>
                                             </div>
                                         </div>
                                     </div>
