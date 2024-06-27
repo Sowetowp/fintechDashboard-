@@ -507,28 +507,28 @@ const DashBody = (prop) => {
                                         <h2 className='dark:text-white text-xl font-medium'>Spendings</h2>
                                         <div className='flex flex-wrap'>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
-                                                <div className='p-2 bg-purple-500 rounded-xl inline-block'></div>
+                                                <div className='p-[0.4rem] bg-purple-500 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Investment</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$1,415 <span className='text-gray-500'>/$2,000</span></p>
                                                 </span>
                                             </div>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
-                                                <div className='p-2 bg-purple-500 rounded-xl inline-block'></div>
+                                                <div className='p-[0.4rem] bg-purple-500 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Installment</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$1,567 <span className='text-gray-500'>/$5,000</span></p>
                                                 </span>
                                             </div>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
-                                                <div className='p-2 bg-purple-500 rounded-xl inline-block'></div>
+                                                <div className='p-[0.4rem] bg-purple-500 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Restaurant</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$487 <span className='text-gray-500'>/$10,000</span></p>
                                                 </span>
                                             </div>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
-                                                <div className='p-2 bg-purple-500 rounded-xl inline-block'></div>
+                                                <div className='p-[0.4rem] bg-purple-500 rounded-xl inline-block'></div>
                                                 <span>
                                                     <p className='text-gray-500 text-sm'>Property</p>
                                                     <p className='dark:text-white text-xl font-medium mt-2'>$3,890 <span className='text-gray-500'>/$4,000</span></p>
