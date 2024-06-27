@@ -378,9 +378,9 @@ const DashBody = (prop) => {
                                         <div className='mt-10'>
                                             {quickTransfer.map((qt, index) => (
                                                 <div key={index} className='w-[fit-content] bg-[#0099ff2a] py-3 px-1 rounded-xl'>
-                                                    <img src={notif1} alt="" className='w-24 rounded-xl' />
-                                                    <p className='dark:text-white text-lg text-center mt-3'>Samuel</p>
-                                                    <p className='text-gray-500 text-xs text-center mt-1'>@sam224</p>
+                                                    <img src={qt.image} alt="" className='w-24 rounded-xl' />
+                                                    <p className='dark:text-white text-lg text-center mt-3'>{qt.handle}</p>
+                                                    <p className='text-gray-500 text-xs text-center mt-1'>{</p>
                                                 </div>
                                             ))}
                                         </div>
