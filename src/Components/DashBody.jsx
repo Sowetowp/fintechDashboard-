@@ -5,8 +5,6 @@ import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
 import notif4 from "../assets/4.jpg"
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import 'swiper/swiper-bundle.min.css';
 
 const drops = {
     dashboard: false,
@@ -404,25 +402,6 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <Swiper
-            spaceBetween={50}
-            slidesPerView={3}
-            breakpoints={{
-                1024: {
-                    slidesPerView: 2,
-                },
-                600: {
-                    slidesPerView: 1,
-                },
-            }}
-        >
-            {quickTransfer.map((item, index) => (
-                <SwiperSlide key={index}>
-                    <img src={item.image} alt={item.name} />
-                    <p>{item.name}</p>
-                </SwiperSlide>
-            ))}
-        </Swiper>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
