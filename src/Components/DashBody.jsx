@@ -325,7 +325,7 @@ const DashBody = (prop) => {
                                             sx={(theme) => ({
                                                 [`.MuiBarElement-series-run`]: {
                                                     borderRadius: 20,
-                                                    str
+                                                    strokeWidth:9
                                                 },
                                                 [`.MuiBarElement-series-cyc`]: {
                                                     borderRadius: 20,
