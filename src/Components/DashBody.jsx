@@ -413,7 +413,7 @@ const DashBody = (prop) => {
                                 </div>
                                 <div className=' bg-[#37a9fb] h-2 w-1/2'></div>
                             </div>
-                            <div>
+                            <div className='w-full'>
                                 <p>Copyright © Designed & Developed by DexignZone 2023</p>
                             </div>
                         </div>
