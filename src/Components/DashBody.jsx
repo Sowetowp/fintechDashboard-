@@ -403,7 +403,7 @@ const DashBody = (prop) => {
                                             ))}
                                         </div>
                                         <div className='mt-8 flex flex-wrap justify-between items-center'>
-                                            <p className='dark:text-white mt02 text-xl font-medium'>Amount</p>
+                                            <p className='dark:text-white mt-2 text-xl font-medium'>Amount</p>
                                             <div className='flex mt-2 justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
                                                 <input type="text" className='outline-0 dark:text-white bg-transparent px-4 md:w-36 w-1/2' />
                                                 <button className='bg-[#0099FF] py-3 px-4 text-xs font-medium text-white rounded-xl'>TRANSFER NOW</button>
