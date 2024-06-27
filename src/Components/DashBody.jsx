@@ -346,7 +346,7 @@ const DashBody = (prop) => {
                                                 <h2 className='dark:text-white text-xl'>Quick Transfer</h2>
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </span>
-                                            <p></p>
+                                            <p>$56,772.38</p>
                                         </div>
                                     </div>
                                 </div>
