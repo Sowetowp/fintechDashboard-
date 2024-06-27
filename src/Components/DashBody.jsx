@@ -123,9 +123,9 @@ const DashBody = (prop) => {
         if (scrollRef.current) {
           const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
           if (scrollLeft + clientWidth >= scrollWidth - 10) {
-            setItems((prevItems) => [...prevItems, ...qu]);
+            setItems((prevItems) => [...prevItems, ...quickTransfer]);
           } else if (scrollLeft === 0) {
-            setItems((prevItems) => [...qu, ...prevItems]);
+            setItems((prevItems) => [...quickTransfer, ...prevItems]);
             scrollRef.current.scrollLeft = scrollWidth;
           }
           calculateMiddleItem();
@@ -136,7 +136,7 @@ const DashBody = (prop) => {
       ref.addEventListener('scroll', handleScroll);
       calculateMiddleItem(); // Initial calculation
       return () => ref.removeEventListener('scroll', handleScroll);
-    }, [qu, items]);
+    }, [quickTransfer, items]);
   
 
     useEffect(() => {
