@@ -538,7 +538,8 @@ const DashBody = (prop) => {
                                         <div>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
                                                 <div className='rounded-full w-24 h-24 m-auto bg-[rgba(243,232,255,0.27)]'>
-                                                    
+                                                    <div></div>
+                                                    <div></div>
                                                 </div>
                                             </div>
                                         </div>
