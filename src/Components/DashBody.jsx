@@ -502,8 +502,7 @@ const DashBody = (prop) => {
                                                 },
                                             ]}
                                             xAxis={[{
-                                                scaleType: 'point', data: ['Page A', 'Page B', 'Page C',
-                                                    'Page D', 'Page E', 'Page F', 'Page G']
+                                                scaleType: 'point', data: ['Page A', 'Page B', 'Page C', 'Page D', 'Page E', 'Page F', 'Page G']
                                             }]}
                                         >
                                             <AreaPlot />
