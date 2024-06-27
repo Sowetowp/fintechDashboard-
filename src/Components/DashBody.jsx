@@ -396,15 +396,15 @@ const DashBody = (prop) => {
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
                                         <div className='mt-10 snap-x flex gap-5 overflow-x-scroll'>
-                                            <marquee behavior="" direction="">
                                             {quickTransfer.map((qt, index) => (
+                                            <marquee behavior="" direction="">
                                                 <div key={index} className='w-[fit-content] scroll-ml-14 snap-start bg-[#0099ff2a] py-3 px-1 rounded-xl'>
                                                     <img src={qt.image} alt="" className='min-w-20 rounded-xl' />
                                                     <p className='dark:text-white text-lg text-center mt-3 font-medium'>{qt.name}</p>
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
-                                            ))}
                                             </marquee>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>
