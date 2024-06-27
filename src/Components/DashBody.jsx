@@ -50,7 +50,8 @@ const DashBody = (prop) => {
 
     const quickTransfer = [
         {
-            
+            image: notif1,
+            name: Samuel
         }
     ]
     const images = [
