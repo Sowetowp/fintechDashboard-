@@ -449,7 +449,7 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div> */}
-                                        <div className="scroller" ref={scrollerRef}>
+                                        <div className="scroller mt-10 snap-x flex gap-5 overflow-x-scroll whitespace-nowrap scroll-smooth scrooler" ref={scrollerRef}>
                                             <div className="wrapper" ref={wrapperRef}></div>
                                         </div>
                                     </div>
