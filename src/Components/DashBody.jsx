@@ -323,7 +323,8 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                backgroundColor: "red"
+                                                backgroundColor: "red",
+                                                color:"black"
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80] },
