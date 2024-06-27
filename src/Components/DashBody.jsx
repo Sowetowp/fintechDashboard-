@@ -503,8 +503,8 @@ const DashBody = (prop) => {
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
                                     </div>
-                                    <div className='dark:bg-blue-950 overflow-hidden shadow mt-7 w-full rounded-xl'>
-                                        
+                                    <div className='dark:bg-blue-950 shadow mt-7 w-full rounded-xl'>
+
                                     </div>
                                 </div>
                             </div>
