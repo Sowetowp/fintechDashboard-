@@ -501,7 +501,14 @@ const DashBody = (prop) => {
                                                     stack: 'total',
                                                 },
                                             ]}
-                                            xAxis={[{ scaleType: 'point', data: xLabels }]}
+                                            xAxis={[{ scaleType: 'point', data: [
+                                                'Page A',
+                                                'Page B',
+                                                'Page C',
+                                                'Page D',
+                                                'Page E',
+                                                'Page F',
+                                                'Page G']}]}
                                         >
                                             <AreaPlot />
                                         </ChartContainer>
