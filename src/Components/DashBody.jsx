@@ -447,7 +447,10 @@ const DashBody = (prop) => {
                                             <div className='pt-7 px-7 pb-2'>
                                                 <p className='text-gray-500 text-sm'>Outome</p>
                                                 <p className='dark:text-white text-2xl font-bold mt-1'>$24,551</p>
-                                                <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
+                                                <p className='text-gray-500 text-xs mt-1'>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7 24h-6v-6h6v6zm8-9h-6v9h6v-9zm8-4h-6v13h6v-13zm-21.976 4.875l6-1.221-1.716-1.708 4.183-4.108 3.001 3.002 10.508-10.422-1.41-1.418-9.094 9.015-2.991-2.993-5.613 5.512-1.667-1.66-1.201 6.001z" /></svg>
+                                                    {"4% (30 days)"}
+                                                </p>
                                             </div>
                                             <LineChart
                                                 xAxis={[{ data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 21, 24, 27, 30], disableLine: true, disableTicks: true }]}
