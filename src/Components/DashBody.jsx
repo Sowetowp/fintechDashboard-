@@ -328,7 +328,7 @@ const DashBody = (prop) => {
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80], label: 'running', id: 'l_id' },
-                                                { data: [51, 6, 49, 30, 60, 50, 15], label: 'l', id: 'l_id' }
+                                                { data: [51, 6, 49, 30, 60, 50, 15], label: 'cycling', id: 'l_id' }
                                             ]}
                                             height={290}
                                             borderRadius={[10,10]}
