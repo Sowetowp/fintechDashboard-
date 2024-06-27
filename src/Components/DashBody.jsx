@@ -431,9 +431,9 @@ const DashBody = (prop) => {
                                                 [`& .${lineElementClasses.root}`]: {
                                                   stroke: "red",
                                                   strokeWidth: 4,
-                                                  bgcolor:"red"
                                                 },
                                               }}
+                                              
                                               colors={["red"]}
                                             yAxis={[{ disableLine: true, disableTicks: true }]}
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
