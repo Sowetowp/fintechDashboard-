@@ -323,7 +323,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             series={[
-                                                { data: [35, 44, 24, 34, 15, 25, 30] },
+                                                { data: [35, 44, 24, 34, 15, 25, 80] },
                                                 { data: [51, 6, 49, 30, 60, 50, 15] }
                                             ]}
                                             height={290}
