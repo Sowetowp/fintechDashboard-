@@ -490,7 +490,6 @@ const DashBody = (prop) => {
                                             </p>
                                         </div>
                                         <ChartContainer
-                                            width={500}
                                             height={300}
                                             series={[
                                                 {
