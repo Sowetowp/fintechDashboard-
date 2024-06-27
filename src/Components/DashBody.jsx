@@ -402,7 +402,7 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <div className='mt-10 flex flex-wrap justify-between items-center'>
+                                        <div className='mt-8 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
                                                 <input type="text" className='outline-0 dark:text-white bg-transparent px-4 md:w-36 w-1/2' />
