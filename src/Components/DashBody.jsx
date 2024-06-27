@@ -353,7 +353,7 @@ const DashBody = (prop) => {
                                             <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
                                         </div>
                                         <div>
-                                            <div className='w-['>
+                                            <div className='w-[fit-content]'>
                                                 <img src={notif1} alt="" className='w-20 rounded-xl'/>
                                                 <p className='dark:text-white text-lg text-center'>Samuel</p>
                                                 <p className='text-gray-500 text-xs'>@sam224</p>
