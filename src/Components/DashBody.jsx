@@ -503,11 +503,11 @@ const DashBody = (prop) => {
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div className='w-full text-center pt-12'>
-                                <p className='dark:text-white text-gray-600'>Copyright © Developed by <span className='text-[#0099FF] dark:hover:text-white'>Abdulmalik</span> 2023</p>
+                                <p className='<div className='dark:bg-blue-950 overflow-hidden shadow mt-7 w-full rounded-xl'>dark:text-white text-gray-600'>Copyright © Developed by <span className='text-[#0099FF] dark:hover:text-white'>Abdulmalik</span> 2023</p>
                             </div>
                         </div>
                     </div>
