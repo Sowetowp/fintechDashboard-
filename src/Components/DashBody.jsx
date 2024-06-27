@@ -327,8 +327,8 @@ const DashBody = (prop) => {
                                                     width: 9
                                                 },
                                                 [`.MuiSlider-root`]: {
-                                                    color: #20b2aa;
-                                                  }
+                                                    margin:99
+                                                  },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5",
                                             })}
