@@ -404,6 +404,25 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
+                                        <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            breakpoints={{
+                1024: {
+                    slidesPerView: 2,
+                },
+                600: {
+                    slidesPerView: 1,
+                },
+            }}
+        >
+            {items.map((item, index) => (
+                <SwiperSlide key={index}>
+                    <img src={item.image} alt={item.name} />
+                    <p>{item.name}</p>
+                </SwiperSlide>
+            ))}
+        </Swiper>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl dark:bg-[rgb(17,26,56)]'>
