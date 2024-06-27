@@ -324,8 +324,8 @@ const DashBody = (prop) => {
                                         <BarChart
                                             xAxis={[    {
                                                     scaleType: 'band',
-      data: ['Page 1', 'Page 2', 'Page 3']
-      categoryGapRatio: 0.3
+      data: ['Page 1', 'Page 2', 'Page 3'],
+      categoryGapRatio: 0.3,
       barGapRatio: 0.1
                                                 }
                                                 />
