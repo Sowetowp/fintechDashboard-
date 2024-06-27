@@ -328,6 +328,11 @@ const DashBody = (prop) => {
                                                 },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5",
+                                                bar: {
+                                                    width: '9px',  // Apply width to bars if possible
+                                                    stroke: 'grey',
+                                                    strokeWidth: '0.5',
+                                                  },
                                             })}
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 80], id: 'run' },
