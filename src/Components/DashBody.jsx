@@ -477,7 +477,7 @@ const DashBody = (prop) => {
                                     <div className='dark:bg-blue-950 shadow w-full rounded-xl'>
                                         <div>
                                             <span>
-                                            <p className='text-gray-500 text-sm'>Outome</p>
+                                            <p className='text-gray-500 text-sm'>Weekly Wallet Usage</p>
                                             </span>
                                         </div>
                                     </div>
