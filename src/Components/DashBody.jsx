@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
-import { BarChart, barElementClasses } from '@mui/x-charts'
+import { BarChart } from '@mui/x-charts'
 
 const drops = {
     dashboard: false,
@@ -323,15 +323,12 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                [`.MuiBarElement-series-run`]: {
-                                                    padding: 20,
-                                                  },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5"
                                             })}
                                             series={[
-                                                { data: [35, 44, 24, 34, 15, 25, 80], id: 'run' },
-                                                { data: [51, 6, 49, 30, 60, 50, 15], id: 'cyc' }
+                                                { data: [35, 44, 24, 34, 15, 25, 80], label: 'running', id: 'rub' },
+                                                { data: [51, 6, 49, 30, 60, 50, 15], label: 'cycling', id: 'l_id' }
                                             ]}
                                             height={290}
                                             borderRadius={[10,10]}
