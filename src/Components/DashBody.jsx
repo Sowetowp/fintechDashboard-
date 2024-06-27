@@ -107,37 +107,37 @@ const DashBody = (prop) => {
     const scrollRef = useRef(null);
     const [items, setItems] = useState([...quickTransfer, ...quickTransfer]);
     const [middleItem, setMiddleItem] = useState(null);
-  
+
     const calculateMiddleItem = () => {
-      if (scrollRef.current) {
-        const { scrollLeft, clientWidth } = scrollRef.current;
-        const middlePoint = scrollLeft + clientWidth / 2;
-        const itemWidth = scrollRef.current.children[0].children[0].offsetWidth;
-        const middleIndex = Math.floor(middlePoint / itemWidth);
-        setMiddleItem(items[middleIndex]);
-      }
-    };
-  
-    useEffect(() => {
-      const handleScroll = () => {
         if (scrollRef.current) {
-          const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-          if (scrollLeft + clientWidth >= scrollWidth - 10) {
-            setItems((prevItems) => [...prevItems, ...quickTransfer]);
-          } else if (scrollLeft === 0) {
-            setItems((prevItems) => [...quickTransfer, ...prevItems]);
-            scrollRef.current.scrollLeft = scrollWidth;
-          }
-          calculateMiddleItem();
+            const { scrollLeft, clientWidth } = scrollRef.current;
+            const middlePoint = scrollLeft + clientWidth / 2;
+            const itemWidth = scrollRef.current.children[0].children[0].offsetWidth;
+            const middleIndex = Math.floor(middlePoint / itemWidth);
+            setMiddleItem(items[middleIndex]);
         }
-      };
-  
-      const ref = scrollRef.current;
-      ref.addEventListener('scroll', handleScroll);
-      calculateMiddleItem(); // Initial calculation
-      return () => ref.removeEventListener('scroll', handleScroll);
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (scrollRef.current) {
+                const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+                if (scrollLeft + clientWidth >= scrollWidth - 10) {
+                    setItems((prevItems) => [...prevItems, ...quickTransfer]);
+                } else if (scrollLeft === 0) {
+                    setItems((prevItems) => [...quickTransfer, ...prevItems]);
+                    scrollRef.current.scrollLeft = scrollWidth;
+                }
+                calculateMiddleItem();
+            }
+        };
+
+        const ref = scrollRef.current;
+        ref.addEventListener('scroll', handleScroll);
+        calculateMiddleItem(); // Initial calculation
+        return () => ref.removeEventListener('scroll', handleScroll);
     }, [quickTransfer, items]);
-  
+
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -440,7 +440,7 @@ const DashBody = (prop) => {
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
-                                                <input type="text" className='outline-0 bg-transparent px-4 md:w-36 w-1/2'/>
+                                                <input type="text" className='outline-0 bg-transparent px-4 md:w-36 w-1/2' />
                                                 <button className='bg-[#0099FF] py-3 px-4 text-xs font-medium text-white rounded-xl'>TRANSFER NOW</button>
                                             </div>
                                         </div>
