@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
-import { BarChart } from '@mui/x-charts'
+import { BarChart, LineChart } from '@mui/x-charts'
 import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
@@ -418,6 +418,17 @@ const DashBody = (prop) => {
                                             <p className='dark:text-white text-2xl font-bold mt-1'>$65,123</p>
                                             <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
                                         </div>
+                                        <LineChart
+                                            xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
+                                            series={[
+                                                {
+                                                    data: [2, 5.5, 2, 8.5, 1.5, 5],
+                                                },
+                                            ]}
+                                            height={300}
+                                            margin={{ left: 30, right: 30, top: 30, bottom: 30 }}
+                                            grid={{ vertical: true, horizontal: true }}
+                                        />
                                     </div>
                                 </div>
                             </div>
