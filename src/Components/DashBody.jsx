@@ -492,7 +492,7 @@ const DashBody = (prop) => {
                                         <LineChart
                                             height={300}
                                             series={[{ data: [4000, 3000, 2000, 2780, 1890, 2390, 3490], area: true, showMark: false }]}
-                                            xAxis={[{ scaleType: 'point', data: ['Page A', 'Page B', 'Page C', 'Page D', 'Page E', 'Page F', 'Page G'] }]}
+                                            xAxis={[{ scaleType: 'point', data: ['Page A', 'Page B', 'Page C', 'Page D', 'Page E', 'Page F', 'Page G'], disableLine: true, disableTicks: true }]}
                                             sx={{
                                                 [`& .${lineElementClasses.root}`]: {
                                                     display: 'none',
