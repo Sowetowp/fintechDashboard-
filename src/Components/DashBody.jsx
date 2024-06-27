@@ -323,25 +323,25 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
-                                                [`.${barElementClasses.root}`]: {
-                                                    fill: theme.palette.background.paper,
-                                                    strokeWidth: 2,
-                                                },
-                                                [`.MuiBarElement-series-l_id`]: {
-                                                    stroke: colors[0],
-                                                },
-                                                [`.MuiBarElement-series-r_id`]: {
-                                                    stroke: colors[1],
-                                                },
-                                                [`.${axisClasses.root}`]: {
-                                                    [`.${axisClasses.tick}, .${axisClasses.line}`]: {
-                                                        stroke: '#006BD6',
-                                                        strokeWidth: 3,
-                                                    },
-                                                    [`.${axisClasses.tickLabel}`]: {
-                                                        fill: '#006BD6',
-                                                    },
-                                                },
+                                                // [`.${barElementClasses.root}`]: {
+                                                //     fill: theme.palette.background.paper,
+                                                //     strokeWidth: 2,
+                                                // },
+                                                // [`.MuiBarElement-series-l_id`]: {
+                                                //     stroke: colors[0],
+                                                // },
+                                                // [`.MuiBarElement-series-r_id`]: {
+                                                //     stroke: colors[1],
+                                                // },
+                                                // [`.${axisClasses.root}`]: {
+                                                //     [`.${axisClasses.tick}, .${axisClasses.line}`]: {
+                                                //         stroke: '#006BD6',
+                                                //         strokeWidth: 3,
+                                                //     },
+                                                //     [`.${axisClasses.tickLabel}`]: {
+                                                //         fill: '#006BD6',
+                                                //     },
+                                                // },
 
                                                 border: `1px solid rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1)`,
                                                 backgroundImage: `linear-gradient(rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(${theme.palette.mode === 'dark' ? '255,255,255' : '0, 0, 0'}, 0.1) 1px, transparent 1px)`,
