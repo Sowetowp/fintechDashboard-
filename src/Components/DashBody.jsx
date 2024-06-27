@@ -105,7 +105,7 @@ const DashBody = (prop) => {
     ]
 
     const scrollRef = useRef(null);
-    const [items, setItems] = useState([...data, ...data, ...data]);
+    const [items, setItems] = useState([...quickTransfer, ...quickTransfer, ...quickTransfer]);
   
   const handleScroll = () => {
     if (scrollRef.current) {
