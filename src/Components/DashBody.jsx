@@ -428,7 +428,7 @@ const DashBody = (prop) => {
                                             ))}
                                         </div>
                                         <Slider {...settings}>
-            {items.map((item, index) => (
+            {quickTransfer.map((item, index) => (
                 <div key={index}>
                     <img src={item.image} alt={item.name} />
                     <p>{item.name}</p>
