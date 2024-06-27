@@ -489,6 +489,17 @@ const DashBody = (prop) => {
                                                 {"4% (30 days)"}
                                             </p>
                                         </div>
+                                        <LineChart
+  width={500}
+  height={300}
+  series={[{ data: uData, label: 'uv', area: true, showMark: false }]}
+  xAxis={[{ scaleType: 'point', data: xLabels }]}
+  sx={{
+    [`& .${lineElementClasses.root}`]: {
+      display: 'none',
+    },
+  }}
+/>
                                         <ChartContainer
                                             width={300}
                                             height={300}
