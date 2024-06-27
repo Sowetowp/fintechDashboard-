@@ -426,7 +426,7 @@ const DashBody = (prop) => {
                                                     showMark: false
                                                 },
                                             ]}
-                                            height={70}
+                                            height={90}
                                             sx={{
                                                 [`& .${lineElementClasses.root}`]: {
                                                   stroke: "red",
