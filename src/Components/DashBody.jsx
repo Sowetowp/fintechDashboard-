@@ -436,14 +436,6 @@ const DashBody = (prop) => {
                                                 </div>
                                             ))}
                                         </div>
-                                        <div class="gallery js-flickity"
-  data-flickity-options='{ "wrapAround": true }'>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-  <div class="gallery-cell"></div>
-</div>
                                         <div className='mt-10 flex flex-wrap justify-between items-center'>
                                             <p className='dark:text-white text-xl font-medium'>Amount</p>
                                             <div className='flex justify-between items-center bg-gray-100 rounded-xl'>
