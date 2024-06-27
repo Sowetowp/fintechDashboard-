@@ -439,6 +439,33 @@ const DashBody = (prop) => {
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
                                     </div>
+                                    <div className='dark:bg-blue-950 md:w-1/2 w-full rounded-xl pb-3'>
+                                        <div className='pt-7 px-7 pb-2'>
+                                            <p className='text-gray-500 text-sm'>Income</p>
+                                            <p className='dark:text-white text-2xl font-bold mt-1'>$65,123</p>
+                                            <p className='text-gray-500 text-xs mt-1'>{"4% (30 days)"}</p>
+                                        </div>
+                                        <LineChart
+                                            xAxis={[{ data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 21, 24, 27, 30], disableLine: true, disableTicks: true }]}
+                                            series={[
+                                                {
+                                                    data: [2, 4, 2.5, 6, 3, 5, 2, 4, 1, 7, 2, 8, 0.3, 5],
+                                                    showMark: false
+                                                },
+                                            ]}
+                                            height={90}
+                                            sx={{
+                                                [`& .${lineElementClasses.root}`]: {
+                                                    stroke: "#0099FF",
+                                                    strokeWidth: 4,
+                                                },
+                                                strokeWidth: 0,
+                                            }}
+                                            colors={["#0099FF"]}
+                                            yAxis={[{ disableLine: true, disableTicks: true }]}
+                                            margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className='w-full text-center pt-12'>
