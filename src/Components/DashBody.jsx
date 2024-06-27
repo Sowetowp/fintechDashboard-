@@ -324,7 +324,7 @@ const DashBody = (prop) => {
                                         <BarChart
                                             sx={(theme) => ({
                                                 [`.MuiBarElement-series-run`]: {
-                                                    strokeDasharray: 9
+                                                    margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
                                                 },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5",
