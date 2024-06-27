@@ -323,6 +323,10 @@ const DashBody = (prop) => {
                                         </div>
                                         <BarChart
                                             sx={(theme) => ({
+                                                [`.${barElementClasses.root}`]: {
+                                                    fill: theme.palette.background.paper,
+                                                    strokeWidth: 2,
+                                                  },
                                                 stroke:"grey",
                                                 strokeWidth:"0.5"
                                             })}
