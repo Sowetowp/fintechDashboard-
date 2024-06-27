@@ -327,8 +327,8 @@ const DashBody = (prop) => {
                                                 strokeWidth:"0.5"
                                             })}
                                             series={[
-                                                { data: [35, 44, 24, 34, 15, 25, 80], label: 'running', id: 'l_id' },
-                                                { data: [51, 6, 49, 30, 60, 50, 15], label: 'cycling', id: 'l_id' }
+                                                { data: [35, 44, 24, 34, 15, 25, 80], label: 'running', id: 'run' },
+                                                { data: [51, 6, 49, 30, 60, 50, 15], label: 'cycling', id: 'cyc' }
                                             ]}
                                             height={290}
                                             borderRadius={[10,10]}
