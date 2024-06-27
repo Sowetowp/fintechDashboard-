@@ -425,7 +425,7 @@ const DashBody = (prop) => {
                                                     data: [2, 5.5, 2, 8.5, 1.5, 5],
                                                 },
                                             ]}
-                                            height={300}
+                                            height={200}
                                             margin={{ left: 30, right: 30, top: 30, bottom: 30 }}
                                             grid={{ vertical: true, horizontal: true }}
                                         />
