@@ -474,7 +474,7 @@ const DashBody = (prop) => {
                                             />
                                         </div>
                                     </div>
-                                    <div className='dark:bg-blue-950 shadow mt-7 w-full rounded-xl'>
+                                    <div className='dark:bg-blue-950 overflow-hidden shadow mt-7 w-full rounded-xl'>
                                         <div className='flex justify-between flex-wrap items-center p-7'>
                                             <span>
                                                 <p className='text-gray-500 text-sm'>Weekly Wallet Usage</p>
