@@ -431,12 +431,12 @@ const DashBody = (prop) => {
       <div className="infinite-scroll-content">
         {quickTransfer.map((item, index) => (
           <div key={index} className="infinite-scroll-item">
-            {item.}
+            {item.name}
           </div>
         ))}
         {quickTransfer.map((item, index) => (
           <div key={`clone-${index}`} className="infinite-scroll-item">
-            {item}
+            {item.name}
           </div>
         ))}
       </div>
