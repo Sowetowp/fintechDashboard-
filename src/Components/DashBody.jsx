@@ -48,7 +48,7 @@ const DashBody = (prop) => {
         }
     }, []);
 
-    const quickTransfer = [
+    const items = [
         {
             image: notif1,
             name: "Samuel",
