@@ -109,21 +109,17 @@ const DashBody = (prop) => {
     useEffect(() => {
         const scroller = scrollerRef.current;
     
-        // Set initial scroll position to the middle
-        const halfScrollWidth = scroller.scrollWidth / 2;
-        scroller.scrollLeft = halfScrollWidth;
+        // Event listener for smooth scrolling behavior
+        scroller.addEventListener('scroll', () => {
+          scroller.scrollTo({
+            left: Math.floor(scroller.scrollLeft / scroller.clientWidth) * scroller.clientWidth,
+            behavior: 'smooth'
+          });
+        });
     
-        const handleScroll = () => {
-          const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
-          if (scroller.scrollLeft === 0) {
-            scroller.scrollLeft = halfScrollWidth;
-          } else if (scroller.scrollLeft >= maxScrollLeft) {
-            scroller.scrollLeft = halfScrollWidth;
-          }
+        return () => {
+          scroller.removeEventListener('scroll', () => {});
         };
-    
-        scroller.addEventListener('scroll', handleScroll);
-        return () => scroller.removeEventListener('scroll', handleScroll);
       }, []);
 
     useEffect(() => {
