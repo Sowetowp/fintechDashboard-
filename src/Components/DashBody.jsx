@@ -108,18 +108,23 @@ const DashBody = (prop) => {
 
     useEffect(() => {
         const scroller = scrollerRef.current;
-        const duplicateItems = [...quickTransfer, ...quickTransfer];
-
+    
+        // Set initial scroll position to the middle
+        const halfScrollWidth = scroller.scrollWidth / 2;
+        scroller.scrollLeft = halfScrollWidth;
+    
         const handleScroll = () => {
-            const scrollWidth = scroller.scrollWidth / 2;
-            if (scroller.scrollLeft >= scrollWidth) {
-                scroller.scrollLeft = 0;
-            }
+          const maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+          if (scroller.scrollLeft === 0) {
+            scroller.scrollLeft = halfScrollWidth;
+          } else if (scroller.scrollLeft >= maxScrollLeft) {
+            scroller.scrollLeft = halfScrollWidth;
+          }
         };
-
+    
         scroller.addEventListener('scroll', handleScroll);
         return () => scroller.removeEventListener('scroll', handleScroll);
-    }, []);
+      }, []);
 
     useEffect(() => {
         const canvas = canvasRef.current;
