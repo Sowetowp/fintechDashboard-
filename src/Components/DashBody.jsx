@@ -404,6 +404,7 @@ const DashBody = (prop) => {
                                                     <p className='text-gray-500 text-xs text-center mt-1'>{qt.handle}</p>
                                                 </div>
                                             ))}
+                                            </marquee>
                                         </div>
                                     </div>
                                 </div>
