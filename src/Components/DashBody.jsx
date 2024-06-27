@@ -324,9 +324,7 @@ const DashBody = (prop) => {
                                         <BarChart
                                             series={[
                                                 { data: [35, 44, 24, 34, 15, 25, 30] },
-                                                { data: [51, 6, 49, 30, 60, 50, 15] },
-                                                // { data: [15, 25, 30, 50] },
-                                                // { data: [60, 50, 15, 25] },
+                                                { data: [51, 6, 49, 30, 60, 50, 15] }
                                             ]}
                                             height={290}
                                             xAxis={[{ data: ['Sun', 'Mon', 'Tue', 'Wed', "Thu", "Fri", "Sat"], scaleType: 'band' }]}
