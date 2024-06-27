@@ -105,24 +105,24 @@ const DashBody = (prop) => {
     ]
 
     const scrollRef = useRef(null);
-    const [items, setItems] = useState([...quickTransfer, ...quickTransfer, ...quickTransfer]);
-  
-  const handleScroll = () => {
-    if (scrollRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
-
-      if (scrollLeft === 0) {
-        scrollRef.current.scrollLeft = scrollWidth / 3;
-      } else if (scrollLeft + clientWidth >= scrollWidth) {
-        scrollRef.current.scrollLeft = scrollWidth / 3;
-      }
-    }
-  };
+  const [items, setItems] = useState([...data, ...data, ...data]);
 
   useEffect(() => {
     const ref = scrollRef.current;
+    const { scrollWidth, clientWidth } = ref;
+
+    const handleScroll = () => {
+      if (ref.scrollLeft >= scrollWidth - clientWidth) {
+        ref.scrollLeft = scrollWidth / 3 - clientWidth;
+      } else if (ref.scrollLeft <= 0) {
+        ref.scrollLeft = scrollWidth / 3;
+      }
+    };
+
     ref.addEventListener('scroll', handleScroll);
-    ref.scrollLeft = ref.scrollWidth / 3;
+
+    // Set initial scroll position to the middle of the concatenated list
+    ref.scrollLeft = scrollWidth / 3;
 
     return () => {
       ref.removeEventListener('scroll', handleScroll);
