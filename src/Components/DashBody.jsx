@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
-import { BarChart, LineChart, lineElementClasses } from '@mui/x-charts'
+import { BarChart, ChartContainer, LineChart, lineElementClasses } from '@mui/x-charts'
 import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
@@ -489,7 +489,22 @@ const DashBody = (prop) => {
                                                 {"4% (30 days)"}
                                             </p>
                                         </div>
-                                        
+                                        <ChartContainer
+                                            width={500}
+                                            height={300}
+                                            series={[
+                                                {
+                                                    data: uData,
+                                                    type: 'line',
+                                                    label: 'uv',
+                                                    area: true,
+                                                    stack: 'total',
+                                                },
+                                            ]}
+                                            xAxis={[{ scaleType: 'point', data: xLabels }]}
+                                        >
+                                            <AreaPlot />
+                                        </ChartContainer>
                                     </div>
                                 </div>
                             </div>
