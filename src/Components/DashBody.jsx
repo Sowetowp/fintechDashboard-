@@ -393,7 +393,7 @@ const DashBody = (prop) => {
                                                 <h2 className='dark:text-white text-xl font-medium'>Quick Transfer</h2>
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </span>
-                                            <p className='dark:text-white text-xl font-bold'>$56,772.38</p>
+                                            <p className='dark:text-white text-xl font-medium'>$56,772.38</p>
                                         </div>
                                         <div className='mt-10 flex gap-5 overflow-x-scroll'>
                                             {quickTransfer.map((qt, index) => (
