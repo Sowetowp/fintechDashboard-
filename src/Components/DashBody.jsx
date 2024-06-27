@@ -509,7 +509,8 @@ const DashBody = (prop) => {
                                             <div>
                                                 <div></div>
                                                 <span>
-                                                <p className='text-gray-500 text-sm'></p>
+                                                <p className='text-gray-500 text-sm'>Investment</p>
+                                                
                                                 </span>
                                             </div>
                                         </div>
