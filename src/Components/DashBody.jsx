@@ -494,7 +494,7 @@ const DashBody = (prop) => {
                                             height={300}
                                             series={[
                                                 {
-                                                    data: uData,
+                                                    data: [4000, 3000, 2000, 2780, 1890, 2390, 3490],
                                                     type: 'line',
                                                     label: 'uv',
                                                     area: true,
