@@ -137,7 +137,6 @@ const DashBody = (prop) => {
         calculateMiddleItem(); // Initial calculation
         return () => ref.removeEventListener('scroll', handleScroll);
     }, [quickTransfer, items]);
-console.log(middleItem)
 
     useEffect(() => {
         const canvas = canvasRef.current;
