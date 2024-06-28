@@ -384,7 +384,7 @@ const DashBody = (prop) => {
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
 
                                         />
-                                        <div className='flex gap-5 items-center'>
+                                        <div className='flex gap-5 items-center mt-2'>
                                             <p className='dark:text-white font-medium'>Number</p>
                                             <div class="cl-toggle-switch">
                                                 <label class="cl-switch">
