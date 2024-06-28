@@ -570,8 +570,8 @@ const DashBody = (prop) => {
                                                             cornerRadius: 5,
                                                             startAngle: -90,
                                                             endAngle: 180,
-                                                            cx: 150,
-                                                            cy: 150,
+                                                            // cx: 150,
+                                                            // cy: 150,
                                                         }
                                                     ]}
                                                     height={90}
