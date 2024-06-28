@@ -385,7 +385,7 @@ const DashBody = (prop) => {
 
                                         />
                                         <div>
-                                            <p className='dark:text-white text-xl font-medium'>Number</p>
+                                            <p className='dark:text-white text-lg font-medium'>Number</p>
                                         </div>
                                     </div>
                                     <div className='bg-white dark:bg-blue-950 mt-12 shadow p-6 rounded-lg'>
