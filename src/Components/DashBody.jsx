@@ -537,7 +537,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <div>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
-                                                <div className='bg-slate-500 flex justify-center items-center'>
+                                                <div className='flex justify-center items-center'>
                                                     <div className='absolute z-50 rounded-full w-12 h-12 m-auto bg-purple-500'></div>
                                                     <PieChart
                                                         series={[
