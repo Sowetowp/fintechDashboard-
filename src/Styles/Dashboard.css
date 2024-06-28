@@ -208,7 +208,7 @@
 /* Checked */
 .cl-switch>input:checked {
     right: -10px;
-    background-color: #0099FF;
+    background-color: #0099ff54;
 }
 
 .cl-switch>input:checked+span::before {
