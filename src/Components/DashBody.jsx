@@ -550,6 +550,7 @@ const DashBody = (prop) => {
                                                             ],
                                                         },
                                                     ]}
+                                                    height={100}
                                                     sx={{
 
                                                     }}
