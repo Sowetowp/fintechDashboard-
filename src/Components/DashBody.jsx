@@ -459,7 +459,7 @@ const DashBody = (prop) => {
                                                 margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                             />
                                         </div>
-                                        <div className='dark:bg-blue-950 shadow md:w-1/2 w-full rounded-xl pb-3'>
+                                        <div className='dark:bg-blue-950 bg-white shadow md:w-1/2 w-full rounded-xl pb-3'>
                                             <div className='pt-7 px-7 pb-2'>
                                                 <p className='text-gray-500 text-sm'>Outome</p>
                                                 <p className='dark:text-white text-2xl font-bold mt-1'>$24,551</p>
