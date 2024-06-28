@@ -548,6 +548,7 @@ const DashBody = (prop) => {
                                                                 { id: 0, value: 70 },
                                                                 { id: 1, value: 30 },
                                                             ],
+                                                            paddingAngle: 5,
                                                         },
                                                     ]}
                                                     height={70}
