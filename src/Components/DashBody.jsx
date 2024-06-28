@@ -579,7 +579,7 @@ const DashBody = (prop) => {
                                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                                         />
                                                     </div>
-                                                    <p className='text-white text-center mt-3'>Investment</p>
+                                                    <p className='text-white text-center mt-3'>Installment</p>
                                                 </div>
                                             </div>
                                             <div className='flex flex-wrap md:flex-nowrap mt-6 gap-6'>
