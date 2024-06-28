@@ -554,7 +554,7 @@ const DashBody = (prop) => {
                                                     height={70}
                                                     sx={{
                                                         [`& .${pieArcLabelClasses.root}`]: {
-                                                          fill: 'white',
+                                                          fill: 'red',
                                                           fontWeight: 'bold',
                                                         },
                                                       }}
