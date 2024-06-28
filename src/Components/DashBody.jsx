@@ -546,6 +546,7 @@ const DashBody = (prop) => {
                                                         {
                                                             data: [
                                                                 { id: 0, value: 70 },
+                                                                { id: 1, value: 0 },
                                                             ],
                                                         },
                                                     ]}
