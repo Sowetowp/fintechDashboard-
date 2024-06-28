@@ -541,7 +541,7 @@ const DashBody = (prop) => {
                                                     <div className='rounded-tl-full rotate-[240deg] translate-x-[2.0099rem] translate-y-[1.399rem] rounded-bl-full w-1/2 h-24 bg-white'></div>
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
                                                 </div> */}
-                                                <div className='bg-slate-500'>
+                                                <div className='bg-slate-500 flex justify-center items-center'>
                                                     <div className='absolute rounded-full w-16 h-16 m-auto bg-black'></div>
                                                 <PieChart
                                                     series={[
