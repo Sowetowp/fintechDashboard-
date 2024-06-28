@@ -603,7 +603,7 @@ const DashBody = (prop) => {
                                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                                         />
                                                     </div>
-                                                    <p className='text-white text-center mt-3'>Restaurant</p>
+                                                    <p className='dark:text-white text-center mt-3'>Restaurant</p>
                                                 </div>
                                                 <div className='md:w-1/2 w-full rounded-xl bg-indigo-700 p-4'>
                                                     <div className='flex justify-center items-center'>
