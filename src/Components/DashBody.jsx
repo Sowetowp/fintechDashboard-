@@ -580,6 +580,50 @@ const DashBody = (prop) => {
                                                 </div>
                                                 <p className='text-white text-center mt-3'>Investment</p>
                                             </div>
+                                            <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
+                                                <div className='flex justify-center items-center'>
+                                                    <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
+                                                    <PieChart
+                                                        series={[
+                                                            {
+                                                                data: [
+                                                                    { id: 0, value: 70 },
+                                                                    { id: 1, value: 30 },
+                                                                ],
+                                                            },
+                                                        ]}
+                                                        height={85}
+                                                        sx={{
+                                                            strokeOpacity: "0",
+                                                        }}
+                                                        colors={["white", "rgba(243,232,255,0.27)"]}
+                                                        margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                                    />
+                                                </div>
+                                                <p className='text-white text-center mt-3'>Investment</p>
+                                            </div>
+                                            <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
+                                                <div className='flex justify-center items-center'>
+                                                    <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
+                                                    <PieChart
+                                                        series={[
+                                                            {
+                                                                data: [
+                                                                    { id: 0, value: 70 },
+                                                                    { id: 1, value: 30 },
+                                                                ],
+                                                            },
+                                                        ]}
+                                                        height={85}
+                                                        sx={{
+                                                            strokeOpacity: "0",
+                                                        }}
+                                                        colors={["white", "rgba(243,232,255,0.27)"]}
+                                                        margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                                    />
+                                                </div>
+                                                <p className='text-white text-center mt-3'>Investment</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
