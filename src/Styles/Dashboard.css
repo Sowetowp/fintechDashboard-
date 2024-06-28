@@ -208,11 +208,11 @@
 /* Checked */
 .cl-switch>input:checked {
     right: -10px;
-    background-color: #0099FF;
+    background-color: #0099ff70;
 }
 
 .cl-switch>input:checked+span::before {
-    background-color: #0099FF;
+    background-color: #0099ff70;
 }
 
 .cl-switch>input:checked+span::after {
@@ -245,7 +245,7 @@
 }
 
 .cl-switch>input:checked:active+span::before {
-    background-color: #0099ff70;
+    background-color: #0099ff7070;
 }
 
 /* Disabled */
