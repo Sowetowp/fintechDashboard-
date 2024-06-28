@@ -386,8 +386,19 @@ const DashBody = (prop) => {
                                         />
                                         <div>
                                             <p className='dark:text-white font-medium'>Number</p>
-                                            
+                                            <div class="cl-toggle-switch">
+                                                <label class="cl-switch">
+                                                    <input type="checkbox" />
+                                                    <span></span>
+                                                </label>
+                                            </div>
                                             <p className='dark:text-white font-medium'>Analytics</p>
+                                            <div class="cl-toggle-switch">
+                                                <label class="cl-switch">
+                                                    <input type="checkbox" />
+                                                    <span></span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className='bg-white dark:bg-blue-950 mt-12 shadow p-6 rounded-lg'>
