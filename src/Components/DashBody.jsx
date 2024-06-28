@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer, useRef, useState } from 'react'
 import card from "../assets/dual-dot.png"
-import { BarChart, LineChart, lineElementClasses } from '@mui/x-charts'
+import { BarChart, LineChart, PieChart, lineElementClasses } from '@mui/x-charts'
 import notif1 from "../assets/1.jpg"
 import notif2 from "../assets/2.jpg"
 import notif3 from "../assets/3.jpg"
@@ -537,10 +537,23 @@ const DashBody = (prop) => {
                                         </div>
                                         <div>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
-                                                <div className='rounded-full w-24 flex h-24 m-auto bg-[rgba(243,232,255,0.27)]'>
+                                                {/* <div className='rounded-full w-24 flex h-24 m-auto bg-[rgba(243,232,255,0.27)]'>
                                                     <div className='rounded-tl-full rotate-[240deg] translate-x-[2.0099rem] translate-y-[1.399rem] rounded-bl-full w-1/2 h-24 bg-white'></div>
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
-                                                </div>
+                                                </div> */}
+                                                <PieChart
+                                                    series={[
+                                                        {
+                                                            data: [
+                                                                { id: 0, value: 10, label: 'series A' },
+                                                                { id: 1, value: 15, label: 'series B' },
+                                                                { id: 2, value: 20, label: 'series C' },
+                                                            ],
+                                                        },
+                                                    ]}
+                                                    width={400}
+                                                    height={200}
+                                                />
                                             </div>
                                         </div>
                                     </div>
