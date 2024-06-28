@@ -567,7 +567,7 @@ const DashBody = (prop) => {
                                                             innerRadius: 30,
                                                             outerRadius: 100,
                                                             paddingAngle: 5,
-                                                            cornerRadius: 5,
+                                                            // cornerRadius: 5,
                                                             // startAngle: -90,
                                                             // endAngle: 180,
                                                             // cx: 150,
