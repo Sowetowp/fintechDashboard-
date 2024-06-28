@@ -537,8 +537,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <div className='flex flex-wrap mt-6 gap-6'>
                                             <div>
-                                                
-                                            </div>
+
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
                                                 <div className='flex justify-center items-center'>
                                                     <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
@@ -582,6 +581,7 @@ const DashBody = (prop) => {
                                                     />
                                                 </div>
                                                 <p className='text-white text-center mt-3'>Investment</p>
+                                            </div>
                                             </div>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
                                                 <div className='flex justify-center items-center'>
