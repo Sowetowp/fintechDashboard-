@@ -583,7 +583,7 @@ const DashBody = (prop) => {
                                                 </div>
                                             </div>
                                             <div className='flex flex-wrap md:flex-nowrap mt-3 gap-3'>
-                                                <div className='md:w-1/2 w-full rounded-xl dark:bg-blue-950 p-4'>
+                                                <div className='md:w-1/2 w-full rounded-xl border dark:bg-blue-950 p-4'>
                                                     <div className='flex justify-center items-center'>
                                                         <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-white dark:bg-blue-950 flex items-center justify-center font-medium dark:text-white text-md'>5%</div>
                                                         <PieChart
