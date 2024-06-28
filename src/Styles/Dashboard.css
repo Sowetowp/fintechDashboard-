@@ -137,7 +137,7 @@
     background-position: 60%;
 }
 #barCategories{
-    background-color: grey;
+    background-color: rgb(230, 230, 230);
 }
 .scrooler{
     scrollbar-width: none;
