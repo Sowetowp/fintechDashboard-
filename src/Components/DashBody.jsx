@@ -559,7 +559,7 @@ const DashBody = (prop) => {
                                                     </div>
                                                     <p className='text-white text-center mt-3'>Investment</p>
                                                 </div>
-                                                <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
+                                                <div className='md:w-1/2 w-full rounded-xl bg-purple-500 p-4'>
                                                     <div className='flex justify-center items-center'>
                                                         <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
                                                         <PieChart
@@ -582,7 +582,7 @@ const DashBody = (prop) => {
                                                     <p className='text-white text-center mt-3'>Investment</p>
                                                 </div>
                                             </div>
-                                            <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
+                                            <div className='md:w-1/2 w-full rounded-xl bg-purple-500 p-4'>
                                                 <div className='flex justify-center items-center'>
                                                     <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
                                                     <PieChart
@@ -604,7 +604,7 @@ const DashBody = (prop) => {
                                                 </div>
                                                 <p className='text-white text-center mt-3'>Investment</p>
                                             </div>
-                                            <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
+                                            <div className='md:w-1/2 w-full rounded-xl bg-purple-500 p-4'>
                                                 <div className='flex justify-center items-center'>
                                                     <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
                                                     <PieChart
