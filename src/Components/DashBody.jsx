@@ -542,29 +542,25 @@ const DashBody = (prop) => {
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
                                                 </div> */}
                                                 <PieChart
-            series={[
-                {
-                    data: [
-                        { id: 0, value: 70 },
-                        { id: 1, value: 30 },
-                    ],
-                },
-            ]}
-            height={70}
-            sx={{
-                [`& .${pieArcLabelClasses.root}`]: {
-                    fill: 'white',
-                    fontWeight: 'bold',
-                    border: "none"
-                },
-                // Ensure the pie slices have no border
-                [`& .MuiPie-root`]: {
-                    border: "none"
-                }
-            }}
-            colors={["white", "rgba(243,232,255,0.27)"]}
-            margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
-        />
+                                                    series={[
+                                                        {
+                                                            data: [
+                                                                { id: 0, value: 70 },
+                                                                { id: 1, value: 30 },
+                                                            ],
+                                                        },
+                                                    ]}
+                                                    height={70}
+                                                    sx={{
+                                                        [`& .${pieArcLabelClasses.root}`]: {
+                                                          fill: 'white',
+                                                          fontWeight: 'bold',
+                                                          border:"none"
+                                                        },
+                                                      }}
+                                                    colors={["white", "rgba(243,232,255,0.27)"]}
+                                                    margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                                />
                                             </div>
                                         </div>
                                     </div>
