@@ -496,7 +496,7 @@ const DashBody = (prop) => {
                                             xAxis={[{ scaleType: 'point', data: ['Page A', 'Page B', 'Page C', 'Page D', 'Page E', 'Page F', 'Page G', 'Page H', 'Page I', 'Page J', 'Page K', 'Page L', 'Page M', 'Page N'], disableLine: true, disableTicks: true }]}
                                             sx={{
                                                 [`& .${pieArcLabelClasses.root}`]: {
-                                                  fill: 'white',
+                                                  fill: 'red',
                                                   fontWeight: 'bold',
                                                 },
                                               }}
