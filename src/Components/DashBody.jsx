@@ -548,6 +548,7 @@ const DashBody = (prop) => {
                                                                 { id: 0, value: 70 },
                                                                 { id: 1, value: 30 },
                                                             ],
+                                                            showMark: false
                                                         },
                                                     ]}
                                                     height={70}
