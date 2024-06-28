@@ -574,7 +574,7 @@ const DashBody = (prop) => {
                                                             cy: 150,
                                                         }
                                                     ]}
-                                                    height={900}
+                                                    height={90}
                                                 />
                                             </div>
                                         </div>
