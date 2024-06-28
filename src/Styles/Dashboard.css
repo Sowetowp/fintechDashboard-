@@ -216,9 +216,7 @@
 }
 
 .cl-switch>input:checked+span::after {
-    background-color: #0099FF
-    #0099FF
-    #0099ff;
+    background-color: #0099FF;
     transform: translateX(16px);
 }
 
