@@ -555,6 +555,7 @@ const DashBody = (prop) => {
                                                         [`& .${pieArcLabelClasses.root}`]: {
                                                           fill: 'white',
                                                           fontWeight: 'bold',
+                                                          border:"none"
                                                         },
                                                       }}
                                                     colors={["white", "rgba(243,232,255,0.27)"]}
