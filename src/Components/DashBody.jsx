@@ -560,7 +560,10 @@ const DashBody = (prop) => {
                                                 <PieChart
                                                     series={[
                                                         {
-                                                            data: [... ],
+                                                            data: [
+                                                                { id: 0, value: 70 },
+                                                                { id: 1, value: 30 },
+                                                            ],
                                                             innerRadius: 30,
                                                             outerRadius: 100,
                                                             paddingAngle: 5,
