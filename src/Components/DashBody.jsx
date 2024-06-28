@@ -542,8 +542,7 @@ const DashBody = (prop) => {
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
                                                 </div> */}
                                                 <div>
-                                                    <div></div>
-                                                </div>
+                                                    <div className=''></div>
                                                 <PieChart
                                                     series={[
                                                         {
@@ -560,6 +559,7 @@ const DashBody = (prop) => {
                                                     colors={["white", "rgba(243,232,255,0.27)"]}
                                                     margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                                 />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
