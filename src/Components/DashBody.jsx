@@ -535,7 +535,7 @@ const DashBody = (prop) => {
                                                 </span>
                                             </div>
                                         </div>
-                                        <div className='flex flex-wrap'>
+                                        <div className='flex flex-wrap m-6'>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
                                                 <div className='flex justify-center items-center'>
                                                     <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
