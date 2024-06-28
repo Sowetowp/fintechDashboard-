@@ -245,7 +245,7 @@
 }
 
 .cl-switch>input:checked:active+span::before {
-    background-color: #0099FF;
+    background-color: #0099ff70;
 }
 
 /* Disabled */
