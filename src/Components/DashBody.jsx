@@ -538,7 +538,7 @@ const DashBody = (prop) => {
                                         <div>
                                             <div className='w-1/2 rounded-xl bg-purple-500 p-4'>
                                                 <div className='rounded-full w-24 flex h-24 m-auto bg-[rgba(243,232,255,0.27)]'>
-                                                    <div className='rounded-tl-full rotate-[250deg] translate-x-8 translate-y-5 rounded-bl-full w-1/2 h-24 bg-white'></div>
+                                                    <div className='rounded-tl-full rotate-[250deg] translate-x-[2.2rem] translate-y-5 rounded-bl-full w-1/2 h-24 bg-white'></div>
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
                                                 </div>
                                             </div>
