@@ -551,7 +551,6 @@ const DashBody = (prop) => {
                                                         },
                                                     ]}
                                                     height={70}
-                                                    yAxis={[{ disableLine: true, disableTicks: true }]}
                                                     sx={{
                                                         
                                                     }}
