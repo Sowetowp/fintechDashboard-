@@ -490,7 +490,7 @@ const DashBody = (prop) => {
                                             />
                                         </div>
                                     </div>
-                                    <div className='dark:bg-blue-950 overflow-hidden shadow mt-7 w-full rounded-xl'>
+                                    <div className='dark:bg-blue-950 bg-white overflow-hidden shadow mt-7 w-full rounded-xl'>
                                         <div className='flex justify-between flex-wrap items-center pt-7 pb-2 px-7'>
                                             <span>
                                                 <p className='text-gray-500 text-sm'>Weekly Wallet Usage</p>
@@ -519,7 +519,7 @@ const DashBody = (prop) => {
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
                                     </div>
-                                    <div className='dark:bg-blue-950 shadow mt-7 p-7 w-full rounded-xl'>
+                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
                                         <h2 className='dark:text-white text-xl font-medium'>Spendings</h2>
                                         <div className='flex flex-wrap'>
                                             <div className='flex md:w-1/2 w-full mt-7 gap-4'>
