@@ -599,7 +599,7 @@ const DashBody = (prop) => {
                                                             sx={{
                                                                 strokeOpacity: "0",
                                                             }}
-                                                            colors={["white", "rgba(243,232,255,0.27)"]}
+                                                            colors={["#0099FF", "rgba(243,232,255,0.27)"]}
                                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                                         />
                                                     </div>
