@@ -551,7 +551,6 @@ const DashBody = (prop) => {
                                                             ],
                                                         },
                                                     ]}
-                                                    width={400}
                                                     height={200}
                                                 />
                                             </div>
