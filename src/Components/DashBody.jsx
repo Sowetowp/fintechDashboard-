@@ -553,7 +553,7 @@ const DashBody = (prop) => {
                                                     height={70}
                                                     sx={{
 fill:"red",
-strokeOpacity:"0"
+strokeOpacity:"0",
 stroke:"red"
                                                     }}
                                                     colors={["white", "rgba(243,232,255,0.27)"]}
