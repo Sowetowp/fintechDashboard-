@@ -552,10 +552,25 @@ const DashBody = (prop) => {
                                                     ]}
                                                     height={70}
                                                     sx={{
-                                                        
+
                                                     }}
                                                     colors={["white", "rgba(243,232,255,0.27)"]}
                                                     margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                                />
+                                                <PieChart
+                                                    series={[
+                                                        {
+                                                            data: [... ],
+                                                            innerRadius: 30,
+                                                            outerRadius: 100,
+                                                            paddingAngle: 5,
+                                                            cornerRadius: 5,
+                                                            startAngle: -90,
+                                                            endAngle: 180,
+                                                            cx: 150,
+                                                            cy: 150,
+                                                        }
+                                                    ]}
                                                 />
                                             </div>
                                         </div>
