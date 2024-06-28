@@ -502,7 +502,7 @@ const DashBody = (prop) => {
                                                 },
                                               }}
                                             colors={["#199dc9"]}
-                                            border={{}}
+                                            border={{"none"}}
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
                                     </div>
