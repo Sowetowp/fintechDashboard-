@@ -495,10 +495,11 @@ const DashBody = (prop) => {
                                             series={[{ data: [2, 4, 2.5, 6, 3, 4, 2, 4, 0.5, 5, 2, 9, 4.3, 5], area: true, showMark: false }]}
                                             xAxis={[{ scaleType: 'point', data: ['Page A', 'Page B', 'Page C', 'Page D', 'Page E', 'Page F', 'Page G', 'Page H', 'Page I', 'Page J', 'Page K', 'Page L', 'Page M', 'Page N'], disableLine: true, disableTicks: true }]}
                                             sx={{
-                                                [`& .${lineElementClasses.root}`]: {
-                                                    display: 'none',
+                                                [`& .${pieArcLabelClasses.root}`]: {
+                                                  fill: 'white',
+                                                  fontWeight: 'bold',
                                                 },
-                                            }}
+                                              }}
                                             colors={["#199dc9"]}
                                             margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
                                         />
