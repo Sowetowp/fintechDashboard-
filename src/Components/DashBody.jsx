@@ -384,7 +384,9 @@ const DashBody = (prop) => {
                                             margin={{ top: 10, bottom: 30, left: 40, right: 10 }}
 
                                         />
-                                        
+                                        <div>
+                                            
+                                        </div>
                                     </div>
                                     <div className='bg-white dark:bg-blue-950 mt-12 shadow p-6 rounded-lg'>
                                         <div className='flex flex-wrap justify-between items-center'>
