@@ -536,7 +536,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div>
-                                            <div className='flex flex-wrap md:flex-nowrap mt-6 gap-6'>
+                                            <div className='flex flex-wrap md:flex-nowrap mt-6 gap-3'>
                                                 <div className='md:w-1/2 w-full rounded-xl bg-purple-500 p-4'>
                                                     <div className='flex justify-center items-center'>
                                                         <div className='absolute z-10 rounded-full w-16 h-16 m-auto bg-purple-500 flex items-center justify-center font-medium text-white text-md'>70%</div>
