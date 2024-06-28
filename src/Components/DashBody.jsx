@@ -543,22 +543,22 @@ const DashBody = (prop) => {
                                                 </div> */}
                                                 <div className='bg-slate-500 flex justify-center items-center'>
                                                     <div className='absolute rounded-full w-12 h-12 m-auto bg-black'></div>
-                                                <PieChart
-                                                    series={[
-                                                        {
-                                                            data: [
-                                                                { id: 0, value: 70 },
-                                                                { id: 1, value: 30 },
-                                                            ],
-                                                        },
-                                                    ]}
-                                                    height={70}
-                                                    sx={{
-                                                        strokeOpacity: "0",
-                                                    }}
-                                                    colors={["white", "rgba(243,232,255,0.27)"]}
-                                                    margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
-                                                />
+                                                    <PieChart
+                                                        series={[
+                                                            {
+                                                                data: [
+                                                                    { id: 0, value: 70 },
+                                                                    { id: 1, value: 30 },
+                                                                ],
+                                                            },
+                                                        ]}
+                                                        height={70}
+                                                        sx={{
+                                                            strokeOpacity: "0",
+                                                        }}
+                                                        colors={["white", "rgba(243,232,255,0.27)"]}
+                                                        margin={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
