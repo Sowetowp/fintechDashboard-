@@ -548,7 +548,7 @@ const DashBody = (prop) => {
                                                                 ],
                                                             },
                                                         ]}
-                                                        height={70}
+                                                        height={90}
                                                         sx={{
                                                             strokeOpacity: "0",
                                                         }}
