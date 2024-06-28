@@ -542,7 +542,7 @@ const DashBody = (prop) => {
                                                     <div className='rounded-tr-full rounded-br-full w-1/2 h-24 bg-white'></div>
                                                 </div> */}
                                                 <div>
-                                                    
+                                                    <div></div>
                                                 </div>
                                                 <PieChart
                                                     series={[
