@@ -647,7 +647,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-[90%] rounded-xl'>
+                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
                                         <div className='flex flex-wrap md:flex-nowrap justify-between items-center'>
                                             <div>
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
@@ -659,8 +659,8 @@ const DashBody = (prop) => {
                                                 <a onClick={() => setDay("today")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "today" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>today</a>
                                             </div>
                                         </div>
-                                        <div className='w-full overflow-x-auto'>
-                                            <table className='w-full'>
+                                        <div className='w-full px-2 overflow-x-auto'>
+                                            {/* <table className='w-full'>
                                                 <tbody>
                                                     <tr>
                                                         <td className='py-4'>
@@ -685,7 +685,7 @@ const DashBody = (prop) => {
 
                                                     </tr>
                                                 </tbody>
-                                            </table>
+                                            </table> */}
                                         </div>
                                     </div>
                                 </div>
