@@ -66,7 +66,7 @@ const DashBody = (prop) => {
             credit: true,
             name: "XYZ Store ID",
             price: "-$167",
-            status: "Pending"
+            status: "Canceled"
         }
     ]
 
