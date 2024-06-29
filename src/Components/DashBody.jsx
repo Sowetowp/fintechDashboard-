@@ -673,7 +673,10 @@ const DashBody = (prop) => {
                                                         </td>
                                                         <td>
                                                             <p>June 4, 2020</p>
-                                                            <p></p>
+                                                            <p>05:34</p>
+                                                        </td>
+                                                        <td>
+                                                            
                                                         </td>
                                                     </tr>
                                                 </tbody>
