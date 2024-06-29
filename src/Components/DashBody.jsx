@@ -655,8 +655,8 @@ const DashBody = (prop) => {
                                             </div>
                                             <div className='rounded-full flex bg-gray-100 h-fit text-sm'>
                                                 <a onClick={()=> setDay("month")} className='rounded-full pb-2 pt-1 inline-block px-4'>monthly</a>
-                                                <a className='rounded-full pb-2 pt-1 inline-block px-4'>weekly</a>
-                                                <a className='rounded-full pb-2 pt-1 inline-block px-4'>today</a>
+                                                <a onClick={()=> setDay("month")} className='rounded-full pb-2 pt-1 inline-block px-4'>weekly</a>
+                                                <a onClick={()=> setDay("month")} className='rounded-full pb-2 pt-1 inline-block px-4'>today</a>
                                             </div>
                                         </div>
                                     </div>
