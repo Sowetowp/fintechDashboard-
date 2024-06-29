@@ -654,9 +654,9 @@ const DashBody = (prop) => {
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
                                             <div className='rounded-full flex bg-gray-100 h-fit text-sm'>
-                                                <a onClick={()=> setDay("month")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "month" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>monthly</a>
-                                                <a onClick={()=> setDay("week")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "week" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>weekly</a>
-                                                <a onClick={()=> setDay("today")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "today" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>today</a>
+                                                <a onClick={() => setDay("month")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "month" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>monthly</a>
+                                                <a onClick={() => setDay("week")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "week" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>weekly</a>
+                                                <a onClick={() => setDay("today")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "today" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>today</a>
                                             </div>
                                         </div>
                                         <div className='w-full overflow-x-auto'>
@@ -664,7 +664,7 @@ const DashBody = (prop) => {
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 12.05H16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11.8008 7.09985L15.4108 10.6199C15.5961 10.7998 15.7435 11.0153 15.8442 11.2532C15.9448 11.4911 15.9966 11.7466 15.9966 12.0049C15.9966 12.2632 15.9448 12.5189 15.8442 12.7568C15.7435 12.9947 15.5961 13.21 15.4108 13.3899L11.8008 16.8999" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M2 12.05H16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M11.8008 7.09985L15.4108 10.6199C15.5961 10.7998 15.7435 11.0153 15.8442 11.2532C15.9448 11.4911 15.9966 11.7466 15.9966 12.0049C15.9966 12.2632 15.9448 12.5189 15.8442 12.7568C15.7435 12.9947 15.5961 13.21 15.4108 13.3899L11.8008 16.8999" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                                         </td>
                                                     </tr>
                                                 </tbody>
