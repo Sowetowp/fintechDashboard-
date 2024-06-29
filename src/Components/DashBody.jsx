@@ -673,7 +673,7 @@ const DashBody = (prop) => {
                                                             </div>
                                                         </td>
                                                         <td className='whitespace-nowrap'>
-                                                            XYZ Store ID
+                                                            XYZ Store IDffffffffffffffffffff
                                                             <br/>
                                                             Cashback
                                                         </td>
