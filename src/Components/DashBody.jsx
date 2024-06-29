@@ -675,12 +675,11 @@ const DashBody = (prop) => {
                                                         <td className='p-4 whitespace-nowrap'>
                                                             XYZ Store ID
                                                             <br/>
-                                                            Cashback
-                                                        </td>
-                                                        <td className='p-4 whitespace-nowrap'>
                                                             June 4, 2020
                                                             <br/>
                                                             05:34
+                                                        </td>
+                                                        <td className='p-4 whitespace-nowrap'>
                                                         </td>
                                                         <td className='p-4 whitespace-nowrap'>+$5,553</td>
                                                         <td className='p-4 pr-0 whitespace-nowrap'>Completed</td>
