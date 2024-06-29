@@ -672,12 +672,12 @@ const DashBody = (prop) => {
                                                                 }
                                                             </div>
                                                         </td>
-                                                        <td className='p-4'>
+                                                        <td className='p-4 whitespace-nowrap'>
                                                             XYZ Store ID
                                                             <br/>
                                                             Cashback
                                                         </td>
-                                                        <td className='p-4'>
+                                                        <td className='p-4 whitespace-nowrap'>
                                                             June 4, 2020
                                                             <br/>
                                                             05:34
