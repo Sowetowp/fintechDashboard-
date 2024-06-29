@@ -52,7 +52,8 @@ const DashBody = (prop) => {
     const history = [
         {
             credit: true,
-            name: ""
+            name: "XYZ Store ID"
+            
         }
     ]
 
