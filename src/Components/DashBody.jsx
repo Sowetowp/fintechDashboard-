@@ -651,7 +651,7 @@ const DashBody = (prop) => {
                                         <div className='flex flex-wrap justify-between items-center'>
                                             <div className='w-1/3'>
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
-                                                <p className='text-gray-500 text-xs mt-3 md'>Lorem ipsum dolor sit amet, consectetur</p>
+                                                <p className='text-gray-500 text-xs mt-3 md:mt-0'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
                                             <div className='rounded-full dark:bg-[#0099ff45] flex bg-gray-100 h-fit text-sm'>
                                                 <a onClick={() => setDay("month")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "month" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>monthly</a>
