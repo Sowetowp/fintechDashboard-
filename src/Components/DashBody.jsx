@@ -674,7 +674,7 @@ const DashBody = (prop) => {
                                             </span>
                                             <span>
                                                 <p className='text-gray-500 text-xs'>+$5,553</p>
-                                                <p className='text-green-500'>Completed</p>
+                                                <p className={${`text-green-500`}}>Completed</p>
                                             </span>
                                         </div>
                                         {/* <div className='w-[calc(100% - 5px)] overflow-x-auto'>
