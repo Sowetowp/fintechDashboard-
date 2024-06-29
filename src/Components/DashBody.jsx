@@ -668,7 +668,8 @@ const DashBody = (prop) => {
                                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 11.95H2" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M6.20081 16.8999L2.59082 13.3899C2.40292 13.2115 2.25331 12.9966 2.15106 12.7585C2.04881 12.5204 1.99609 12.264 1.99609 12.0049C1.99609 11.7458 2.04881 11.4893 2.15106 11.2512C2.25331 11.0131 2.40292 10.7983 2.59082 10.6199L6.20081 7.09985" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
                                                         </td>
                                                         <td>
-                                                            
+                                                            <p>XYZ Store ID</p>
+                                                            <p></p>
                                                         </td>
                                                     </tr>
                                                 </tbody>
