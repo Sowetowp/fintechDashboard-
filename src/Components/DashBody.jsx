@@ -647,7 +647,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 py-7 w-full rounded-xl'>
+                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 px-1 py-7 w-full rounded-xl'>
                                         <div className='flex px-7 justify-between items-center'>
                                             <div>
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
