@@ -650,7 +650,7 @@ const DashBody = (prop) => {
                                     <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
                                         <div className='flex flex-wrap justify-between items-center'>
                                             <div className='w-1/3'>
-                                                <h2 className='dark:text-white text-xl break-words font-medium'>Previous Transactions</h2>
+                                                <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
                                                 <p className='text-gray-500 text-xs break-words'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
                                             <div className='rounded-full dark:bg-[#0099ff45] flex bg-gray-100 h-fit text-sm'>
