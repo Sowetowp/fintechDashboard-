@@ -659,7 +659,15 @@ const DashBody = (prop) => {
                                                 <a onClick={()=> setDay("today")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "today" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>today</a>
                                             </div>
                                         </div>
-                                        
+                                        <div>
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
