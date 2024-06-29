@@ -51,8 +51,8 @@ const DashBody = (prop) => {
 
     const history = [
         {
-            transfer: true,
-            
+            receive: true,
+
         }
     ]
 
