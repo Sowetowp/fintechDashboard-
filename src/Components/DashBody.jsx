@@ -680,8 +680,8 @@ const DashBody = (prop) => {
                                                             <p>June 4, 2020</p>
                                                             <p>05:34</p>
                                                         </td>
-                                                        <td>+$5,553</td>
-                                                        <td>Completed</td>
+                                                        <td className='py-4'>+$5,553</td>
+                                                        <td className='py-4'>Completed</td>
 
                                                     </tr>
                                                 </tbody>
@@ -701,4 +701,4 @@ const DashBody = (prop) => {
     )
 }
 
-export
+export default DashBody
