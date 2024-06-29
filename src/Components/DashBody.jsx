@@ -647,8 +647,8 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 py-7 w-full rounded-xl'>
-                                        <div className='flex px-7 justify-between items-center'>
+                                    <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
+                                        <div className='flex justify-between items-center'>
                                             <div>
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
@@ -663,7 +663,7 @@ const DashBody = (prop) => {
                                             <table className='w-full'>
                                                 <tbody>
                                                     <tr>
-                                                        <td className='px-3'>
+                                                        <td>
                                                             <div className={`p-4 border-2 rounded-full ${false ? "border-green-500" : "border-red-500"}`}>
                                                                 {false ?
                                                                     <svg className='w-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M2 12.05H16" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M11.8008 7.09985L15.4108 10.6199C15.5961 10.7998 15.7435 11.0153 15.8442 11.2532C15.9448 11.4911 15.9966 11.7466 15.9966 12.0049C15.9966 12.2632 15.9448 12.5189 15.8442 12.7568C15.7435 12.9947 15.5961 13.21 15.4108 13.3899L11.8008 16.8999" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
