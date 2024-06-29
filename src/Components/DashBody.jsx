@@ -679,7 +679,9 @@ const DashBody = (prop) => {
                                                             <br/>
                                                             05:34
                                                         </td>
-                                                        <td className='p-4 whitespace-nowrap'>+$5,553</td>
+                                                        <td className='p-4 whitespace-nowrap'>
+                                                            +$5,553
+                                                            </td>
                                                         <td className='p-4 pr-0 whitespace-nowrap'>Completed</td>
                                                     </tr>
                                                 </tbody>
