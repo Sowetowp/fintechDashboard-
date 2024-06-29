@@ -672,9 +672,8 @@ const DashBody = (prop) => {
                                                     <p>05:34</p>
                                                 </span>
                                             </span>
-                                            +$5,553
-                                                            <br />
-                                                            Completed
+                                            <p>+$5,553</p>
+                                            <p>Completed</p>
                                         </div>
                                         {/* <div className='w-[calc(100% - 5px)] overflow-x-auto'>
                                             <table className='w-full'>
