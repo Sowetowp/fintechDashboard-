@@ -653,7 +653,9 @@ const DashBody = (prop) => {
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
                                             <div>
-                                                <a href=""></a>
+                                                <a href="">monthly</a>
+                                                <a href="">weekly</a>
+                                                <a href="">today</a>
                                             </div>
                                         </div>
                                     </div>
