@@ -674,7 +674,7 @@ const DashBody = (prop) => {
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
                                                 <p className='text-gray-500 text-xs mt-3 md:mt-0'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
-                                            <div className='rounded-full dark:bg-[#0099ff45] flex bg-gray-100 h-fit text-sm'>
+                                            <div className='rounded-full mt3  dark:bg-[#0099ff45] flex bg-gray-100 h-fit text-sm'>
                                                 <a onClick={() => setDay("month")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "month" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>monthly</a>
                                                 <a onClick={() => setDay("week")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "week" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>weekly</a>
                                                 <a onClick={() => setDay("today")} className={`rounded-full dark:text-[#0099FF] pb-2 pt-1 inline-block px-4 cursor-pointer ${day === "today" ? "bg-[#0099FF] text-white dark:text-white" : ""}`}>today</a>
