@@ -678,8 +678,9 @@ const DashBody = (prop) => {
                                                             Cashback
                                                         </td>
                                                         <td className='p-4'>
-                                                            <p>June 4, 2020</p>
-                                                            <p>05:34</p>
+                                                            June 4, 2020
+                                                            <br/>
+                                                            05:34
                                                         </td>
                                                         <td className='p-4'>+$5,553</td>
                                                         <td className='p-4 pr-0'>Completed</td>
