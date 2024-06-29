@@ -673,7 +673,7 @@ const DashBody = (prop) => {
                                                 </span>
                                             </span>
                                             <span>
-                                                <p>+$5,553</p>
+                                                <p className='text-gray-500 text-xs'>+$5,553</p>
                                                 <p>Completed</p>
                                             </span>
                                         </div>
