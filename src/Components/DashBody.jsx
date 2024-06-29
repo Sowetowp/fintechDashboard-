@@ -669,7 +669,7 @@ const DashBody = (prop) => {
                                                         </td>
                                                         <td>
                                                             <p>XYZ Store ID</p>
-                                                            <p></p>
+                                                            <p>Cashback</p>
                                                         </td>
                                                     </tr>
                                                 </tbody>
