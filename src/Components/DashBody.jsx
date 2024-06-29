@@ -672,7 +672,7 @@ const DashBody = (prop) => {
                                                                 }
                                                             </div>
                                                         </td>
-                                                        <td>
+                                                        <td className='p-4'>
                                                             <p>XYZ Store ID</p>
                                                             <p>Cashback</p>
                                                         </td>
