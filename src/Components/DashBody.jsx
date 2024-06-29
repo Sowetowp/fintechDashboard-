@@ -39,6 +39,7 @@ const dropReducer = (state, action) => {
 const DashBody = (prop) => {
     const [drop, dispatch] = useReducer(dropReducer, drops)
     const [height, setHeight] = useState("0px")
+    const [height, setHeight] = useState("0px")
     const contentRef = useRef()
     const canvasRef = useRef(null);
 
