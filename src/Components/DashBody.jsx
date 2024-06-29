@@ -663,7 +663,7 @@ const DashBody = (prop) => {
                                             <table className='w-full'>
                                                 <tbody>
                                                     <tr>
-                                                        <td className='py-4'>
+                                                        {/* <td className='py-4'>
                                                             <div className={`p-4 border-2 rounded-full ${false ? "border-green-500" : "border-red-500"}`}>
                                                                 {false ?
                                                                     <svg className='w-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M2 12.05H16" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M11.8008 7.09985L15.4108 10.6199C15.5961 10.7998 15.7435 11.0153 15.8442 11.2532C15.9448 11.4911 15.9966 11.7466 15.9966 12.0049C15.9966 12.2632 15.9448 12.5189 15.8442 12.7568C15.7435 12.9947 15.5961 13.21 15.4108 13.3899L11.8008 16.8999" className='stroke-green-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
@@ -671,7 +671,7 @@ const DashBody = (prop) => {
                                                                     <svg className='w-6' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.8105 2C22.3973 8.57225 22.3973 15.4277 20.8105 22" className='stroke-red-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M16 11.95H2" className='stroke-red-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> <path d="M6.20081 16.8999L2.59082 13.3899C2.40292 13.2115 2.25331 12.9966 2.15106 12.7585C2.04881 12.5204 1.99609 12.264 1.99609 12.0049C1.99609 11.7458 2.04881 11.4893 2.15106 11.2512C2.25331 11.0131 2.40292 10.7983 2.59082 10.6199L6.20081 7.09985" className='stroke-red-500' strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
                                                                 }
                                                             </div>
-                                                        </td>
+                                                        </td> */}
                                                         <td className='p-4'>
                                                             <p>XYZ Store ID</p>
                                                             <p>Cashback</p>
