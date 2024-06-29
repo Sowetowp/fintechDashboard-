@@ -672,16 +672,16 @@ const DashBody = (prop) => {
                                                                 }
                                                             </div>
                                                         </td>
-                                                        <td className='px-3'>
+                                                        <td className='px-4'>
                                                             <p>XYZ Store ID</p>
                                                             <p>Cashback</p>
                                                         </td>
-                                                        <td className='px-3'>
+                                                        <td className='px-4'>
                                                             <p>June 4, 2020</p>
                                                             <p>05:34</p>
                                                         </td>
-                                                        <td className='px-3'>+$5,553</td>
-                                                        <td className='px-3'>Completed</td>
+                                                        <td className='px-4'>+$5,553</td>
+                                                        <td className='px-4'>Completed</td>
 
                                                     </tr>
                                                 </tbody>
