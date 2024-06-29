@@ -649,7 +649,7 @@ const DashBody = (prop) => {
                                     </div>
                                     <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
                                         <div className='flex flex-wrap justify-between items-center'>
-                                            <div className='w-1/3'>
+                                            <div className='min-w-1/3'>
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
                                                 <p className='text-gray-500 text-xs mt-3 md:mt-0'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
