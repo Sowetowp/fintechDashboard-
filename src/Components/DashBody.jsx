@@ -668,7 +668,7 @@ const DashBody = (prop) => {
                                                 }
                                                 <span>
                                                     <p className='font-medium dark:text-white'>XYZ Store ID</p>
-                                                    <p className='text-gray-500 text-xs mt-2'>June 4, 2020</p>
+                                                    <p className='text-gray-500 text-xs mt-1'>June 4, 2020</p>
                                                     <p className='text-gray-500 text-xs'>05:34</p>
                                                 </span>
                                             </span>
