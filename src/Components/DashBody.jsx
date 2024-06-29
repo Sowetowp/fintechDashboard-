@@ -647,7 +647,9 @@ const DashBody = (prop) => {
                                         </div>
                                     </div>
                                     <div className='dark:bg-blue-950 bg-white shadow mt-7 p-7 w-full rounded-xl'>
-                                        
+                                        <div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
