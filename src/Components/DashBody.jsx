@@ -652,7 +652,7 @@ const DashBody = (prop) => {
                                                 <h2 className='dark:text-white text-xl font-medium'>Previous Transactions</h2>
                                                 <p className='text-gray-500 text-xs'>Lorem ipsum dolor sit amet, consectetur</p>
                                             </div>
-                                            <div className='rounded-full bg-gray-100'>
+                                            <div className='rounded-full bg-gray-100 h-fit'>
                                                 <a className='rounded-full py-1 px-3'>monthly</a>
                                                 <a className='rounded-full'>weekly</a>
                                                 <a className='rounded-full'>today</a>
