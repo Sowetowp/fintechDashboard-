@@ -654,8 +654,8 @@ const DashBody = (prop) => {
                                             </div>
                                             <div className='rounded-full bg-gray-100 h-fit'>
                                                 <a className='rounded-full pb-2 pt-1 inline-block px-5'>monthly</a>
-                                                <a className='rounded-full'>weekly</a>
-                                                <a className='rounded-full'>today</a>
+                                                <a className='rounded-full pb-2 pt-1 inline-block px-5'>weekly</a>
+                                                <a className='rounded-full pb-2 pt-1 inline-block px-5'>today</a>
                                             </div>
                                         </div>
                                     </div>
