@@ -696,7 +696,7 @@ const DashBody = (prop) => {
                                                 </span>
                                                 <span>
                                                     <p className='text-gray-500 text-xs'>{his.price}</p>
-                                                    <p className={`font-medium text-sm ${true ? "text-green-500" : "text-red-500"}`}>Completed</p>
+                                                    <p className={`font-medium text-sm ${true ? "text-green-500" : "text-red-500"}`}>{his.status}</p>
                                                 </span>
                                             </div>
                                         ))}
