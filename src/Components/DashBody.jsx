@@ -661,7 +661,7 @@ const DashBody = (prop) => {
                                         </div>
                                         <div className='w-full overflow-x-auto'>
                                             <table className='w-20'>
-                                                <tbody className='w-full'>
+                                                <tbody className='w-20'>
                                                     <tr className='w-full'>
                                                         <td className='py-4'>
                                                             <div className={`p-4 border-2 rounded-full ${false ? "border-green-500" : "border-red-500"}`}>
