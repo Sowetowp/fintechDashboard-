@@ -660,7 +660,7 @@ const DashBody = (prop) => {
                                             </div>
                                         </div>
                                         <div className='w-full overflow-x-auto'>
-                                            <table className='w-32'>
+                                            <table className='w-20'>
                                                 <tbody className='w-full'>
                                                     <tr className='w-full'>
                                                         <td className='py-4'>
