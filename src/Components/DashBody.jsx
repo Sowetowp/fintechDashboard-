@@ -668,9 +668,8 @@ const DashBody = (prop) => {
                                                 }
                                                 <span>
                                                     <p>XYZ Store ID</p>
-                                                    <p>June 4, 2020
-                                                    <br />
-                                                    05:34
+                                                    <p>June 4, 2020</p>
+                                                    <p>05:34</p>
                                                 </span>
                                             </span>
                                         </div>
