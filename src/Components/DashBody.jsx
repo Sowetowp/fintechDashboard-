@@ -682,7 +682,6 @@ const DashBody = (prop) => {
                                                         </td>
                                                         <td className='px-7'>+$5,553</td>
                                                         <td className='px-7'>Completed</td>
-
                                                     </tr>
                                                 </tbody>
                                             </table>
