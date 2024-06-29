@@ -49,7 +49,12 @@ const DashBody = (prop) => {
         }
     }, []);
 
-    
+    const history = [
+        {
+            
+        }
+    ]
+
     const quickTransfer = [
         {
             image: notif1,
