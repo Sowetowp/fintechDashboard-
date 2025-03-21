@@ -307,7 +307,7 @@ const DashBody = (prop) => {
     return (
         <>
             <main className='w-full min-h-screen bg-white dark:bg-blue-950'>
-                <section className='max-w-7xl w-full mx-auto flex'>
+                <section className='max-w-[96rem] w-full mx-auto flex'>
                     <div className={`${prop.prop ? "w-[17rem]" : "w-[0rem] md:w-[5.5rem]"} z-40  md:sticky fixed top-[5.5rem] h-[83vh] overflow-y-auto bestSeller overflow-x-hidden bg-white dark:bg-blue-950`} style={{ transition: "width .5s ease" }}>
                         {Object.keys(drop).map((dr, index) => (
                             <div key={index} className='py-3'>
